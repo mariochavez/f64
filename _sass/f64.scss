@@ -1,0 +1,322 @@
+@import 'bulma';
+
+body, html {
+  height: 100%;
+}
+
+body {
+  color: black;
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+  font-weight: bold;
+}
+
+h1{
+  font-family: 'EB Garamond', serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 70px;
+  letter-spacing: -.02em;
+  line-height: 1em;
+  text-transform: none;
+  margin-bottom: 46px;
+}
+
+h2 {
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  letter-spacing: 0em;
+  line-height: 1.65em;
+  text-transform: none;
+}
+
+h3 {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: .12em;
+  line-height: 1em;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.white-bg {
+  background-color: white;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.main-container {
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.parallax-container-1 {
+  background-image: url($url + '/images/header.jpg');
+  display: flex;
+  flex: 1 0 auto;
+  position: relative;
+  height: 100%;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  justify-content: space-between
+}
+
+.parallax-container-2 {
+  background-image: url($url + '/images/middle.png');
+  display: flex;
+  flex: 1 0 auto;
+  position: relative;
+  height: 100%;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  justify-content: space-between
+}
+
+.parallax-container-3 {
+  background-image: url($url + '/images/clothing.png');
+  display: flex;
+  flex: 1 0 auto;
+  position: relative;
+  height: 100%;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  justify-content: space-between
+}
+
+.parallax-container-4 {
+  background-image: url($url + '/images/mountain.png');
+  display: flex;
+  flex: 1 0 auto;
+  position: relative;
+  height: 110%;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  justify-content: space-between
+}
+
+
+.content-container {
+  display: block;
+  position: relative;
+  z-index: 1;
+  height: auto;
+}
+
+.navbar-brand {
+  padding: 0 24px 0 24px;
+  height: 7%;
+}
+
+.navbar {
+  background-color: transparent;
+  padding: 64px 66px 0 66px;
+  width: 100%;
+  height: 15%;
+}
+
+.navbar-item {
+  display: inline-block;
+  vertical-align: middle;
+  color: white;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  padding-left: 3px;
+}
+
+.navbar-end {
+  height: 60px;
+  padding-bottom: 15px;
+  &:hover {
+    a {
+      color: #b0b0b0;
+      background-color: transparent;
+    }
+  }
+}
+
+a.navbar-item {
+  height: 40px;
+  padding-left: 8px;
+  padding-right: 8px;
+  &:hover {
+    color: white;
+  }
+}
+
+.navbar-burger:hover {
+  background-color: transparent;
+}
+
+.centered-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.top-content {
+  text-align: center;
+  margin-right: 30px;
+  margin-left: 34px
+}
+
+.text-1 {
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: .12em;
+  line-height: 1em;
+  text-transform: uppercase;
+  margin-top: 34px;
+}
+
+.text-2 {
+  font-family: 'EB Garamond', serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 70px;
+  letter-spacing: -.02em;
+  line-height: 1em;
+  text-transform: none;
+  color: white;
+}
+
+.sonora-experience {
+  width: 60%;
+  height: auto;
+  padding: 120px 80px 120px 80px;
+}
+
+.workshops {
+  padding: 170px 80px 140px 80px;
+  height: auto;
+}
+
+.images {
+  padding: 0 80px;
+  img {
+    height: 385px;
+  }
+  h3 {
+    padding: 17px 17px 17px 0;
+  }
+}
+
+.images-2 {
+  padding: 0 80px;
+  img {
+    height: 300px;
+  }
+  h3 {
+    padding: 17px 17px 17px 0;
+  }
+}
+
+.schedule-button {
+  display: block;
+  text-align: end;
+  padding: 40px 80px;
+  a.button {
+    border-width: 2px;
+    border-style: solid;
+    font-size: 21px;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    border-color: #373d3f;
+    border-radius: 0px;
+    padding: 34px 21px;
+  }
+}
+
+.brands {
+  padding: 170px 80px 30px 80px;
+  height: auto;
+}
+
+.underline {
+  width: 80%;
+  border-bottom: rgba(176,176,176, 0.5) solid 1px;
+  padding-bottom: 20px;
+  margin: auto
+}
+
+.symbols {
+  text-align: center;
+  padding: 0 80px;
+  img {
+    padding: 40px 20px;
+    height: auto;
+    border-bottom: rgba(176,176,176, 0.5) solid 1px;
+  }
+  p {
+    text-align: left;
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    letter-spacing: 0em;
+    line-height: 1.8em;
+    text-transform: none;
+    color: #b0b0b0;
+  }
+  h3 {
+    text-align: left
+  }
+}
+
+.footer {
+  text-align: center;
+  height: auto;
+  width: auto;
+  padding: 50px 80px
+}
+
+.social {
+  padding: 20px 0; 
+}
+
+.info p {
+  padding-bottom: 20px;
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+  letter-spacing: .01em;
+  line-height: 1em;
+  text-transform: none;
+  color: #707070
+}
+
+.is-30px {
+  width: auto;
+  h3 {
+    padding: 25px;
+  }
+}
+
+.final {
+  font-family: 'EB Garamond', serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 42px;
+  letter-spacing: -.02em;
+  line-height: 1.3em;
+  color: white;
+  padding: 20%;
+  text-align: center;
+}
