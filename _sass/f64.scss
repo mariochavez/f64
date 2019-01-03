@@ -29,6 +29,7 @@ h2 {
   letter-spacing: 0em;
   line-height: 1.65em;
   text-transform: none;
+  color: #545454;
 }
 
 h3 {
@@ -199,9 +200,11 @@ a.navbar-item {
 }
 
 .sonora-experience {
-  widows: 60%;
   height: auto;
   padding: 120px 80px 120px 80px;
+  h3 {
+    padding-left: 15px;
+  }
 }
 
 .workshops {
