@@ -121,6 +121,8 @@ h3 {
   padding: 64px 66px 0 66px;
   width: 100%;
   height: 15%;
+  position: absolute;
+  z-index: 1000;
 }
 
 .navbar-item {
@@ -159,11 +161,14 @@ a.navbar-item {
 }
 
 .centered-text {
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
   width: 100%;
+  position: absolute;
+  z-index: 999;
 }
 
 .top-content {
@@ -194,7 +199,7 @@ a.navbar-item {
 }
 
 .sonora-experience {
-  width: 60%;
+  widows: 60%;
   height: auto;
   padding: 120px 80px 120px 80px;
 }
@@ -207,7 +212,8 @@ a.navbar-item {
 .images {
   padding: 0 80px;
   img {
-    height: 385px;
+    height: auto;
+    width: 100%
   }
   h3 {
     padding: 17px 17px 17px 0;
@@ -217,7 +223,8 @@ a.navbar-item {
 .images-2 {
   padding: 0 80px;
   img {
-    height: 300px;
+    height: auto;
+    width: 100%;
   }
   h3 {
     padding: 17px 17px 17px 0;
