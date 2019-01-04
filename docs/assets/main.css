@@ -2176,13 +2176,13 @@ h3 { font-weight: 400; font-style: normal; font-size: 14px; letter-spacing: .12e
 
 .main-container { perspective: 1px; transform-style: preserve-3d; height: 100%; overflow-x: hidden; overflow-y: scroll; }
 
-.parallax-container-1 { background-image: url("/images/home.jpg"); display: flex; flex: 1 0 auto; position: relative; height: 100%; transform: translateZ(-1px) scale(2); z-index: -1; justify-content: space-between; }
+.parallax-container-1 { background-image: url("/f64/images/home.jpg"); display: flex; flex: 1 0 auto; position: relative; height: 100%; transform: translateZ(-1px) scale(2); z-index: -1; justify-content: space-between; }
 
-.parallax-container-2 { background-image: url("/images/f64-publico.jpg"); display: flex; flex: 1 0 auto; position: relative; margin-top: 2rem; height: 100%; transform: translateZ(-1px) scale(2); z-index: -1; justify-content: space-between; }
+.parallax-container-2 { background-image: url("/f64/images/f64-publico.jpg"); display: flex; flex: 1 0 auto; position: relative; margin-top: 2rem; height: 100%; transform: translateZ(-1px) scale(2); z-index: -1; justify-content: space-between; }
 
-.parallax-container-3 { background-image: url("/images/talks.jpg"); display: flex; flex: 1 0 auto; position: relative; height: 100%; transform: translateZ(-1px) scale(2); z-index: -1; justify-content: space-between; }
+.parallax-container-3 { background-image: url("/f64/images/talks.jpg"); display: flex; flex: 1 0 auto; position: relative; height: 100%; transform: translateZ(-1px) scale(2); z-index: -1; justify-content: space-between; }
 
-.parallax-container-4 { background-image: url("/images/colima.jpg"); display: flex; flex: 1 0 auto; position: relative; height: 110%; transform: translateZ(-1px) scale(2); z-index: -1; justify-content: space-between; }
+.parallax-container-4 { background-image: url("/f64/images/colima.jpg"); display: flex; flex: 1 0 auto; position: relative; height: 110%; transform: translateZ(-1px) scale(2); z-index: -1; justify-content: space-between; }
 
 .content-container { display: block; position: relative; z-index: 1; height: auto; }
 
