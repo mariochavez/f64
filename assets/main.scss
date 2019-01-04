@@ -1,6 +1,6 @@
 ---
 ---
 
-$url: {% if jekyll.environment == 'production' %}"{{ site.url }}"{% else %}"{{ site.development_url }}"{% endif %};
+$url: "{{ site.baseUrl }}";
 
 @import "f64";
