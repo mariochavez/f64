@@ -60,49 +60,35 @@ h3 {
   overflow-y: scroll;
 }
 
-.parallax-container-1 {
-  background-image: url($url + '/images/home.jpg');
+.parallax {
+  background-position-y: center;
   display: flex;
   flex: 1 0 auto;
-  position: relative;
   height: 100%;
+  justify-content: space-between;
+  position: relative;
   transform: translateZ(-1px) scale(2);
   z-index: -1;
-  justify-content: space-between
+}
+
+.parallax-container-1 {
+  background-image: url($url + '/images/home.jpg');
+  @extend .parallax;
 }
 
 .parallax-container-2 {
   background-image: url($url + '/images/f64-publico.jpg');
-  display: flex;
-  flex: 1 0 auto;
-  position: relative;
-  margin-top: 2rem;
-  height: 100%;
-  transform: translateZ(-1px) scale(2);
-  z-index: -1;
-  justify-content: space-between
+  @extend .parallax;
 }
 
 .parallax-container-3 {
   background-image: url($url + '/images/talks.jpg');
-  display: flex;
-  flex: 1 0 auto;
-  position: relative;
-  height: 100%;
-  transform: translateZ(-1px) scale(2);
-  z-index: -1;
-  justify-content: space-between
+  @extend .parallax;
 }
 
 .parallax-container-4 {
   background-image: url($url + '/images/colima.jpg');
-  display: flex;
-  flex: 1 0 auto;
-  position: relative;
-  height: 110%;
-  transform: translateZ(-1px) scale(2);
-  z-index: -1;
-  justify-content: space-between
+  @extend .parallax;
 }
 
 
