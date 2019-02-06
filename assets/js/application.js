@@ -56,7 +56,12 @@ function showVideo(event) {
   const content = nextUntil(event.target, 'column')[0];
 
   close.addEventListener('click', hideVideo);
-  modal.querySelector('iframe').setAttribute('src', videoUrl);
+  const frame = modal.querySelector('iframe');
+  frame.setAttribute('src', videoUrl);
+  if (isMobileDevice()) {
+    frame.setAttribute('width', 280);
+    frame.setAttribute('height', 200);
+  }
 
   details.innerHTML = content.innerHTML;
 
@@ -73,6 +78,10 @@ function hideVideo(event) {
   root.classList.remove('is-clipped');
   modal.classList.remove('is-active');
 }
+
+function isMobileDevice() {
+  return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+};
 
 function nextUntil(elem, selector, filter) {
   // matches() polyfill
