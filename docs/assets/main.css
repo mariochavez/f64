@@ -2201,15 +2201,15 @@ p { font-size: 1.25rem; letter-spacing: 0.12rem; line-height: 2rem; margin: 1.5r
 
 .background-image, .intro:after, .expectators:after, .presenters:after, .about:after { background-repeat: no-repeat; background-position-x: center; background-position-y: center; background-size: cover; }
 
-.intro:after { background-image: url("/f64/images/home.jpg"); }
+.intro:after { background-image: url("/images/home.jpg"); }
 
-.expectators:after { background-image: url("/f64/images/f64-publico.jpg"); }
+.expectators:after { background-image: url("/images/f64-publico.jpg"); }
 @media screen and (max-width: 1087px) { .expectators:after { background-size: 100%; } }
 
-.presenters:after { background-image: url("/f64/images/talks.jpg"); }
+.presenters:after { background-image: url("/images/talks.jpg"); }
 @media screen and (max-width: 1087px) { .presenters:after { background-size: 100%; } }
 
-.about:after { background-image: url("/f64/images/colima.jpg"); background-position-y: bottom; }
+.about:after { background-image: url("/images/colima.jpg"); background-position-y: bottom; }
 
 .navbar-brand { padding: 0 24px 0 24px; height: 7%; }
 @media screen and (max-width: 768px) { .navbar-brand { padding: 0; } }
@@ -2249,7 +2249,7 @@ hr { border-bottom: rgba(176, 176, 176, 0.5) solid 1px; margin: 1rem auto; width
 .top a { color: #ffffff; display: block; font-family: 'Fira Sans Extra Condensed', sans-serif; font-size: 1rem; font-weight: 100; line-height: 0rem; padding: 1rem 1rem; }
 
 .play { display: block; position: relative; }
-.play:after { bottom: 0; content: " "; left: 0; position: absolute; right: 0; top: 0; background-image: url("/f64/images/play.png"); background-size: contain; background-repeat: no-repeat; background-position: center; margin: 5rem; }
+.play:after { bottom: 0; content: " "; left: 0; position: absolute; right: 0; top: 0; background-image: url("/images/play.png"); background-size: contain; background-repeat: no-repeat; background-position: center; margin: 5rem; }
 
 .modal-content { padding: 1rem; background-color: white; border: 1px solid #ccc; border-radius: .2rem; }
 .modal-content iframe { margin: 0 auto; display: block; }
