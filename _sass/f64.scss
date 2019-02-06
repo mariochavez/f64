@@ -5,6 +5,7 @@ $family-sans-serif: 'EB Garamond', serif;
 $family-secondary: 'Fira Sans Extra Condensed', sans-serif;
 
 $size-0: 4.5rem;
+$mobile: 414px;
 
 @import 'bulma';
 
@@ -83,6 +84,10 @@ p {
 
 .presenters, .expectators {
   min-height: 50rem;
+
+  @include until($tablet) {
+    min-height: 40rem;
+  }
 }
 
 .intro {
@@ -121,6 +126,7 @@ p {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   perspective: 2px;
 
   .section {
@@ -154,6 +160,7 @@ p {
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
+
   background-size: cover;
 }
 
@@ -165,11 +172,19 @@ p {
 .expectators:after {
   background-image: url($url + '/images/f64-publico.jpg');
   @extend .background-image;
+
+  @include until($desktop) {
+    background-size: 100%;
+  }
 }
 
 .presenters:after {
   background-image: url($url + '/images/talks.jpg');
   @extend .background-image;
+
+  @include until($desktop) {
+    background-size: 100%;
+  }
 }
 
 .about:after {
@@ -356,6 +371,7 @@ hr {
 
   .details {
     overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
     padding: 2rem 1rem 0 1rem;
   }
 

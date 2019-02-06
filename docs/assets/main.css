@@ -2179,6 +2179,7 @@ p { font-size: 1.25rem; letter-spacing: 0.12rem; line-height: 2rem; margin: 1.5r
 @media screen and (max-width: 768px) { .intro, .f64, .event, .events, .about, .footer { padding: 4rem 1rem; } }
 
 .presenters, .expectators { min-height: 50rem; }
+@media screen and (max-width: 768px) { .presenters, .expectators { min-height: 40rem; } }
 
 .intro { padding-top: 0; }
 .intro h1 { font-size: 4.5rem !important; }
@@ -2190,7 +2191,7 @@ p { font-size: 1.25rem; letter-spacing: 0.12rem; line-height: 2rem; margin: 1.5r
 .footer a { text-transform: uppercase; }
 .footer p { font-family: "Fira Sans Extra Condensed", sans-serif; font-size: 1rem; font-weight: 100; }
 
-.parallax-container { height: 100vh; overflow-x: hidden; overflow-y: auto; perspective: 2px; }
+.parallax-container { height: 100vh; overflow-x: hidden; overflow-y: auto; -webkit-overflow-scrolling: touch; perspective: 2px; }
 .parallax-container .section { height: 100vh; position: relative; }
 
 .parallax { position: relative; }
@@ -2203,8 +2204,10 @@ p { font-size: 1.25rem; letter-spacing: 0.12rem; line-height: 2rem; margin: 1.5r
 .intro:after { background-image: url("/f64/images/home.jpg"); }
 
 .expectators:after { background-image: url("/f64/images/f64-publico.jpg"); }
+@media screen and (max-width: 1087px) { .expectators:after { background-size: 100%; } }
 
 .presenters:after { background-image: url("/f64/images/talks.jpg"); }
+@media screen and (max-width: 1087px) { .presenters:after { background-size: 100%; } }
 
 .about:after { background-image: url("/f64/images/colima.jpg"); background-position-y: bottom; }
 
@@ -2250,6 +2253,6 @@ hr { border-bottom: rgba(176, 176, 176, 0.5) solid 1px; margin: 1rem auto; width
 
 .modal-content { padding: 1rem; background-color: white; border: 1px solid #ccc; border-radius: .2rem; }
 .modal-content iframe { margin: 0 auto; display: block; }
-.modal-content .details { overflow-y: scroll; padding: 2rem 1rem 0 1rem; }
+.modal-content .details { overflow-y: scroll; -webkit-overflow-scrolling: touch; padding: 2rem 1rem 0 1rem; }
 .modal-content h3 { font-size: 1.25rem; }
 .modal-content p { font-size: 1rem; }
