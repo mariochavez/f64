@@ -1,140 +1,242 @@
+$text: hsl(0, 0%, 29%);
+$link: hsl(0, 0%, 21%);
+$link-hover: hsl(0, 0%, 48%);
+$family-sans-serif: 'EB Garamond', serif;
+$family-secondary: 'Fira Sans Extra Condensed', sans-serif;
+
+$size-0: 4.5rem;
+
 @import 'bulma';
 
-body, html {
-  height: 100%;
-}
-
 body {
-  color: black;
-  font-family: 'Fira Sans Extra Condensed', sans-serif;
-  font-weight: bold;
+  font-style: normal;
+  font-size: 16px;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: subpixel-antialiased;
+
+  @include until($tablet) {
+    font-size: 16px;
+  }
 }
 
-h1{
-  font-family: 'EB Garamond', serif;
-  font-weight: 700;
+a {
+  -webkit-transition: color .15s ease-out;
+  -moz-transition: color .15s ease-out;
+  -ms-transition: color .15s ease-out;
+  -o-transition: color .15s ease-out;
+  transition: color .15s ease-out;
+}
+
+h1 {
+  font-size: $size-0;
   font-style: normal;
-  font-size: 70px;
+  font-weight: 700;
   letter-spacing: -.02em;
   line-height: 1em;
-  text-transform: none;
   margin-bottom: 46px;
+  text-transform: none;
 }
 
 h2 {
-  font-family: 'EB Garamond', serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 24px;
-  letter-spacing: 0em;
-  line-height: 1.65em;
-  text-transform: none;
-  color: #545454;
+  font-family: $family-secondary;
+  font-size: $size-5;
+  font-weight: bolder;
+  letter-spacing: .12em;
+  line-height: 1em;
+  margin-top: 34px;
+  text-transform: uppercase;
 }
 
 h3 {
-  font-weight: 400;
+  font-family: $family-secondary;
+  font-size: $size-6;
   font-style: normal;
-  font-size: 14px;
+  font-weight: 400;
   letter-spacing: .12em;
   line-height: 1em;
-  text-transform: uppercase;
   margin-bottom: 15px;
+  text-transform: uppercase;
 }
 
-.white-bg {
-  background-color: white;
+h4 {
+  font-family: $family-secondary;
+  font-size: $size-6;
+  font-style: normal;
+  font-weight: 100;
+  letter-spacing: .12em;
 }
 
-.overlay {
-  position: fixed;
-  width: 100%;
-  top: 0;
+p {
+  font-size: $size-5;
+  letter-spacing: 0.12rem;
+  line-height: 2rem;
+  margin: 1.5rem 0;
 }
 
-.main-container {
-  perspective: 1px;
-  transform-style: preserve-3d;
-  height: 100%;
+.intro, .f64, .event, .events, .about, .footer {
+  padding: 120px 80px;
+
+  @include until($tablet) {
+    padding: 4rem 1rem;
+  }
+}
+
+.presenters, .expectators {
+  min-height: 50rem;
+}
+
+.intro {
+  padding-top: 0;
+
+  h1 {
+    font-size: $size-0 !important;
+  }
+}
+
+.event {
+  h1 {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.about {
+  h1 {
+    font-size: $size-1 !important;
+  }
+}
+
+.footer {
+  a {
+    text-transform: uppercase;
+  }
+
+  p {
+    font-family: $family-secondary;
+    font-size: $size-6;
+    font-weight: 100;
+  }
+}
+
+.parallax-container {
+  height: 100vh;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
+  perspective: 2px;
+
+  .section {
+    height: 100vh;
+    position: relative;
+  }
 }
 
-.parallax-container-1 {
+.parallax {
+  position: relative;
+}
+
+.parallax:after {
+  bottom: 0;
+  content: " ";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  background-size: 100%;
+  transform: translateZ(-1px) scale(1.5);
+  z-index: -1;
+
+  @include until($desktop) {
+    transform: translateZ(-1px) scale(2.1);
+  }
+}
+
+.background-image {
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+}
+
+.intro:after {
   background-image: url($url + '/images/home.jpg');
-  display: flex;
-  flex: 1 0 auto;
-  position: relative;
-  height: 100%;
-  transform: translateZ(-1px) scale(2);
-  z-index: -1;
-  justify-content: space-between
+  @extend .background-image;
 }
 
-.parallax-container-2 {
+.expectators:after {
   background-image: url($url + '/images/f64-publico.jpg');
-  display: flex;
-  flex: 1 0 auto;
-  position: relative;
-  margin-top: 2rem;
-  height: 100%;
-  transform: translateZ(-1px) scale(2);
-  z-index: -1;
-  justify-content: space-between
+  @extend .background-image;
 }
 
-.parallax-container-3 {
+.presenters:after {
   background-image: url($url + '/images/talks.jpg');
-  display: flex;
-  flex: 1 0 auto;
-  position: relative;
-  height: 100%;
-  transform: translateZ(-1px) scale(2);
-  z-index: -1;
-  justify-content: space-between
+  @extend .background-image;
 }
 
-.parallax-container-4 {
+.about:after {
   background-image: url($url + '/images/colima.jpg');
-  display: flex;
-  flex: 1 0 auto;
-  position: relative;
-  height: 110%;
-  transform: translateZ(-1px) scale(2);
-  z-index: -1;
-  justify-content: space-between
-}
-
-
-.content-container {
-  display: block;
-  position: relative;
-  z-index: 1;
-  height: auto;
+  @extend .background-image;
+  background-position-y: bottom;
 }
 
 .navbar-brand {
   padding: 0 24px 0 24px;
   height: 7%;
+
+  @include until($tablet) {
+    padding: 0;
+  }
 }
 
 .navbar {
   background-color: transparent;
-  padding: 3rem; /* 64px 66px 0 66px;
-  width: 100%;
-  height: 15%;
-  position: absolute; */
+  padding: 3rem;
   z-index: 1000;
+
+  @include until($tablet) {
+    padding: 2rem 1rem;
+  }
+}
+
+.navbar-menu {
+  @media screen and (max-width: 1087px) {
+    background-color: transparent;
+    opacity: 0;
+
+    -webkit-transition: all 2s ease-out;
+    -moz-transition: all 2s ease-out;
+    -ms-transition: all 2s ease-out;
+    -o-transition: all 2s ease-out;
+    transition: all 2s ease-out;
+  }
+}
+
+.is-active {
+  opacity: 1;
 }
 
 .navbar-item {
-  color: white;
-  font-size: 1rem;
+  color: $white;
+  font-family: $family-secondary;
+  font-size: $size-6;
   letter-spacing: .06em;
   text-transform: uppercase;
 
   img {
     max-height: 100%;
+  }
+
+  @media screen and (max-width: 1087px) {
+    padding-bottom: 1.2rem !important;
+  }
+}
+
+.navbar-burger {
+  span {
+    background-color: $white;
+  }
+
+  &:hover {
+    background-color: transparent;
   }
 }
 
@@ -151,98 +253,21 @@ h3 {
 
 a.navbar-item {
   padding: 0 1rem;
-  // height: 40px;
-  // padding-left: 8px;
-  // padding-right: 8px;
   &:hover {
     color: white;
   }
 }
 
-.navbar-burger:hover {
-  background-color: transparent;
-}
-
-.centered-text {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: 999;
-}
-
-.top-content {
-  text-align: center;
-  margin-right: 30px;
-  margin-left: 34px
-}
-
-.text-1 {
-  color: white;
-  font-family: 'Fira Sans Extra Condensed', sans-serif;
-  font-size: 1.2rem;
-  font-weight: bolder;
-  text-align: center;
-  letter-spacing: .12em;
-  line-height: 1em;
-  text-transform: uppercase;
-  margin-top: 34px;
-}
-
-.text-2 {
-  font-family: 'EB Garamond', serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 70px;
-  letter-spacing: -.02em;
-  line-height: 1em;
-  text-transform: none;
-  color: white;
-}
-
-.sonora-experience {
-  height: auto;
-  padding: 120px 80px 120px 80px;
-  h3 {
-    padding-left: 15px;
-  }
-}
-
-.workshops {
-  padding: 170px 80px 140px 80px;
-  height: auto;
-
-  h1 {
-    margin-bottom: 1rem;
-  }
-}
-
 .images {
-  padding: 0 80px;
   img {
     height: auto;
     width: 100%
   }
+
   h3 {
     padding: 17px 17px 17px 0;
   }
-}
 
-.images-2 {
-  padding: 0 80px;
-  img {
-    height: auto;
-    width: 100%;
-  }
-  h3 {
-    padding: 17px 17px 17px 0;
-  }
-}
-
-.images, .images-2 {
   .column {
     position: relative;
 
@@ -257,99 +282,88 @@ a.navbar-item {
   }
 }
 
-.schedule-button {
-  display: block;
-  text-align: end;
-  padding: 40px 80px;
-  a.button {
-    border-width: 2px;
-    border-style: solid;
-    font-size: 21px;
-    font-weight: 400;
-    font-style: normal;
-    text-transform: uppercase;
-    letter-spacing: .06em;
-    font-family: 'Fira Sans Extra Condensed', sans-serif;
-    border-color: #373d3f;
-    border-radius: 0px;
-    padding: 34px 21px;
-  }
-}
-
-.brands {
-  padding: 170px 80px 30px 80px;
-  height: auto;
-}
-
-.underline {
-  width: 80%;
+hr {
   border-bottom: rgba(176,176,176, 0.5) solid 1px;
-  padding-bottom: 20px;
-  margin: auto
+  margin: 1rem auto;
+  width: 80%;
 }
 
-.symbols {
-  text-align: center;
-  padding: 0 80px;
+.photographers {
   img {
     padding: 40px 20px;
     height: auto;
     border-bottom: rgba(176,176,176, 0.5) solid 1px;
   }
+
   p {
-    text-align: left;
-    font-family: 'EB Garamond', serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 18px;
-    letter-spacing: 0em;
-    line-height: 1.8em;
-    text-transform: none;
-    color: #b0b0b0;
+    font-size: 1.3rem;
   }
+
   h3 {
     text-align: left
   }
 }
 
-.footer {
-  text-align: center;
-  height: auto;
-  width: auto;
-  padding: 50px 80px
-}
+.top {
+  background-color: #000000;
+  bottom: 2rem;
+  display: none;
+  opacity: 0.6;
+  position: absolute;
+  right: 2rem;
+  z-index: 10;
 
-.social {
-  padding: 20px 0;
-}
-
-.info p {
-  padding-bottom: 20px;
-  font-family: 'EB Garamond', serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 17px;
-  letter-spacing: .01em;
-  line-height: 1em;
-  text-transform: none;
-  color: #707070
-}
-
-.is-30px {
-  width: auto;
-  h3 {
-    padding: 25px;
+  a {
+    color: #ffffff;
+    display: block;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 0rem;
+    padding: 1rem 1rem;
   }
 }
 
-.final {
-  font-family: 'EB Garamond', serif;
-  font-weight: 600;
-  font-style: italic;
-  font-size: 42px;
-  letter-spacing: -.02em;
-  line-height: 1.3em;
-  color: white;
-  padding: 20%;
-  text-align: center;
+.play {
+  display: block;
+  position: relative;
+
+  &:after {
+    bottom: 0;
+    content: " ";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url($url + '/images/play.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 5rem;
+  }
+}
+
+.modal-content {
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: .2rem;
+
+  iframe {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .details {
+    overflow-y: scroll;
+    padding: 2rem 1rem 0 1rem;
+  }
+
+  h3 {
+    font-size: $size-5;
+  }
+
+  p {
+    font-size: $size-6;
+  }
 }
