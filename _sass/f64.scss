@@ -383,3 +383,8 @@ hr {
     font-size: $size-6;
   }
 }
+
+.intro-fernando:after {
+  background-image: url($url + '/images/fernando/fernando-chavez-ev-0.jpg');
+  @extend .background-image;
+}
