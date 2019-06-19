@@ -12,12 +12,12 @@
 <div class="images columns">
   <div class="column is-three-fifths">
     <div class="photo-overlay"></div>
-    <img src="{{site.baseurl}}/images/{{page.fotografo}}/{{page.photoname}}-1.jpg" alt="{{page.nombre}}">
+    <img src="{{'/images/' | append: page.fotografo | append: '/' | append: page.photoname | append: '-1.jpg' | absolute_url}}" alt="{{page.nombre}}">
     <h3>&copy; {{page.nombre}}</h3>
   </div>
   <div class="column">
     <div class="photo-overlay"></div>
-    <img src="{{site.baseurl}}/images/{{page.fotografo}}/{{page.photoname}}-2.jpg" alt="{{page.nombre}}">
+    <img src="{{'/images/' | append: page.fotografo | append: '/' | append: page.photoname | append: '-2.jpg' | absolute_url}}">
     <h3>&copy; {{page.nombre}}</h3>
   </div>
 </div>
@@ -25,17 +25,17 @@
 <div class="images columns">
   <div class="column">
     <div class="photo-overlay"></div>
-    <img src="{{site.baseurl}}/images/{{page.fotografo}}/{{page.photoname}}-3.jpg" alt="{{page.nombre}}">
+    <img src="{{'/images/' | append: page.fotografo | append: '/' | append: page.photoname | append: '-3.jpg' | absolute_url}}">
     <h3>&copy; {{page.nombre}}</h3>
   </div>
   <div class="column">
     <div class="photo-overlay"></div>
-    <img src="{{site.baseurl}}/images/{{page.fotografo}}/{{page.photoname}}-4.jpg" alt="{{page.nombre}}">
+    <img src="{{'/images/' | append: page.fotografo | append: '/' | append: page.photoname | append: '-4.jpg' | absolute_url}}">
     <h3>&copy; {{page.nombre}}</h3>
   </div>
   <div class="column">
     <div class="photo-overlay"></div>
-    <img src="{{site.baseurl}}/images/{{page.fotografo}}/{{page.photoname}}-5.jpg" alt="{{page.nombre}}">
+    <img src="{{'/images/' | append: page.fotografo | append: '/' | append: page.photoname | append: '-5.jpg' | absolute_url}}">
     <h3>&copy; {{page.nombre}}</h3>
   </div>
 </div>
