@@ -7,6 +7,7 @@ photoname: fernando-chavez
 fecha: "Diciembre 12, 2018"
 description: El fotógrafo del pueblo de Comala, él que cuida la tradición.
 image: diciembref64.jpg
+address: michelada.io, av. Carranza 1248 Colinas de Santa Bárbara, Colima.
 ---
 <div class="parallax-container">
   <section class="hero is-large has-text-centered parallax intro intro-fernando">

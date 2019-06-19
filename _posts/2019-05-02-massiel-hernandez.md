@@ -7,6 +7,7 @@ photoname: massiel-hernandez
 fecha: "Mayo 2, 2019"
 description: Soy fotógrafa, realizadora documental y activista.
 image: mayof64.jpg
+address: michelada.io, av. Carranza 1248 Colinas de Santa Bárbara, Colima.
 ---
 <div class="parallax-container">
   <section class="hero is-large has-text-centered parallax intro intro-massiel">
