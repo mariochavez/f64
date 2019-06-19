@@ -388,3 +388,13 @@ hr {
   background-image: url($url + '/images/fernando/fernando-chavez-ev-0.jpg');
   @extend .background-image;
 }
+
+.intro-neddy:after {
+  background-image: url($url + '/images/neddy/neddy-palacios-ev-0.jpg');
+  @extend .background-image;
+}
+
+.intro-america:after {
+  background-image: url($url + '/images/america/america-alvarez-ev-0.jpg');
+  @extend .background-image;
+}

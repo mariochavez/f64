@@ -1,1 +1,619 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://f64.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://f64.io/" rel="alternate" type="text/html" /><updated>2019-05-13T14:27:52-05:00</updated><id>https://f64.io/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://f64.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://f64.io/" rel="alternate" type="text/html" /><updated>2019-06-18T20:41:40-05:00</updated><id>https://f64.io/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">f64</title><link href="https://f64.io/2019/02/07/america-alvarez.html" rel="alternate" type="text/html" title="f64" /><published>2019-02-07T00:00:00-06:00</published><updated>2019-02-07T00:00:00-06:00</updated><id>https://f64.io/2019/02/07/america-alvarez</id><content type="html" xml:base="https://f64.io/2019/02/07/america-alvarez.html">&lt;div class=&quot;parallax-container&quot;&gt;
+  &lt;section class=&quot;hero is-large has-text-centered parallax intro intro-america&quot;&gt;
+    &lt;nav class=&quot;navbar&quot;&gt;
+  &lt;div class=&quot;navbar-brand&quot;&gt;
+    &lt;a class=&quot;navbar-item&quot; href=&quot;&quot;&gt;
+      &lt;img src=&quot;/images/white-f64.png&quot; alt=&quot;F/64 Pláticas fotográficas&quot; width=&quot;70&quot; height=&quot;51&quot; /&gt;
+    &lt;/a&gt;
+    &lt;a role=&quot;button&quot; class=&quot;navbar-burger&quot; aria-label=&quot;menu&quot; aria-expanded=&quot;false&quot; data-target=&quot;menu&quot;&gt;
+      &lt;span aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+      &lt;span aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+      &lt;span aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;navbar-menu&quot; id=&quot;menu&quot;&gt;
+    &lt;div class=&quot;navbar-end&quot;&gt;
+      &lt;a class=&quot;navbar-item&quot; href=&quot;https://f64.io/#que-es&quot;&gt;
+        Qué es F/64?
+      &lt;/a&gt;
+      &lt;a class=&quot;navbar-item&quot; href=&quot;https://f64.io/#eventos&quot;&gt;
+        Eventos
+      &lt;/a&gt;
+      &lt;a class=&quot;navbar-item&quot; href=&quot;https://f64.io/#sesiones&quot;&gt;
+        Eventos pasados
+      &lt;/a&gt;
+      &lt;a class=&quot;navbar-item&quot; href=&quot;https://f64.io/#acerca&quot;&gt;
+        Acerca
+      &lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+
+  
+    &lt;div class=&quot;hero-body&quot;&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;h2 class=&quot;subtitle has-text-white&quot;&gt;
+          Febrero 7, 2019
+        &lt;/h2&gt;
+        &lt;h1 class=&quot;title has-text-white&quot;&gt;
+          América Álvarez
+        &lt;/h1&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;section id=&quot;f64&quot; class=&quot;hero is-white f64&quot;&gt;
+    &lt;div class=&quot;hero-body&quot;&gt;
+      &lt;div class=&quot;columns&quot;&gt;
+        &lt;div class=&quot;column&quot;&gt;
+          &lt;div class=&quot;column is-three-fifths&quot;&gt;
+            &lt;h3&gt;América Álvarez&lt;/h3&gt;
+            &lt;h1&gt;La fotógrafa&lt;/h1&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;column is-three-fifths&quot;&gt;
+            &lt;p&gt;
+            Quien soy es una pregunta básica en mi existencia, después de morir y renacer cada día, busco ser, estando y guiándome entre que la realidad es el sueño y la vida se va en un momento creo las imágenes puras de mi ensueño, a través de la foto reafirmo mi existencia, observo hacia donde va mi mirada, reflejándome a mí misma en lo fotografiado, en el sujeto y en el objeto, en las formas orgánicas e inorgánicas, dejando de pensar caminando por la intuición de la foto me conozco, como una meditación activa, con la fotografía puedo crear ventanas de realidad, portales que me recuerdan que otros mundos pueden ser posibles dentro de una realidad colectiva y todo se convierte en una imagen, dejando la técnica de lado cuando se revela mi forma de ver el mundo, queda en un recuerdo, en un fragmento de tiempo congelado, que me ayuda a recordar quien soy.
+            &lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  
+  &lt;section class=&quot;hero is-white event&quot;&gt;
+    &lt;div class=&quot;hero-body&quot;&gt;
+      &lt;a name=&quot;eventos&quot;&gt;&lt;/a&gt;
+      &lt;div class=&quot;columns&quot;&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;h3&gt;Evento&lt;/h3&gt;
+    &lt;h1&gt;Febrero 7, 2019&lt;/h1&gt;
+    &lt;h4&gt;8pm en Av. Carranza 1248, Colinas de Santa Bárbara, Colima&lt;/h4&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;column is-three-fifths&quot;&gt;
+    &lt;p&gt;&lt;b&gt;América Álvarez&lt;/b&gt;, Danzante, fotógrafa, pintora y viajera.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;images columns&quot;&gt;
+  &lt;div class=&quot;column is-three-fifths&quot;&gt;
+    &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+    &lt;img src=&quot;/images/america/america-alvarez-1.jpg&quot; alt=&quot;América Álvarez&quot; /&gt;
+    &lt;h3&gt;&amp;copy; América Álvarez&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+    &lt;img src=&quot;/images/america/america-alvarez-2.jpg&quot; alt=&quot;América Álvarez&quot; /&gt;
+    &lt;h3&gt;&amp;copy; América Álvarez&lt;/h3&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;images columns&quot;&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+    &lt;img src=&quot;/images/america/america-alvarez-3.jpg&quot; alt=&quot;América Álvarez&quot; /&gt;
+    &lt;h3&gt;&amp;copy; América Álvarez&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+    &lt;img src=&quot;/images/america/america-alvarez-4.jpg&quot; alt=&quot;América Álvarez&quot; /&gt;
+    &lt;h3&gt;&amp;copy; América Álvarez&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+    &lt;img src=&quot;/images/america/america-alvarez-5.jpg&quot; alt=&quot;América Álvarez&quot; /&gt;
+    &lt;h3&gt;&amp;copy; América Álvarez&lt;/h3&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+    &lt;/div&gt;
+  &lt;/section&gt;
+  
+  &lt;section class=&quot;hero events is-black&quot;&gt;
+  &lt;div class=&quot;hero-body&quot;&gt;
+    &lt;div class=&quot;images columns&quot;&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+        &lt;img src=&quot;/images/america/america-alvarez-ev-1.jpg&quot; alt=&quot;Evento f/64&quot; /&gt;
+        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+        &lt;img src=&quot;/images/america/america-alvarez-ev-2.jpg&quot; alt=&quot;Evento f/64&quot; /&gt;
+        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+
+    &lt;div class=&quot;images columns&quot;&gt;
+      &lt;div class=&quot;column is-one-fifth is-hidden-mobile&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;column&quot;&gt; 
+        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt; 
+        &lt;img src=&quot;/images/america/america-alvarez-ev-3.jpg&quot; alt=&quot;Evento f/64&quot; /&gt; 
+        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt; 
+      &lt;/div&gt;
+      &lt;div class=&quot;column is-one-fifth is-hidden-mobile&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;images columns&quot;&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+        &lt;img src=&quot;/images/america/america-alvarez-ev-4.jpg&quot; alt=&quot;Evento f/64&quot; /&gt;
+        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;column is-three-fifths&quot;&gt;
+        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+        &lt;img src=&quot;/images/america/america-alvarez-ev-5.jpg&quot; alt=&quot;Evento f/64&quot; /&gt;
+        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;images columns&quot;&gt;
+      &lt;div class=&quot;column is-one-fifth is-hidden-mobile&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+        &lt;img src=&quot;/images/america/america-alvarez-ev-6.jpg&quot; alt=&quot;Evento f/64&quot; /&gt;
+        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;column is-one-fifth is-hidden-mobile&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;/div&gt;</content><author><name></name></author><summary type="html">Qué es F/64? Eventos Eventos pasados Acerca Febrero 7, 2019 América Álvarez</summary></entry><entry><title type="html">f64</title><link href="https://f64.io/2019/01/03/neddy-palacios.html" rel="alternate" type="text/html" title="f64" /><published>2019-01-03T00:00:00-06:00</published><updated>2019-01-03T00:00:00-06:00</updated><id>https://f64.io/2019/01/03/neddy-palacios</id><content type="html" xml:base="https://f64.io/2019/01/03/neddy-palacios.html">&lt;div class=&quot;parallax-container&quot;&gt;
+  &lt;section class=&quot;hero is-large has-text-centered parallax intro intro-neddy&quot;&gt;
+    &lt;nav class=&quot;navbar&quot;&gt;
+  &lt;div class=&quot;navbar-brand&quot;&gt;
+    &lt;a class=&quot;navbar-item&quot; href=&quot;&quot;&gt;
+      &lt;img src=&quot;/images/white-f64.png&quot; alt=&quot;F/64 Pláticas fotográficas&quot; width=&quot;70&quot; height=&quot;51&quot; /&gt;
+    &lt;/a&gt;
+    &lt;a role=&quot;button&quot; class=&quot;navbar-burger&quot; aria-label=&quot;menu&quot; aria-expanded=&quot;false&quot; data-target=&quot;menu&quot;&gt;
+      &lt;span aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+      &lt;span aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+      &lt;span aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;navbar-menu&quot; id=&quot;menu&quot;&gt;
+    &lt;div class=&quot;navbar-end&quot;&gt;
+      &lt;a class=&quot;navbar-item&quot; href=&quot;https://f64.io/#que-es&quot;&gt;
+        Qué es F/64?
+      &lt;/a&gt;
+      &lt;a class=&quot;navbar-item&quot; href=&quot;https://f64.io/#eventos&quot;&gt;
+        Eventos
+      &lt;/a&gt;
+      &lt;a class=&quot;navbar-item&quot; href=&quot;https://f64.io/#sesiones&quot;&gt;
+        Eventos pasados
+      &lt;/a&gt;
+      &lt;a class=&quot;navbar-item&quot; href=&quot;https://f64.io/#acerca&quot;&gt;
+        Acerca
+      &lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+
+  
+    &lt;div class=&quot;hero-body&quot;&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;h2 class=&quot;subtitle has-text-white&quot;&gt;
+          Enero 3, 2019
+        &lt;/h2&gt;
+        &lt;h1 class=&quot;title has-text-white&quot;&gt;
+          Neddy Palacios
+        &lt;/h1&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;section id=&quot;f64&quot; class=&quot;hero is-white f64&quot;&gt;
+    &lt;div class=&quot;hero-body&quot;&gt;
+      &lt;div class=&quot;columns&quot;&gt;
+        &lt;div class=&quot;column&quot;&gt;
+          &lt;div class=&quot;column is-three-fifths&quot;&gt;
+            &lt;h3&gt;Neddy Palacios&lt;/h3&gt;
+            &lt;h1&gt;La fotógrafa&lt;/h1&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;column is-three-fifths&quot;&gt;
+            &lt;p&gt;
+            Neddy Palacios, originaria de Colima, se ha dedicado a la fotografía de 15 años a la fecha y en la búsqueda de un punto de vista propio, de la realidad a través de la cámara, ha encontrado que en la expresió gestual de la gente se concentra la esencia de su ser.
+            &lt;/p&gt;
+            &lt;p&gt;
+            “El retrato es una huella de vida”.
+            Si bien ha transitado por el paisaje, por el desnudo, por la naturaleza muerta, etc., Neddy ha podido descubrir el valor del retrato como expresión genuina del existir de las personas. Nada mejor para develar el momento existencial de alguien que un retrato oportuno.
+            &lt;/p&gt;
+            &lt;p&gt;
+            “El retrato es una confesión, es el alma de un personaje congelada en una imagen”
+            El interés de Neddy Palacios por afinar su sensibilidad para la fotografía de retrato, la ha obligado a indagar en los rostros que le son conocidos, por lo mismo más difíciles de explorar, ya que, lo que vemos a diario lo dejamos de admirar y en consecuencia desaprovechamos su sustancia.
+            &lt;/p&gt;
+            &lt;p&gt;
+            “La costumbre ciega al ojo”
+            En este sentido, el retrato familiar es siempre un reto para quien, a través de los suyos, pretende descubrirse y reconocerse.
+            &lt;/p&gt;
+            &lt;p&gt;
+            Por otra parte, para poder explorar a fondo el lenguaje fotográfico y desarrollar un discurso personal con la imagen, a Neddy le ha sido indispensable el ejercicio del registro cotidiano disponiéndose al hallazgo y reusándose a la tentadora mecanización a la que invita el avance tecnológico, que inhibe la madurez del ojo del fotógrafo.
+            &lt;/p&gt;
+            &lt;p&gt;
+            “Toda cámara fotográfica, por si sola es ciega; para registrar la vida a través de su lente, requiere de la sensibilidad del ojo vivo del fotógrafo”.
+            &lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  
+  &lt;section class=&quot;hero is-white event&quot;&gt;
+    &lt;div class=&quot;hero-body&quot;&gt;
+      &lt;a name=&quot;eventos&quot;&gt;&lt;/a&gt;
+      &lt;div class=&quot;columns&quot;&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;h3&gt;Evento&lt;/h3&gt;
+    &lt;h1&gt;Enero 3, 2019&lt;/h1&gt;
+    &lt;h4&gt;8pm en Av. Carranza 1248, Colinas de Santa Bárbara, Colima&lt;/h4&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;column is-three-fifths&quot;&gt;
+    &lt;p&gt;&lt;b&gt;Neddy Palacios&lt;/b&gt;, Fotógrafa del proceso tradicional de buscar, encontrar, disparar, descubrir, revelar y develar.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;images columns&quot;&gt;
+  &lt;div class=&quot;column is-three-fifths&quot;&gt;
+    &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+    &lt;img src=&quot;/images/neddy/neddy-palacios-1.jpg&quot; alt=&quot;Neddy Palacios&quot; /&gt;
+    &lt;h3&gt;&amp;copy; Neddy Palacios&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+    &lt;img src=&quot;/images/neddy/neddy-palacios-2.jpg&quot; alt=&quot;Neddy Palacios&quot; /&gt;
+    &lt;h3&gt;&amp;copy; Neddy Palacios&lt;/h3&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;images columns&quot;&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+    &lt;img src=&quot;/images/neddy/neddy-palacios-3.jpg&quot; alt=&quot;Neddy Palacios&quot; /&gt;
+    &lt;h3&gt;&amp;copy; Neddy Palacios&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+    &lt;img src=&quot;/images/neddy/neddy-palacios-4.jpg&quot; alt=&quot;Neddy Palacios&quot; /&gt;
+    &lt;h3&gt;&amp;copy; Neddy Palacios&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+    &lt;img src=&quot;/images/neddy/neddy-palacios-5.jpg&quot; alt=&quot;Neddy Palacios&quot; /&gt;
+    &lt;h3&gt;&amp;copy; Neddy Palacios&lt;/h3&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+    &lt;/div&gt;
+  &lt;/section&gt;
+  
+  &lt;section class=&quot;hero events is-black&quot;&gt;
+  &lt;div class=&quot;hero-body&quot;&gt;
+    &lt;div class=&quot;images columns&quot;&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+        &lt;img src=&quot;/images/neddy/neddy-palacios-ev-1.jpg&quot; alt=&quot;Evento f/64&quot; /&gt;
+        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+        &lt;img src=&quot;/images/neddy/neddy-palacios-ev-2.jpg&quot; alt=&quot;Evento f/64&quot; /&gt;
+        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+
+    &lt;div class=&quot;images columns&quot;&gt;
+      &lt;div class=&quot;column is-one-fifth is-hidden-mobile&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;column&quot;&gt; 
+        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt; 
+        &lt;img src=&quot;/images/neddy/neddy-palacios-ev-3.jpg&quot; alt=&quot;Evento f/64&quot; /&gt; 
+        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt; 
+      &lt;/div&gt;
+      &lt;div class=&quot;column is-one-fifth is-hidden-mobile&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;images columns&quot;&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+        &lt;img src=&quot;/images/neddy/neddy-palacios-ev-4.jpg&quot; alt=&quot;Evento f/64&quot; /&gt;
+        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;column is-three-fifths&quot;&gt;
+        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+        &lt;img src=&quot;/images/neddy/neddy-palacios-ev-5.jpg&quot; alt=&quot;Evento f/64&quot; /&gt;
+        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;images columns&quot;&gt;
+      &lt;div class=&quot;column is-one-fifth is-hidden-mobile&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+        &lt;img src=&quot;/images/neddy/neddy-palacios-ev-6.jpg&quot; alt=&quot;Evento f/64&quot; /&gt;
+        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;column is-one-fifth is-hidden-mobile&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;/div&gt;</content><author><name></name></author><summary type="html">Qué es F/64? Eventos Eventos pasados Acerca Enero 3, 2019 Neddy Palacios</summary></entry><entry><title type="html">f64</title><link href="https://f64.io/2018/12/06/fernando-chavez.html" rel="alternate" type="text/html" title="f64" /><published>2018-12-06T00:00:00-06:00</published><updated>2018-12-06T00:00:00-06:00</updated><id>https://f64.io/2018/12/06/fernando-chavez</id><content type="html" xml:base="https://f64.io/2018/12/06/fernando-chavez.html">&lt;div class=&quot;parallax-container&quot;&gt;
+  &lt;section class=&quot;hero is-large has-text-centered parallax intro intro-fernando&quot;&gt;
+    &lt;nav class=&quot;navbar&quot;&gt;
+  &lt;div class=&quot;navbar-brand&quot;&gt;
+    &lt;a class=&quot;navbar-item&quot; href=&quot;&quot;&gt;
+      &lt;img src=&quot;/images/white-f64.png&quot; alt=&quot;F/64 Pláticas fotográficas&quot; width=&quot;70&quot; height=&quot;51&quot; /&gt;
+    &lt;/a&gt;
+    &lt;a role=&quot;button&quot; class=&quot;navbar-burger&quot; aria-label=&quot;menu&quot; aria-expanded=&quot;false&quot; data-target=&quot;menu&quot;&gt;
+      &lt;span aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+      &lt;span aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+      &lt;span aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;navbar-menu&quot; id=&quot;menu&quot;&gt;
+    &lt;div class=&quot;navbar-end&quot;&gt;
+      &lt;a class=&quot;navbar-item&quot; href=&quot;https://f64.io/#que-es&quot;&gt;
+        Qué es F/64?
+      &lt;/a&gt;
+      &lt;a class=&quot;navbar-item&quot; href=&quot;https://f64.io/#eventos&quot;&gt;
+        Eventos
+      &lt;/a&gt;
+      &lt;a class=&quot;navbar-item&quot; href=&quot;https://f64.io/#sesiones&quot;&gt;
+        Eventos pasados
+      &lt;/a&gt;
+      &lt;a class=&quot;navbar-item&quot; href=&quot;https://f64.io/#acerca&quot;&gt;
+        Acerca
+      &lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+
+  
+    &lt;div class=&quot;hero-body&quot;&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;h2 class=&quot;subtitle has-text-white&quot;&gt;
+          Diciembre 12, 2018
+        &lt;/h2&gt;
+        &lt;h1 class=&quot;title has-text-white&quot;&gt;
+          Fernando Chávez
+        &lt;/h1&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;section id=&quot;f64&quot; class=&quot;hero is-white f64&quot;&gt;
+    &lt;div class=&quot;hero-body&quot;&gt;
+      &lt;div class=&quot;columns&quot;&gt;
+        &lt;div class=&quot;column&quot;&gt;
+          &lt;div class=&quot;column is-three-fifths&quot;&gt;
+            &lt;h3&gt;Fernando Chávez&lt;/h3&gt;
+            &lt;h1&gt;El fotógrafo&lt;/h1&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;column is-three-fifths&quot;&gt;
+            &lt;p&gt;
+            Fernando Chávez, desde mi cámara capturo la fugaz sensación de estar vivo y el movimiento de la Luz en los cielos azules y el multicolor sentido del campo, nací para que la luz me ayudara a hacer el sentido del mundo a través de la fotografía. SOY EL FOTÓGRAFO TRAGALUZ... o cómo bien decía una anciana de Comala.. EL FOTÓGRAFO DEL PUEBLO QUE CUIDA LA TRADICIÓN.
+            &lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  
+  &lt;section class=&quot;hero is-white event&quot;&gt;
+    &lt;div class=&quot;hero-body&quot;&gt;
+      &lt;a name=&quot;eventos&quot;&gt;&lt;/a&gt;
+      &lt;div class=&quot;columns&quot;&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;h3&gt;Evento&lt;/h3&gt;
+    &lt;h1&gt;Diciembre 12, 2018&lt;/h1&gt;
+    &lt;h4&gt;8pm en Av. Carranza 1248, Colinas de Santa Bárbara, Colima&lt;/h4&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;column is-three-fifths&quot;&gt;
+    &lt;p&gt;&lt;b&gt;Fernando Chávez&lt;/b&gt;, El fotógrafo del pueblo de Comala, él que cuida la tradición.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;images columns&quot;&gt;
+  &lt;div class=&quot;column is-three-fifths&quot;&gt;
+    &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+    &lt;img src=&quot;/images/fernando/fernando-chavez-1.jpg&quot; alt=&quot;Fernando Chávez&quot; /&gt;
+    &lt;h3&gt;&amp;copy; Fernando Chávez&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+    &lt;img src=&quot;/images/fernando/fernando-chavez-2.jpg&quot; alt=&quot;Fernando Chávez&quot; /&gt;
+    &lt;h3&gt;&amp;copy; Fernando Chávez&lt;/h3&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;images columns&quot;&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+    &lt;img src=&quot;/images/fernando/fernando-chavez-3.jpg&quot; alt=&quot;Fernando Chávez&quot; /&gt;
+    &lt;h3&gt;&amp;copy; Fernando Chávez&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+    &lt;img src=&quot;/images/fernando/fernando-chavez-4.jpg&quot; alt=&quot;Fernando Chávez&quot; /&gt;
+    &lt;h3&gt;&amp;copy; Fernando Chávez&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+    &lt;img src=&quot;/images/fernando/fernando-chavez-5.jpg&quot; alt=&quot;Fernando Chávez&quot; /&gt;
+    &lt;h3&gt;&amp;copy; Fernando Chávez&lt;/h3&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+    &lt;/div&gt;
+  &lt;/section&gt;
+  
+  &lt;section class=&quot;hero events is-black&quot;&gt;
+  &lt;div class=&quot;hero-body&quot;&gt;
+    &lt;div class=&quot;images columns&quot;&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+        &lt;img src=&quot;/images/fernando/fernando-chavez-ev-1.jpg&quot; alt=&quot;Evento f/64&quot; /&gt;
+        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+        &lt;img src=&quot;/images/fernando/fernando-chavez-ev-2.jpg&quot; alt=&quot;Evento f/64&quot; /&gt;
+        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+
+    &lt;div class=&quot;images columns&quot;&gt;
+      &lt;div class=&quot;column is-one-fifth is-hidden-mobile&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;column&quot;&gt; 
+        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt; 
+        &lt;img src=&quot;/images/fernando/fernando-chavez-ev-3.jpg&quot; alt=&quot;Evento f/64&quot; /&gt; 
+        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt; 
+      &lt;/div&gt;
+      &lt;div class=&quot;column is-one-fifth is-hidden-mobile&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;images columns&quot;&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+        &lt;img src=&quot;/images/fernando/fernando-chavez-ev-4.jpg&quot; alt=&quot;Evento f/64&quot; /&gt;
+        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;column is-three-fifths&quot;&gt;
+        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+        &lt;img src=&quot;/images/fernando/fernando-chavez-ev-5.jpg&quot; alt=&quot;Evento f/64&quot; /&gt;
+        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;images columns&quot;&gt;
+      &lt;div class=&quot;column is-one-fifth is-hidden-mobile&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+        &lt;img src=&quot;/images/fernando/fernando-chavez-ev-6.jpg&quot; alt=&quot;Evento f/64&quot; /&gt;
+        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;column is-one-fifth is-hidden-mobile&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;/div&gt;</content><author><name></name></author><summary type="html">Qué es F/64? Eventos Eventos pasados Acerca Diciembre 12, 2018 Fernando Chávez</summary></entry><entry><title type="html">f64</title><link href="https://f64.io/2018/11/08/gustavo-vilchis.html" rel="alternate" type="text/html" title="f64" /><published>2018-11-08T00:00:00-06:00</published><updated>2018-11-08T00:00:00-06:00</updated><id>https://f64.io/2018/11/08/gustavo-vilchis</id><content type="html" xml:base="https://f64.io/2018/11/08/gustavo-vilchis.html">&lt;div class=&quot;parallax-container&quot;&gt;
+  &lt;section class=&quot;hero is-large has-text-centered parallax intro&quot;&gt;
+    &lt;nav class=&quot;navbar&quot;&gt;
+  &lt;div class=&quot;navbar-brand&quot;&gt;
+    &lt;a class=&quot;navbar-item&quot; href=&quot;&quot;&gt;
+      &lt;img src=&quot;/images/white-f64.png&quot; alt=&quot;F/64 Pláticas fotográficas&quot; width=&quot;70&quot; height=&quot;51&quot; /&gt;
+    &lt;/a&gt;
+    &lt;a role=&quot;button&quot; class=&quot;navbar-burger&quot; aria-label=&quot;menu&quot; aria-expanded=&quot;false&quot; data-target=&quot;menu&quot;&gt;
+      &lt;span aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+      &lt;span aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+      &lt;span aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;navbar-menu&quot; id=&quot;menu&quot;&gt;
+    &lt;div class=&quot;navbar-end&quot;&gt;
+      &lt;a class=&quot;navbar-item&quot; href=&quot;https://f64.io/#que-es&quot;&gt;
+        Qué es F/64?
+      &lt;/a&gt;
+      &lt;a class=&quot;navbar-item&quot; href=&quot;https://f64.io/#eventos&quot;&gt;
+        Eventos
+      &lt;/a&gt;
+      &lt;a class=&quot;navbar-item&quot; href=&quot;https://f64.io/#sesiones&quot;&gt;
+        Eventos pasados
+      &lt;/a&gt;
+      &lt;a class=&quot;navbar-item&quot; href=&quot;https://f64.io/#acerca&quot;&gt;
+        Acerca
+      &lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+
+  
+    &lt;div class=&quot;hero-body&quot;&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;h2 class=&quot;subtitle has-text-white&quot;&gt;
+          Noviembre 8, 2018
+        &lt;/h2&gt;
+        &lt;h1 class=&quot;title has-text-white&quot;&gt;
+          Gustavo Vilchis
+        &lt;/h1&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;section id=&quot;f64&quot; class=&quot;hero is-white f64&quot;&gt;
+    &lt;div class=&quot;hero-body&quot;&gt;
+      &lt;div class=&quot;columns&quot;&gt;
+        &lt;div class=&quot;column&quot;&gt;
+          &lt;div class=&quot;column is-three-fifths&quot;&gt;
+            &lt;h3&gt;Gustavo Vilchis&lt;/h3&gt;
+            &lt;h1&gt;El fotógrafo&lt;/h1&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;column is-three-fifths&quot;&gt;
+            &lt;p&gt;
+            Gustavo Vilchis originario de Guerrero, fotógrafo documentalista, activista y viajero.
+            &lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  
+  &lt;section class=&quot;hero events is-black&quot;&gt;
+  &lt;div class=&quot;hero-body&quot;&gt;
+    &lt;div class=&quot;images columns&quot;&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+        &lt;img src=&quot;/images/vilchis/gustavo-vilchis-ev-1.jpg&quot; alt=&quot;Evento f/64&quot; /&gt;
+        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+        &lt;img src=&quot;/images/vilchis/gustavo-vilchis-ev-2.jpg&quot; alt=&quot;Evento f/64&quot; /&gt;
+        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+
+    &lt;div class=&quot;images columns&quot;&gt;
+      &lt;div class=&quot;column is-one-fifth is-hidden-mobile&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;column&quot;&gt; 
+        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt; 
+        &lt;img src=&quot;/images/vilchis/gustavo-vilchis-ev-3.jpg&quot; alt=&quot;Evento f/64&quot; /&gt; 
+        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt; 
+      &lt;/div&gt;
+      &lt;div class=&quot;column is-one-fifth is-hidden-mobile&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;images columns&quot;&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+        &lt;img src=&quot;/images/vilchis/gustavo-vilchis-ev-4.jpg&quot; alt=&quot;Evento f/64&quot; /&gt;
+        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;column is-three-fifths&quot;&gt;
+        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+        &lt;img src=&quot;/images/vilchis/gustavo-vilchis-ev-5.jpg&quot; alt=&quot;Evento f/64&quot; /&gt;
+        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;images columns&quot;&gt;
+      &lt;div class=&quot;column is-one-fifth is-hidden-mobile&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+        &lt;img src=&quot;/images/vilchis/gustavo-vilchis-ev-6.jpg&quot; alt=&quot;Evento f/64&quot; /&gt;
+        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;column is-one-fifth is-hidden-mobile&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;/div&gt;</content><author><name></name></author><summary type="html">Qué es F/64? Eventos Eventos pasados Acerca Noviembre 8, 2018 Gustavo Vilchis</summary></entry></feed>
