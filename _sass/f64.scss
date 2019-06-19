@@ -398,3 +398,23 @@ hr {
   background-image: url($url + '/images/america/america-alvarez-ev-0.jpg');
   @extend .background-image;
 }
+
+.intro-hernando:after {
+  background-image: url($url + '/images/hernando/hernando-rivera-ev-0.jpg');
+  @extend .background-image;
+}
+
+.intro-javier:after {
+  background-image: url($url + '/images/javier/javier-flores-ev-0.jpg');
+  @extend .background-image;
+}
+
+.intro-massiel:after {
+  background-image: url($url + '/images/massiel/massiel-hernandez-ev-0.jpg');
+  @extend .background-image;
+}
+
+.intro-ingrid:after {
+  background-image: url($url + '/images/ingrid/ingrid-acosta-ev-0.jpg');
+  @extend .background-image;
+}
