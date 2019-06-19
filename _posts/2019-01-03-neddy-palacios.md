@@ -6,7 +6,7 @@ fotografo: neddy
 photoname: neddy-palacios
 fecha: "Enero 3, 2019"
 description: Fotógrafa del proceso tradicional de buscar, encontrar, disparar, descubrir, revelar y develar.
-image: enerof64.jpg
+image: Enerof64.jpg
 address: michelada.io, av. Carranza 1248 Colinas de Santa Bárbara, Colima.
 ---
 <div class="parallax-container">

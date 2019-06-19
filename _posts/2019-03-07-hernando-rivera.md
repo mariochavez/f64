@@ -6,7 +6,7 @@ fotografo: hernando
 photoname: hernando-rivera
 fecha: "Marzo 7, 2019"
 description: Fotógrafo de naturaleza apasionado por la conservación y los paisajes nocturnos y la fauna silvestre.
-image: marzof64.jpg
+image: Marzof64.jpg
 address: michelada.io, av. Carranza 1248 Colinas de Santa Bárbara, Colima.
 ---
 <div class="parallax-container">

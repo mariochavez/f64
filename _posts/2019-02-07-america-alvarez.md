@@ -6,7 +6,7 @@ fotografo: america
 photoname: america-alvarez
 fecha: "Febrero 7, 2019"
 description: Danzante, fotógrafa, pintora y viajera.
-image: febrerof64.jpg
+image: Febrerof64.jpg
 address: michelada.io, av. Carranza 1248 Colinas de Santa Bárbara, Colima.
 ---
 <div class="parallax-container">

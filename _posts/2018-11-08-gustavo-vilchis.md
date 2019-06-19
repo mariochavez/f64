@@ -5,7 +5,7 @@ nombre: "Gustavo Vilchis"
 fotografo: vilchis
 photoname: gustavo-vilchis
 fecha: "Noviembre 8, 2018"
-image: noviembref64.jpg
+image: Noviembref64.jpg
 address: michelada.io, av. Carranza 1248 Colinas de Santa Bárbara, Colima.
 ---
 <div class="parallax-container">
