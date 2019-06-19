@@ -6,6 +6,7 @@ fotografo: neddy
 photoname: neddy-palacios
 fecha: "Enero 3, 2019"
 description: Fotógrafa del proceso tradicional de buscar, encontrar, disparar, descubrir, revelar y develar.
+image: enerof64.png
 ---
 <div class="parallax-container">
   <section class="hero is-large has-text-centered parallax intro intro-neddy">
