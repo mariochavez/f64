@@ -6,7 +6,7 @@ fotografo: massiel
 photoname: massiel-hernandez
 fecha: "Mayo 2, 2019"
 description: Soy fotógrafa, realizadora documental y activista.
-image: mayof64.png
+image: mayof64.jpg
 ---
 <div class="parallax-container">
   <section class="hero is-large has-text-centered parallax intro intro-massiel">

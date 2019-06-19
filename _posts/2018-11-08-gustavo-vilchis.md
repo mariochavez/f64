@@ -5,7 +5,7 @@ nombre: "Gustavo Vilchis"
 fotografo: vilchis
 photoname: gustavo-vilchis
 fecha: "Noviembre 8, 2018"
-image: noviembref64.png
+image: noviembref64.jpg
 ---
 <div class="parallax-container">
   <section class="hero is-large has-text-centered parallax intro">

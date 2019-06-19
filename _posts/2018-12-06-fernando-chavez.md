@@ -6,7 +6,7 @@ fotografo: fernando
 photoname: fernando-chavez
 fecha: "Diciembre 12, 2018"
 description: El fotógrafo del pueblo de Comala, él que cuida la tradición.
-image: diciembref64.png
+image: diciembref64.jpg
 ---
 <div class="parallax-container">
   <section class="hero is-large has-text-centered parallax intro intro-fernando">

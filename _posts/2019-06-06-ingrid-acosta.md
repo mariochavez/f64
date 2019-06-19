@@ -6,7 +6,7 @@ fotografo: ingrid
 photoname: ingrid-acosta
 fecha: "Junio 6, 2019"
 description: Soy fotógrafa, realizadora documental y activista.
-image: juniof64.png
+image: juniof64.jpg
 ---
 <div class="parallax-container">
   <section class="hero is-large has-text-centered parallax intro intro-ingrid">

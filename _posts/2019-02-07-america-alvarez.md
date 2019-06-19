@@ -6,7 +6,7 @@ fotografo: america
 photoname: america-alvarez
 fecha: "Febrero 7, 2019"
 description: Danzante, fotógrafa, pintora y viajera.
-image: febrerof64.png
+image: febrerof64.jpg
 ---
 <div class="parallax-container">
   <section class="hero is-large has-text-centered parallax intro intro-america">

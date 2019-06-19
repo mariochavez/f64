@@ -6,7 +6,7 @@ fotografo: javier
 photoname: javier-flores
 fecha: "Abril 4, 2019"
 description: Fotógrafo que se ha dedicado a capturar la vida cotidiana de Colima y sus alrededores.
-image: abrilf64.png
+image: abrilf64.jpg
 ---
 <div class="parallax-container">
   <section class="hero is-large has-text-centered parallax intro intro-javier">

@@ -6,7 +6,7 @@ fotografo: hernando
 photoname: hernando-rivera
 fecha: "Marzo 7, 2019"
 description: Fotógrafo de naturaleza apasionado por la conservación y los paisajes nocturnos y la fauna silvestre.
-image: marzof64.png
+image: marzof64.jpg
 ---
 <div class="parallax-container">
   <section class="hero is-large has-text-centered parallax intro intro-hernando">
