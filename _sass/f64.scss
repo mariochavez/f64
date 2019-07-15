@@ -418,3 +418,8 @@ hr {
   background-image: url($url + '/images/ingrid/ingrid-acosta-ev-0.jpg');
   @extend .background-image;
 }
+
+.intro-carlos:after {
+  background-image: url($url + '/images/carlos/carlos-tirado-ev-0.jpg');
+  @extend .background-image;
+}
