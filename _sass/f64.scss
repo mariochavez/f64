@@ -423,3 +423,8 @@ hr {
   background-image: url($url + '/images/carlos/carlos-tirado-ev-0.jpg');
   @extend .background-image;
 }
+
+.intro-alf:after {
+  background-image: url($url + '/images/alf/alfredo-mendoza-ev-0.jpg');
+  @extend .background-image;
+}

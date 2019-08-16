@@ -1,16 +1,16 @@
 ---
 layout: default
 title: f64
-nombre: "Carlos Tirado"
-fotografo: carlos
-photoname: carlos-tirado
-fecha: "Julio 4, 2019"
-description: Gusto por la fotografía urbana, de paisaje, retrato, moda, etc. Enfocado en aprender más de un tipo de fotografía
-image: Juliof64.jpg
-address: Casa Volcán, Venustiano Carranza 56 - A, 28450 Comala.
+nombre: "Alfredo Mendoza"
+fotografo: alf
+photoname: alfredo-mendoza
+fecha: "Agosto 1, 2019"
+description: Desde niño soy un apasionado por la imagen, pasión que primero experimenté desde la fascinación que el cine ejerce en mí, y que conforme crecí se extendió a la fotografía.
+image: Agostof64.jpg
+address: Calle Codorniz No.99 Colonia Santa Barbara, 28017 Colima.
 ---
 <div class="parallax-container">
-  <section class="hero is-large has-text-centered parallax intro intro-carlos">
+  <section class="hero is-large has-text-centered parallax intro intro-alf">
     {% include header.html %}
 
     <div class="hero-body">
@@ -35,7 +35,7 @@ address: Casa Volcán, Venustiano Carranza 56 - A, 28450 Comala.
           </div>
           <div class="column is-three-fifths">
             <p>
-              Gusto por la fotografía urbana, de paisaje, retrato, moda, etc. Enfocado en aprender más de un tipo de fotografía.
+              {{ page.description }}
             </p>
           </div>
         </div>
