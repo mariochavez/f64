@@ -428,3 +428,8 @@ hr {
   background-image: url($url + '/images/alf/alfredo-mendoza-ev-0.jpg');
   @extend .background-image;
 }
+
+.intro-angelica:after {
+  background-image: url($url + '/images/angelica/angelica-mercado-ev-0.jpg');
+  @extend .background-image;
+}
