@@ -433,3 +433,12 @@ hr {
   background-image: url($url + '/images/angelica/angelica-mercado-ev-0.jpg');
   @extend .background-image;
 }
+
+.intro-jose:after {
+  background-image: url($url + '/images/jose/jose-marquez-ev-0.jpg');
+  @extend .background-image;
+}
+
+.level-item {
+  margin-left: 1em;
+}

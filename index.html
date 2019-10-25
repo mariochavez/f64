@@ -1,14 +1,14 @@
 ---
 layout: default
 title: f64
-nombre: "José A Marquez Gileta"
-fecha: "Octubre 3, 2019"
+nombre: "Miguel Dimayuga y Omar Martínez"
+fecha: "Noviembre 7, 2019"
 proximo: Próximo
-fotografo: jose
-photoname: jose-marquez
-description: Archivista y conservador nos viene a presentar una restrospectiva del fotógrafo colimense Gustavo Cárdenas quien durante su época prolífica fotografío la vida social colimense.
-image: Octubref64.jpg
-address: Blus.io Media. Calle Codorniz No.99 Santa Barbara, Colima.
+fotografo: aniversario
+photoname: aniversario
+description: nos acompañaran en esta sesión especial de aniversario de f/64. El primero colaborador de la Revista Proceso y el segundo de la agencia Cuarto Oscuro para platicar acerca de su trabajo en medios tan importantes de México.
+image: Noviembref64-2.jpg
+address: Pinacoteca Universitaria. Calle Vicente Guerrero No.35 Colonia Centro. Colima.
 ---
 
 <div class="top">
@@ -66,21 +66,58 @@ address: Blus.io Media. Calle Codorniz No.99 Santa Barbara, Colima.
       <nav class="level">
         <!-- Left side -->
         <div class="level-left">
-
+          <div class="level-item">
+            <h3>
+              Patrocinadores de Noviembre
+            </h3>
+          </div>
+          <a class="level-item" href="https://www.ucol.mx/" target="_blank"><img src="{{site.baseurl}}/images/universidad.png"  style="width: 240px"/></a>
+          <a class="level-item" href="https://michelada.io" target="_blank"><img src="{{site.baseurl}}/images/micheladaio.png"  style="width: 240px"/></a>
         </div>
 
         <!-- Right side -->
         <div class="level-right">
-          <div class="level-item">
-            <h3>
-              Patrocinador de Octubre
-            </h3>
-          </div>
-          <a class="level-item" href="https://blus.io/en_US/" target="_blank"><img src="{{site.baseurl}}/images/blusio.png"  style="width: 92px"/></a>
         </div>
       </nav>
 
-      {% include photographer.html %}
+      <nav class="level">
+        <!-- Left side -->
+        <div class="level-left">
+        </div>
+
+        <!-- Right side -->
+        <div class="level-right">
+          <a class="level-item" href="https://blus.io/en_US/" target="_blank"><img src="{{site.baseurl}}/images/blusio.png"  style="width: 92px"/></a>
+          <a class="level-item" href="https://www.facebook.com/Domitilacomedor/" target="_blank"><img src="{{site.baseurl}}/images/domitila.png"  style="width: 92px"/></a>
+          <a class="level-item" href="https://www.facebook.com/FondaLaFregada/" target="_blank"><img src="{{site.baseurl}}/images/la-fregada.png"  style="width: 92px"/></a>
+          <a class="level-item" href="https://www.facebook.com/Labuenavidarestaurante/" target="_blank"><img src="{{site.baseurl}}/images/la-buenavida.png"  style="width: 92px"/></a>
+        </div>
+      </nav>
+
+      <div class="columns">
+        <div class="column">
+          <h3>{{page.proximo}} Evento</h3>
+          <h1>{{page.fecha}}</h1>
+          <h4>7:45 pm en {{ page.address }}</h4>
+        </div>
+        <div class="column is-three-fifths">
+          <p>Los fotoperiodistas <b>{{page.nombre}}</b>, {{page.description}}</p>
+        </div>
+      </div>
+
+      <div class="images columns">
+        <div class="column">
+          <div class="photo-overlay"></div>
+          <img src="{{'/images/aniversario/miguel-dimayuga' | append: '.jpg' | absolute_url}}">
+          <h3>&copy; Miguel Dimayuga</h3>
+        </div>
+        <div class="column">
+          <div class="photo-overlay"></div>
+          <img src="{{'/images/aniversario/omar-martinez' | append: '.jpg' | absolute_url}}">
+          <h3>&copy; Omar Martínez</h3>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -106,6 +143,9 @@ address: Blus.io Media. Calle Codorniz No.99 Santa Barbara, Colima.
       <hr/>
       <div class="photographers columns">
         <div class="column">
+          <a href="/2019/10/03/jose-marquez.html">
+            <img src="{{'/images/Octubref64.jpg' | absolute_url}}" alt="José A. Márquez Gileta">
+          </a>
         </div>
         <div class="column">
           <a href="/2019/09/05/angelica-mercado.html">
