@@ -439,6 +439,16 @@ hr {
   @extend .background-image;
 }
 
+.intro-aniversario:after {
+  background-image: url($url + '/images/aniversario/aniversario-ev-0.jpg');
+  @extend .background-image;
+}
+
+.intro-sergio:after {
+  background-image: url($url + '/images/sergio/sergio-tapiro-ev-0.jpg');
+  @extend .background-image;
+}
+
 .level-item {
   margin-left: 1em;
 }
