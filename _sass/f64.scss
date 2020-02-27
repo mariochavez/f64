@@ -449,6 +449,16 @@ hr {
   @extend .background-image;
 }
 
+.intro-antonio:after {
+  background-image: url($url + '/images/antonio/antonio-hirtz-ev-0.jpg');
+  @extend .background-image;
+}
+
+.intro-andrea:after {
+  background-image: url($url + '/images/andrea/andrea-valencia-ev-0.jpg');
+  @extend .background-image;
+}
+
 .level-item {
   margin-left: 1em;
 }

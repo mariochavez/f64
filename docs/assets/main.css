@@ -2199,7 +2199,7 @@ p { font-size: 1.25rem; letter-spacing: 0.12rem; line-height: 2rem; margin: 1.5r
 .parallax:after { bottom: 0; content: " "; left: 0; position: absolute; right: 0; top: 0; background-size: 100%; transform: translateZ(-1px) scale(1.5); z-index: -1; }
 @media screen and (max-width: 1087px) { .parallax:after { transform: translateZ(-1px) scale(2.1); } }
 
-.background-image, .intro:after, .expectators:after, .presenters:after, .about:after, .intro-fernando:after, .intro-neddy:after, .intro-america:after, .intro-hernando:after, .intro-javier:after, .intro-massiel:after, .intro-ingrid:after, .intro-carlos:after, .intro-alf:after, .intro-angelica:after, .intro-jose:after, .intro-aniversario:after, .intro-sergio:after { background-repeat: no-repeat; background-position-x: center; background-position-y: center; background-size: cover; }
+.background-image, .intro:after, .expectators:after, .presenters:after, .about:after, .intro-fernando:after, .intro-neddy:after, .intro-america:after, .intro-hernando:after, .intro-javier:after, .intro-massiel:after, .intro-ingrid:after, .intro-carlos:after, .intro-alf:after, .intro-angelica:after, .intro-jose:after, .intro-aniversario:after, .intro-sergio:after, .intro-antonio:after, .intro-andrea:after { background-repeat: no-repeat; background-position-x: center; background-position-y: center; background-size: cover; }
 
 .intro:after { background-image: url("/images/home.jpg"); }
 
@@ -2282,5 +2282,9 @@ hr { border-bottom: rgba(176, 176, 176, 0.5) solid 1px; margin: 1rem auto; width
 .intro-aniversario:after { background-image: url("/images/aniversario/aniversario-ev-0.jpg"); }
 
 .intro-sergio:after { background-image: url("/images/sergio/sergio-tapiro-ev-0.jpg"); }
+
+.intro-antonio:after { background-image: url("/images/antonio/antonio-hirtz-ev-0.jpg"); }
+
+.intro-andrea:after { background-image: url("/images/andrea/andrea-valencia-ev-0.jpg"); }
 
 .level-item { margin-left: 1em; }

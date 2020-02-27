@@ -1,4 +1,328 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://f64.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://f64.io/" rel="alternate" type="text/html" /><updated>2019-12-16T16:48:42-06:00</updated><id>https://f64.io/feed.xml</id><title type="html">f/64 pláticas fotográficas</title><subtitle>f/64 es un evento con el objetivo de invitar a un fotógrafo local cada primer jueves del mes a que nos platique parte de su historia en la fotografía, no hay formato específico y cada presentador es libre de contar su historia bajo sus condiciones.</subtitle><entry><title type="html">f64</title><link href="https://f64.io/2019/12/05/sergio-tapiro-velasco.html" rel="alternate" type="text/html" title="f64" /><published>2019-12-05T00:00:00-06:00</published><updated>2019-12-05T00:00:00-06:00</updated><id>https://f64.io/2019/12/05/sergio-tapiro-velasco</id><content type="html" xml:base="https://f64.io/2019/12/05/sergio-tapiro-velasco.html">&lt;div class=&quot;parallax-container&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://f64.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://f64.io/" rel="alternate" type="text/html" /><updated>2020-02-27T11:56:53-06:00</updated><id>https://f64.io/feed.xml</id><title type="html">f/64 pláticas fotográficas</title><subtitle>f/64 es un evento con el objetivo de invitar a un fotógrafo local cada primer jueves del mes a que nos platique parte de su historia en la fotografía, no hay formato específico y cada presentador es libre de contar su historia bajo sus condiciones.</subtitle><entry><title type="html">f64</title><link href="https://f64.io/2020/02/06/andrea-valencia.html" rel="alternate" type="text/html" title="f64" /><published>2020-02-06T00:00:00-06:00</published><updated>2020-02-06T00:00:00-06:00</updated><id>https://f64.io/2020/02/06/andrea-valencia</id><content type="html" xml:base="https://f64.io/2020/02/06/andrea-valencia.html">&lt;div class=&quot;parallax-container&quot;&gt;
+  &lt;section class=&quot;hero is-large has-text-centered parallax intro intro-andrea&quot;&gt;
+    &lt;nav class=&quot;navbar&quot;&gt;
+  &lt;div class=&quot;navbar-brand&quot;&gt;
+    &lt;a class=&quot;navbar-item&quot; href=&quot;https://f64.io/&quot;&gt;
+      &lt;img src=&quot;/images/white-f64.png&quot; alt=&quot;F/64 Pláticas fotográficas&quot; width=&quot;70&quot; height=&quot;51&quot; /&gt;
+    &lt;/a&gt;
+    &lt;a role=&quot;button&quot; class=&quot;navbar-burger&quot; aria-label=&quot;menu&quot; aria-expanded=&quot;false&quot; data-target=&quot;menu&quot;&gt;
+      &lt;span aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+      &lt;span aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+      &lt;span aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;navbar-menu&quot; id=&quot;menu&quot;&gt;
+    &lt;div class=&quot;navbar-end&quot;&gt;
+      &lt;a class=&quot;navbar-item&quot; href=&quot;https://f64.io/#que-es&quot;&gt;
+        Qué es F/64?
+      &lt;/a&gt;
+      &lt;a class=&quot;navbar-item&quot; href=&quot;https://f64.io/#eventos&quot;&gt;
+        Eventos
+      &lt;/a&gt;
+      &lt;a class=&quot;navbar-item&quot; href=&quot;https://f64.io/#sesiones&quot;&gt;
+        Eventos pasados
+      &lt;/a&gt;
+      &lt;a class=&quot;navbar-item&quot; href=&quot;https://f64.io/#acerca&quot;&gt;
+        Acerca
+      &lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+
+
+    &lt;div class=&quot;hero-body&quot;&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;h2 class=&quot;subtitle has-text-white&quot;&gt;
+          Febrero 6, 2020
+        &lt;/h2&gt;
+        &lt;h1 class=&quot;title has-text-white&quot;&gt;
+          Andrea Valencia
+        &lt;/h1&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;section id=&quot;f64&quot; class=&quot;hero is-white f64&quot;&gt;
+    &lt;div class=&quot;hero-body&quot;&gt;
+      &lt;div class=&quot;columns&quot;&gt;
+        &lt;div class=&quot;column&quot;&gt;
+          &lt;div class=&quot;column is-three-fifths&quot;&gt;
+            &lt;h3&gt;Andrea Valencia&lt;/h3&gt;
+            &lt;h1&gt;La fotógrafa&lt;/h1&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;column is-three-fifths&quot;&gt;
+            &lt;p&gt;
+              Diseñadora gráfica y fotógrafa, hago retratos inspirados en diferentes corrientes artísticas, lo orgánico de la naturaleza y la feminidad.
+            &lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;section class=&quot;hero is-white event&quot;&gt;
+    &lt;div class=&quot;hero-body&quot;&gt;
+      &lt;div class=&quot;columns&quot;&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;h3&gt; Evento&lt;/h3&gt;
+    &lt;h1&gt;Febrero 6, 2020&lt;/h1&gt;
+    &lt;h4&gt;8pm en Av. Carranza 1248, Colonia Santa Barbara, 28017 Colima.&lt;/h4&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;column is-three-fifths&quot;&gt;
+    &lt;p&gt;&lt;b&gt;Andrea Valencia&lt;/b&gt;, Diseñadora gráfica y fotógrafa, hago retratos inspirados en diferentes corrientes artísticas, lo orgánico de la naturaleza y la feminidad.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;images columns&quot;&gt;
+  &lt;div class=&quot;column is-three-fifths&quot;&gt;
+    &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+    &lt;img src=&quot;https://f64.io/images/andrea/andrea-valencia-1.jpg&quot; alt=&quot;Andrea Valencia&quot; /&gt;
+    &lt;h3&gt;&amp;copy; Andrea Valencia&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+    &lt;img src=&quot;https://f64.io/images/andrea/andrea-valencia-2.jpg&quot; /&gt;
+    &lt;h3&gt;&amp;copy; Andrea Valencia&lt;/h3&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;images columns&quot;&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+    &lt;img src=&quot;https://f64.io/images/andrea/andrea-valencia-3.jpg&quot; /&gt;
+    &lt;h3&gt;&amp;copy; Andrea Valencia&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+    &lt;img src=&quot;https://f64.io/images/andrea/andrea-valencia-4.jpg&quot; /&gt;
+    &lt;h3&gt;&amp;copy; Andrea Valencia&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+    &lt;img src=&quot;https://f64.io/images/andrea/andrea-valencia-5.jpg&quot; /&gt;
+    &lt;h3&gt;&amp;copy; Andrea Valencia&lt;/h3&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;section class=&quot;hero events is-black&quot;&gt;
+  &lt;div class=&quot;hero-body&quot;&gt;
+    &lt;div class=&quot;images columns&quot;&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+        &lt;img src=&quot;https://f64.io/images/andrea/andrea-valencia-ev-1.jpg&quot; alt=&quot;Evento f/64&quot; /&gt;
+        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+        &lt;img src=&quot;https://f64.io/images/andrea/andrea-valencia-ev-2.jpg&quot; alt=&quot;Evento f/64&quot; /&gt;
+        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+
+    &lt;div class=&quot;images columns&quot;&gt;
+      &lt;div class=&quot;column is-one-fifth is-hidden-mobile&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt; 
+        &lt;img src=&quot;https://f64.io/images/andrea/andrea-valencia-ev-3.jpg&quot; alt=&quot;Evento f/64&quot; /&gt; 
+        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt; 
+      &lt;/div&gt;
+      &lt;div class=&quot;column is-one-fifth is-hidden-mobile&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;images columns&quot;&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+        &lt;img src=&quot;https://f64.io/images/andrea/andrea-valencia-ev-4.jpg&quot; alt=&quot;Evento f/64&quot; /&gt;
+        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;column is-three-fifths&quot;&gt;
+        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+        &lt;img src=&quot;https://f64.io/images/andrea/andrea-valencia-ev-5.jpg&quot; alt=&quot;Evento f/64&quot; /&gt;
+        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;images columns&quot;&gt;
+      &lt;div class=&quot;column is-one-fifth is-hidden-mobile&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+        &lt;img src=&quot;https://f64.io/images/andrea/andrea-valencia-ev-6.jpg&quot; alt=&quot;Evento f/64&quot; /&gt;
+        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;column is-one-fifth is-hidden-mobile&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;/div&gt;</content><author><name></name></author><summary type="html">Qué es F/64? Eventos Eventos pasados Acerca</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://f64.io/Febrero20f64.jpg" /></entry><entry><title type="html">f64</title><link href="https://f64.io/2020/01/09/antonio-hirtz.html" rel="alternate" type="text/html" title="f64" /><published>2020-01-09T00:00:00-06:00</published><updated>2020-01-09T00:00:00-06:00</updated><id>https://f64.io/2020/01/09/antonio-hirtz</id><content type="html" xml:base="https://f64.io/2020/01/09/antonio-hirtz.html">&lt;div class=&quot;parallax-container&quot;&gt;
+  &lt;section class=&quot;hero is-large has-text-centered parallax intro intro-antonio&quot;&gt;
+    &lt;nav class=&quot;navbar&quot;&gt;
+  &lt;div class=&quot;navbar-brand&quot;&gt;
+    &lt;a class=&quot;navbar-item&quot; href=&quot;https://f64.io/&quot;&gt;
+      &lt;img src=&quot;/images/white-f64.png&quot; alt=&quot;F/64 Pláticas fotográficas&quot; width=&quot;70&quot; height=&quot;51&quot; /&gt;
+    &lt;/a&gt;
+    &lt;a role=&quot;button&quot; class=&quot;navbar-burger&quot; aria-label=&quot;menu&quot; aria-expanded=&quot;false&quot; data-target=&quot;menu&quot;&gt;
+      &lt;span aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+      &lt;span aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+      &lt;span aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;navbar-menu&quot; id=&quot;menu&quot;&gt;
+    &lt;div class=&quot;navbar-end&quot;&gt;
+      &lt;a class=&quot;navbar-item&quot; href=&quot;https://f64.io/#que-es&quot;&gt;
+        Qué es F/64?
+      &lt;/a&gt;
+      &lt;a class=&quot;navbar-item&quot; href=&quot;https://f64.io/#eventos&quot;&gt;
+        Eventos
+      &lt;/a&gt;
+      &lt;a class=&quot;navbar-item&quot; href=&quot;https://f64.io/#sesiones&quot;&gt;
+        Eventos pasados
+      &lt;/a&gt;
+      &lt;a class=&quot;navbar-item&quot; href=&quot;https://f64.io/#acerca&quot;&gt;
+        Acerca
+      &lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+
+
+    &lt;div class=&quot;hero-body&quot;&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;h2 class=&quot;subtitle has-text-white&quot;&gt;
+          Enero 9, 2020
+        &lt;/h2&gt;
+        &lt;h1 class=&quot;title has-text-white&quot;&gt;
+          Antonio Hirtz
+        &lt;/h1&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;section id=&quot;f64&quot; class=&quot;hero is-white f64&quot;&gt;
+    &lt;div class=&quot;hero-body&quot;&gt;
+      &lt;div class=&quot;columns&quot;&gt;
+        &lt;div class=&quot;column&quot;&gt;
+          &lt;div class=&quot;column is-three-fifths&quot;&gt;
+            &lt;h3&gt;Antonio Hirtz&lt;/h3&gt;
+            &lt;h1&gt;El fotógrafo&lt;/h1&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;column is-three-fifths&quot;&gt;
+            &lt;p&gt;
+              Fotógrafo de naturaleza y conservación de fauna
+            &lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;section class=&quot;hero is-white event&quot;&gt;
+    &lt;div class=&quot;hero-body&quot;&gt;
+      &lt;div class=&quot;columns&quot;&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;h3&gt; Evento&lt;/h3&gt;
+    &lt;h1&gt;Enero 9, 2020&lt;/h1&gt;
+    &lt;h4&gt;8pm en Av. Carranza 1248, Colonia Santa Barbara, 28017 Colima.&lt;/h4&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;column is-three-fifths&quot;&gt;
+    &lt;p&gt;&lt;b&gt;Antonio Hirtz&lt;/b&gt;, Fotógrafo de naturaleza y conservación de fauna&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;images columns&quot;&gt;
+  &lt;div class=&quot;column is-three-fifths&quot;&gt;
+    &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+    &lt;img src=&quot;https://f64.io/images/antonio/antonio-hirtz-1.jpg&quot; alt=&quot;Antonio Hirtz&quot; /&gt;
+    &lt;h3&gt;&amp;copy; Antonio Hirtz&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+    &lt;img src=&quot;https://f64.io/images/antonio/antonio-hirtz-2.jpg&quot; /&gt;
+    &lt;h3&gt;&amp;copy; Antonio Hirtz&lt;/h3&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;images columns&quot;&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+    &lt;img src=&quot;https://f64.io/images/antonio/antonio-hirtz-3.jpg&quot; /&gt;
+    &lt;h3&gt;&amp;copy; Antonio Hirtz&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+    &lt;img src=&quot;https://f64.io/images/antonio/antonio-hirtz-4.jpg&quot; /&gt;
+    &lt;h3&gt;&amp;copy; Antonio Hirtz&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+    &lt;img src=&quot;https://f64.io/images/antonio/antonio-hirtz-5.jpg&quot; /&gt;
+    &lt;h3&gt;&amp;copy; Antonio Hirtz&lt;/h3&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;section class=&quot;hero events is-black&quot;&gt;
+  &lt;div class=&quot;hero-body&quot;&gt;
+    &lt;div class=&quot;images columns&quot;&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+        &lt;img src=&quot;https://f64.io/images/antonio/antonio-hirtz-ev-1.jpg&quot; alt=&quot;Evento f/64&quot; /&gt;
+        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+        &lt;img src=&quot;https://f64.io/images/antonio/antonio-hirtz-ev-2.jpg&quot; alt=&quot;Evento f/64&quot; /&gt;
+        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+
+    &lt;div class=&quot;images columns&quot;&gt;
+      &lt;div class=&quot;column is-one-fifth is-hidden-mobile&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt; 
+        &lt;img src=&quot;https://f64.io/images/antonio/antonio-hirtz-ev-3.jpg&quot; alt=&quot;Evento f/64&quot; /&gt; 
+        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt; 
+      &lt;/div&gt;
+      &lt;div class=&quot;column is-one-fifth is-hidden-mobile&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;images columns&quot;&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+        &lt;img src=&quot;https://f64.io/images/antonio/antonio-hirtz-ev-4.jpg&quot; alt=&quot;Evento f/64&quot; /&gt;
+        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;column is-three-fifths&quot;&gt;
+        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+        &lt;img src=&quot;https://f64.io/images/antonio/antonio-hirtz-ev-5.jpg&quot; alt=&quot;Evento f/64&quot; /&gt;
+        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;images columns&quot;&gt;
+      &lt;div class=&quot;column is-one-fifth is-hidden-mobile&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
+        &lt;img src=&quot;https://f64.io/images/antonio/antonio-hirtz-ev-6.jpg&quot; alt=&quot;Evento f/64&quot; /&gt;
+        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;column is-one-fifth is-hidden-mobile&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;/div&gt;</content><author><name></name></author><summary type="html">Qué es F/64? Eventos Eventos pasados Acerca</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://f64.io/Enero20f64.jpg" /></entry><entry><title type="html">f64</title><link href="https://f64.io/2019/12/05/sergio-tapiro-velasco.html" rel="alternate" type="text/html" title="f64" /><published>2019-12-05T00:00:00-06:00</published><updated>2019-12-05T00:00:00-06:00</updated><id>https://f64.io/2019/12/05/sergio-tapiro-velasco</id><content type="html" xml:base="https://f64.io/2019/12/05/sergio-tapiro-velasco.html">&lt;div class=&quot;parallax-container&quot;&gt;
   &lt;section class=&quot;hero is-large has-text-centered parallax intro intro-sergio&quot;&gt;
     &lt;nav class=&quot;navbar&quot;&gt;
   &lt;div class=&quot;navbar-brand&quot;&gt;
@@ -1302,333 +1626,4 @@
   &lt;/div&gt;
 &lt;/section&gt;
 
-&lt;/div&gt;</content><author><name></name></author><summary type="html">Qué es F/64? Eventos Eventos pasados Acerca Mayo 2, 2019 Massiel Hernández</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://f64.io/Mayof64.jpg" /></entry><entry><title type="html">f64</title><link href="https://f64.io/2019/04/04/javier-flores.html" rel="alternate" type="text/html" title="f64" /><published>2019-04-04T00:00:00-06:00</published><updated>2019-04-04T00:00:00-06:00</updated><id>https://f64.io/2019/04/04/javier-flores</id><content type="html" xml:base="https://f64.io/2019/04/04/javier-flores.html">&lt;div class=&quot;parallax-container&quot;&gt;
-  &lt;section class=&quot;hero is-large has-text-centered parallax intro intro-javier&quot;&gt;
-    &lt;nav class=&quot;navbar&quot;&gt;
-  &lt;div class=&quot;navbar-brand&quot;&gt;
-    &lt;a class=&quot;navbar-item&quot; href=&quot;https://f64.io/&quot;&gt;
-      &lt;img src=&quot;/images/white-f64.png&quot; alt=&quot;F/64 Pláticas fotográficas&quot; width=&quot;70&quot; height=&quot;51&quot; /&gt;
-    &lt;/a&gt;
-    &lt;a role=&quot;button&quot; class=&quot;navbar-burger&quot; aria-label=&quot;menu&quot; aria-expanded=&quot;false&quot; data-target=&quot;menu&quot;&gt;
-      &lt;span aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
-      &lt;span aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
-      &lt;span aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
-
-  &lt;div class=&quot;navbar-menu&quot; id=&quot;menu&quot;&gt;
-    &lt;div class=&quot;navbar-end&quot;&gt;
-      &lt;a class=&quot;navbar-item&quot; href=&quot;https://f64.io/#que-es&quot;&gt;
-        Qué es F/64?
-      &lt;/a&gt;
-      &lt;a class=&quot;navbar-item&quot; href=&quot;https://f64.io/#eventos&quot;&gt;
-        Eventos
-      &lt;/a&gt;
-      &lt;a class=&quot;navbar-item&quot; href=&quot;https://f64.io/#sesiones&quot;&gt;
-        Eventos pasados
-      &lt;/a&gt;
-      &lt;a class=&quot;navbar-item&quot; href=&quot;https://f64.io/#acerca&quot;&gt;
-        Acerca
-      &lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/nav&gt;
-
-
-    &lt;div class=&quot;hero-body&quot;&gt;
-      &lt;div class=&quot;container&quot;&gt;
-        &lt;h2 class=&quot;subtitle has-text-white&quot;&gt;
-          Abril 4, 2019
-        &lt;/h2&gt;
-        &lt;h1 class=&quot;title has-text-white&quot;&gt;
-          Javier Flores
-        &lt;/h1&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/section&gt;
-
-  &lt;section id=&quot;f64&quot; class=&quot;hero is-white f64&quot;&gt;
-    &lt;div class=&quot;hero-body&quot;&gt;
-      &lt;div class=&quot;columns&quot;&gt;
-        &lt;div class=&quot;column&quot;&gt;
-          &lt;div class=&quot;column is-three-fifths&quot;&gt;
-            &lt;h3&gt;Javier Flores&lt;/h3&gt;
-            &lt;h1&gt;El fotógrafo&lt;/h1&gt;
-          &lt;/div&gt;
-          &lt;div class=&quot;column is-three-fifths&quot;&gt;
-            &lt;p&gt;
-            Fotógrafo que se ha dedicado a capturar la vida cotidiana de Colima y sus alrededores, siempre en su mirada los personajes, la comida y las fiestas populares.
-            &lt;/p&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/section&gt;
-
-  &lt;section class=&quot;hero is-white event&quot;&gt;
-    &lt;div class=&quot;hero-body&quot;&gt;
-      &lt;a name=&quot;eventos&quot;&gt;&lt;/a&gt;
-      &lt;div class=&quot;columns&quot;&gt;
-  &lt;div class=&quot;column&quot;&gt;
-    &lt;h3&gt; Evento&lt;/h3&gt;
-    &lt;h1&gt;Abril 4, 2019&lt;/h1&gt;
-    &lt;h4&gt;8pm en michelada.io, av. Carranza 1248 Colinas de Santa Bárbara, Colima.&lt;/h4&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;column is-three-fifths&quot;&gt;
-    &lt;p&gt;&lt;b&gt;Javier Flores&lt;/b&gt;, Fotógrafo que se ha dedicado a capturar la vida cotidiana de Colima y sus alrededores.&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;images columns&quot;&gt;
-  &lt;div class=&quot;column is-three-fifths&quot;&gt;
-    &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
-    &lt;img src=&quot;https://f64.io/images/javier/javier-flores-1.jpg&quot; alt=&quot;Javier Flores&quot; /&gt;
-    &lt;h3&gt;&amp;copy; Javier Flores&lt;/h3&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;column&quot;&gt;
-    &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
-    &lt;img src=&quot;https://f64.io/images/javier/javier-flores-2.jpg&quot; /&gt;
-    &lt;h3&gt;&amp;copy; Javier Flores&lt;/h3&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;images columns&quot;&gt;
-  &lt;div class=&quot;column&quot;&gt;
-    &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
-    &lt;img src=&quot;https://f64.io/images/javier/javier-flores-3.jpg&quot; /&gt;
-    &lt;h3&gt;&amp;copy; Javier Flores&lt;/h3&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;column&quot;&gt;
-    &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
-    &lt;img src=&quot;https://f64.io/images/javier/javier-flores-4.jpg&quot; /&gt;
-    &lt;h3&gt;&amp;copy; Javier Flores&lt;/h3&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;column&quot;&gt;
-    &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
-    &lt;img src=&quot;https://f64.io/images/javier/javier-flores-5.jpg&quot; /&gt;
-    &lt;h3&gt;&amp;copy; Javier Flores&lt;/h3&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-
-    &lt;/div&gt;
-  &lt;/section&gt;
-
-  &lt;section class=&quot;hero events is-black&quot;&gt;
-  &lt;div class=&quot;hero-body&quot;&gt;
-    &lt;div class=&quot;images columns&quot;&gt;
-      &lt;div class=&quot;column&quot;&gt;
-        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
-        &lt;img src=&quot;https://f64.io/images/javier/javier-flores-ev-1.jpg&quot; alt=&quot;Evento f/64&quot; /&gt;
-        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;column&quot;&gt;
-        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
-        &lt;img src=&quot;https://f64.io/images/javier/javier-flores-ev-2.jpg&quot; alt=&quot;Evento f/64&quot; /&gt;
-        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-
-
-    &lt;div class=&quot;images columns&quot;&gt;
-      &lt;div class=&quot;column is-one-fifth is-hidden-mobile&quot;&gt;&lt;/div&gt;
-      &lt;div class=&quot;column&quot;&gt;
-        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt; 
-        &lt;img src=&quot;https://f64.io/images/javier/javier-flores-ev-3.jpg&quot; alt=&quot;Evento f/64&quot; /&gt; 
-        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt; 
-      &lt;/div&gt;
-      &lt;div class=&quot;column is-one-fifth is-hidden-mobile&quot;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-
-    &lt;div class=&quot;images columns&quot;&gt;
-      &lt;div class=&quot;column&quot;&gt;
-        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
-        &lt;img src=&quot;https://f64.io/images/javier/javier-flores-ev-4.jpg&quot; alt=&quot;Evento f/64&quot; /&gt;
-        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;column is-three-fifths&quot;&gt;
-        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
-        &lt;img src=&quot;https://f64.io/images/javier/javier-flores-ev-5.jpg&quot; alt=&quot;Evento f/64&quot; /&gt;
-        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-
-    &lt;div class=&quot;images columns&quot;&gt;
-      &lt;div class=&quot;column is-one-fifth is-hidden-mobile&quot;&gt;&lt;/div&gt;
-      &lt;div class=&quot;column&quot;&gt;
-        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
-        &lt;img src=&quot;https://f64.io/images/javier/javier-flores-ev-6.jpg&quot; alt=&quot;Evento f/64&quot; /&gt;
-        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;column is-one-fifth is-hidden-mobile&quot;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/section&gt;
-
-&lt;/div&gt;</content><author><name></name></author><summary type="html">Qué es F/64? Eventos Eventos pasados Acerca</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://f64.io/Abrilf64.jpg" /></entry><entry><title type="html">f64</title><link href="https://f64.io/2019/03/07/hernando-rivera.html" rel="alternate" type="text/html" title="f64" /><published>2019-03-07T00:00:00-06:00</published><updated>2019-03-07T00:00:00-06:00</updated><id>https://f64.io/2019/03/07/hernando-rivera</id><content type="html" xml:base="https://f64.io/2019/03/07/hernando-rivera.html">&lt;div class=&quot;parallax-container&quot;&gt;
-  &lt;section class=&quot;hero is-large has-text-centered parallax intro intro-hernando&quot;&gt;
-    &lt;nav class=&quot;navbar&quot;&gt;
-  &lt;div class=&quot;navbar-brand&quot;&gt;
-    &lt;a class=&quot;navbar-item&quot; href=&quot;https://f64.io/&quot;&gt;
-      &lt;img src=&quot;/images/white-f64.png&quot; alt=&quot;F/64 Pláticas fotográficas&quot; width=&quot;70&quot; height=&quot;51&quot; /&gt;
-    &lt;/a&gt;
-    &lt;a role=&quot;button&quot; class=&quot;navbar-burger&quot; aria-label=&quot;menu&quot; aria-expanded=&quot;false&quot; data-target=&quot;menu&quot;&gt;
-      &lt;span aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
-      &lt;span aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
-      &lt;span aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
-
-  &lt;div class=&quot;navbar-menu&quot; id=&quot;menu&quot;&gt;
-    &lt;div class=&quot;navbar-end&quot;&gt;
-      &lt;a class=&quot;navbar-item&quot; href=&quot;https://f64.io/#que-es&quot;&gt;
-        Qué es F/64?
-      &lt;/a&gt;
-      &lt;a class=&quot;navbar-item&quot; href=&quot;https://f64.io/#eventos&quot;&gt;
-        Eventos
-      &lt;/a&gt;
-      &lt;a class=&quot;navbar-item&quot; href=&quot;https://f64.io/#sesiones&quot;&gt;
-        Eventos pasados
-      &lt;/a&gt;
-      &lt;a class=&quot;navbar-item&quot; href=&quot;https://f64.io/#acerca&quot;&gt;
-        Acerca
-      &lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/nav&gt;
-
-  
-    &lt;div class=&quot;hero-body&quot;&gt;
-      &lt;div class=&quot;container&quot;&gt;
-        &lt;h2 class=&quot;subtitle has-text-white&quot;&gt;
-          Marzo 7, 2019
-        &lt;/h2&gt;
-        &lt;h1 class=&quot;title has-text-white&quot;&gt;
-          Hernando Rivera
-        &lt;/h1&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/section&gt;
-
-  &lt;section id=&quot;f64&quot; class=&quot;hero is-white f64&quot;&gt;
-    &lt;div class=&quot;hero-body&quot;&gt;
-      &lt;div class=&quot;columns&quot;&gt;
-        &lt;div class=&quot;column&quot;&gt;
-          &lt;div class=&quot;column is-three-fifths&quot;&gt;
-            &lt;h3&gt;Hernando Rivera&lt;/h3&gt;
-            &lt;h1&gt;El fotógrafo&lt;/h1&gt;
-          &lt;/div&gt;
-          &lt;div class=&quot;column is-three-fifths&quot;&gt;
-            &lt;p&gt;
-            Fotógrafo de naturaleza apasionado por la conservación y los paisajes nocturnos y la fauna silvestre.
-            &lt;/p&gt;
-            &lt;p&gt;
-            Reconocido fotógrafo colimense con múltiples premios nacionales e internacionales gracias a sus impresionanetes fotografías del Volcán de Colima.
-            &lt;/p&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/section&gt;
-  
-  &lt;section class=&quot;hero is-white event&quot;&gt;
-    &lt;div class=&quot;hero-body&quot;&gt;
-      &lt;a name=&quot;eventos&quot;&gt;&lt;/a&gt;
-      &lt;div class=&quot;columns&quot;&gt;
-  &lt;div class=&quot;column&quot;&gt;
-    &lt;h3&gt; Evento&lt;/h3&gt;
-    &lt;h1&gt;Marzo 7, 2019&lt;/h1&gt;
-    &lt;h4&gt;8pm en michelada.io, av. Carranza 1248 Colinas de Santa Bárbara, Colima.&lt;/h4&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;column is-three-fifths&quot;&gt;
-    &lt;p&gt;&lt;b&gt;Hernando Rivera&lt;/b&gt;, Fotógrafo de naturaleza apasionado por la conservación y los paisajes nocturnos y la fauna silvestre.&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;images columns&quot;&gt;
-  &lt;div class=&quot;column is-three-fifths&quot;&gt;
-    &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
-    &lt;img src=&quot;https://f64.io/images/hernando/hernando-rivera-1.jpg&quot; alt=&quot;Hernando Rivera&quot; /&gt;
-    &lt;h3&gt;&amp;copy; Hernando Rivera&lt;/h3&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;column&quot;&gt;
-    &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
-    &lt;img src=&quot;https://f64.io/images/hernando/hernando-rivera-2.jpg&quot; /&gt;
-    &lt;h3&gt;&amp;copy; Hernando Rivera&lt;/h3&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;images columns&quot;&gt;
-  &lt;div class=&quot;column&quot;&gt;
-    &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
-    &lt;img src=&quot;https://f64.io/images/hernando/hernando-rivera-3.jpg&quot; /&gt;
-    &lt;h3&gt;&amp;copy; Hernando Rivera&lt;/h3&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;column&quot;&gt;
-    &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
-    &lt;img src=&quot;https://f64.io/images/hernando/hernando-rivera-4.jpg&quot; /&gt;
-    &lt;h3&gt;&amp;copy; Hernando Rivera&lt;/h3&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;column&quot;&gt;
-    &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
-    &lt;img src=&quot;https://f64.io/images/hernando/hernando-rivera-5.jpg&quot; /&gt;
-    &lt;h3&gt;&amp;copy; Hernando Rivera&lt;/h3&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-
-    &lt;/div&gt;
-  &lt;/section&gt;
-  
-  &lt;section class=&quot;hero events is-black&quot;&gt;
-  &lt;div class=&quot;hero-body&quot;&gt;
-    &lt;div class=&quot;images columns&quot;&gt;
-      &lt;div class=&quot;column&quot;&gt;
-        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
-        &lt;img src=&quot;https://f64.io/images/hernando/hernando-rivera-ev-1.jpg&quot; alt=&quot;Evento f/64&quot; /&gt;
-        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;column&quot;&gt;
-        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
-        &lt;img src=&quot;https://f64.io/images/hernando/hernando-rivera-ev-2.jpg&quot; alt=&quot;Evento f/64&quot; /&gt;
-        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-
-
-    &lt;div class=&quot;images columns&quot;&gt;
-      &lt;div class=&quot;column is-one-fifth is-hidden-mobile&quot;&gt;&lt;/div&gt;
-      &lt;div class=&quot;column&quot;&gt;
-        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt; 
-        &lt;img src=&quot;https://f64.io/images/hernando/hernando-rivera-ev-3.jpg&quot; alt=&quot;Evento f/64&quot; /&gt; 
-        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt; 
-      &lt;/div&gt;
-      &lt;div class=&quot;column is-one-fifth is-hidden-mobile&quot;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-
-    &lt;div class=&quot;images columns&quot;&gt;
-      &lt;div class=&quot;column&quot;&gt;
-        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
-        &lt;img src=&quot;https://f64.io/images/hernando/hernando-rivera-ev-4.jpg&quot; alt=&quot;Evento f/64&quot; /&gt;
-        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;column is-three-fifths&quot;&gt;
-        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
-        &lt;img src=&quot;https://f64.io/images/hernando/hernando-rivera-ev-5.jpg&quot; alt=&quot;Evento f/64&quot; /&gt;
-        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-
-    &lt;div class=&quot;images columns&quot;&gt;
-      &lt;div class=&quot;column is-one-fifth is-hidden-mobile&quot;&gt;&lt;/div&gt;
-      &lt;div class=&quot;column&quot;&gt;
-        &lt;div class=&quot;photo-overlay&quot;&gt;&lt;/div&gt;
-        &lt;img src=&quot;https://f64.io/images/hernando/hernando-rivera-ev-6.jpg&quot; alt=&quot;Evento f/64&quot; /&gt;
-        &lt;h3&gt;&amp;copy; f/64&lt;/h3&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;column is-one-fifth is-hidden-mobile&quot;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/section&gt;
-
-&lt;/div&gt;</content><author><name></name></author><summary type="html">Qué es F/64? Eventos Eventos pasados Acerca Marzo 7, 2019 Hernando Rivera</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://f64.io/Marzof64.jpg" /></entry></feed>
+&lt;/div&gt;</content><author><name></name></author><summary type="html">Qué es F/64? Eventos Eventos pasados Acerca Mayo 2, 2019 Massiel Hernández</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://f64.io/Mayof64.jpg" /></entry></feed>
