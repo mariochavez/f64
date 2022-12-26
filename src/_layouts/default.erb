@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="<%= site.config.lang %>" class="antialiased [font-feature-settings:'ss01'] scroll-smooth">
+  <head>
+    <%= render "head", metadata: site.metadata, title: data.title, tagline: data.tagline, description: data.description, image: data.image %>
+  </head>
+  <body data-controller="mobile-menu">
+    <%= render "navbar", metadata: site.metadata, resource: resource %>
+
+    <main class="pt-6">
+      <%= yield %>
+    </main>
+
+    <%= render "footer", metadata: site.metadata %>
+  </body>
+</html>

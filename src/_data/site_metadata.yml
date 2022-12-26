@@ -1,0 +1,11 @@
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.metadata.title }}, {{ site.metadata.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.metadata.myvariable }}.
+
+title: f/64
+tagline: Pláticas fotográficas
+email: info@f64.io
+description: >-
+  f/64 es un evento cuyo objetivo es presentar cada primer jueves del mes a una fotógrafa o fotógrafo a presentar ante público su trabajo fotográfico, cada persona que presenta es libre de elegir el tema y como lo desea mostrar.

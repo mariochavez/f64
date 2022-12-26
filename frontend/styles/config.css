@@ -1,0 +1,12 @@
+:root {
+  --color-base: 31 27 54;
+  --color-accented: 5 150 105;
+  --color-inverted: 255 255 255;
+  --color-accented-hover: 6 95 70;
+  --color-muted: 55 65 81;
+  --color-dimmed: 100 116 139;
+}
+
+body {
+  @apply text-skin-base antialiased;
+}

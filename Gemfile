@@ -1,32 +1,33 @@
 source "https://rubygems.org"
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-# Hello! This is where you manage which Jekyll version is used to run.
-# When you want to use a different version, change it below, save the
-# file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
+####
+# Welcome to your project's Gemfile, used by Rubygems & Bundler.
 #
-#     bundle exec jekyll serve
+# To install a plugin, run:
 #
-# This will help ensure the proper Jekyll version is running.
-# Happy Jekylling!
-gem "jekyll", "~> 3.8.5"
+#   bundle add new-plugin-name -g bridgetown_plugins
+#
+# This will ensure the plugin is added to the correct Bundler group.
+#
+# When you run Bridgetown commands, we recommend using a binstub like so:
+#
+#   bin/bridgetown start (or console, etc.)
+#
+# This will help ensure the proper Bridgetown version is running.
+####
 
-gem 'jekyll-bulma', '~> 0.2'
+# If you need to upgrade/switch Bridgetown versions, change the line below
+# and then run `bundle update bridgetown`
+gem "bridgetown", "~> 1.2.0.beta4"
 
-# This is the default theme for new Jekyll sites. You may change this to anything you like.
-gem "minima", "~> 2.0"
+# Uncomment to add file-based dynamic routing to your project:
+# gem "bridgetown-routes", "~> 1.2.0.beta4"
 
-# If you want to use GitHub Pages, remove the "gem "jekyll"" above and
-# uncomment the line below. To upgrade, run `bundle update github-pages`.
-# gem "github-pages", group: :jekyll_plugins
+# Uncomment to use the Inspectors API to manipulate the output
+# of your HTML or XML resources:
+# gem "nokogiri", "~> 1.13"
 
-# If you have any plugins, put them here!
-group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.6"
-end
-
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
-# Performance-booster for watching directories on Windows
-gem "wdm", "~> 0.1.0" if Gem.win_platform?
-
+# Puma is a Rack-compatible server used by Bridgetown
+# (you can optionally limit this to the "development" group)
+gem "puma", "~> 5.6"
