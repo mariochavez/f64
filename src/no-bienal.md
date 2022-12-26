@@ -43,7 +43,7 @@ image: /images/no-bienal.jpg
         <p class="font-bold text-sky-600">Las imágenes deben de ser creadas a partir de Junio de 2022 - imágenes de archivo o trabajos previos - hasta el 16 de Abril  de 2023. Las imágenes no deben de ser parte de una exhibición personal o colectiva previa.</p>
       </div>
       <div class="prose prose-lg prose-sky mt-6 text-skin-muted lg:mt-0">
-        <p>Se recibirán de 3 a 10 imágenes máximo por participante, las imágenes pueden ser en olor o blanco y negro. <b class="text-sky-600">El formato debe ser jpg con el lado más largo no mayor de 2,048px y en resolución de 72 dpi</b>. En caso de que alguna de las imágenes quede seleccionada se pedirá en formato de alta resolución.</p>
+        <p>Se recibirán de 3 a 10 imágenes máximo por participante, las imágenes pueden ser en color o blanco y negro. <b class="text-sky-600">El formato debe ser jpg con el lado más largo no mayor de 2,048px y en resolución de 72 dpi</b>. En caso de que alguna de las imágenes quede seleccionada se pedirá en formato de alta resolución.</p>
         <p>Las imágenes deben enviarse vía correo electrónico a <a href="mailto:mario@f64.io">mario@f64.io</a>, cada imagen debe incluir su título y formato (ej: Fotografía digital), además la serie debe de incluir un texto breve descriptivo.</p>
 
         <h2 class="font-oswald text-sky-600">Selección de las fotografías</h2>
