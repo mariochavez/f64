@@ -1,0 +1,63 @@
+- presenter: Leonardo Montecillo
+  date: 5 de enero 2023
+  address: 8pm en Ave Carranza 1248, Colinas de Santa Bárbara. Colima.
+  tagline: Documentar la vida a través de la cámara, siempre con pasión, pero sobre todo con conciencia de cada click.
+  copyright: Leonardo Montecillo
+  photos:
+    - /images/leo/leo-montecillo-1.jpg
+    - /images/leo/leo-montecillo-2.jpg
+    - /images/leo/leo-montecillo-3.jpg
+    - /images/leo/leo-montecillo-4.jpg
+    - /images/leo/leo-montecillo-5.jpg
+
+- presenter: Anylú Villalvazo y David Ayala
+  date: 1ro de diciembre 2022
+  address: 8pm en Ave Carranza 1248, Colinas de Santa Bárbara. Colima.
+  tagline: Se desnuda el ser, la cámara es testigo y traductora de lo íntimo.
+  copyright: Anylú Villalvazo y/o David Ayala
+  cover: /images/events/anylu.jpg
+  photos:
+    - /images/anylu/isa-ruiz-1.jpg
+    - /images/anylu/isa-ruiz-2.jpg
+    - /images/anylu/isa-ruiz-3.jpg
+    - /images/anylu/isa-ruiz-4.jpg
+    - /images/anylu/isa-ruiz-5.jpg
+
+- presenter: Isaura Ruíz
+  date: 5 de Marzo 2020
+  address: 8pm en Ave Carranza 1248, Colinas de Santa Bárbara. Colima.
+  tagline: Disfruto ser parte de las competencias y aportar en el tema de la discapacidad, mostrar lo que para muchos es invisible.
+  copyright: Isaura Ruíz
+  cover: /images/events/isa.jpg
+  photos:
+    - /images/anylu/isa-ruiz-1.jpg
+    - /images/anylu/isa-ruiz-2.jpg
+    - /images/anylu/isa-ruiz-3.jpg
+    - /images/anylu/isa-ruiz-4.jpg
+    - /images/anylu/isa-ruiz-5.jpg
+
+- presenter: Andrea Valencia
+  date: 6 de febrero 2020
+  address: 8pm en Ave Carranza 1248, Colinas de Santa Bárbara. Colima.
+  tagline: Diseñadora gráfica y fotógrafa, hago retratos inspirados en diferentes corrientes artísticas, lo orgánico de la naturaleza y la feminidad.
+  copyright: Andrea Valencia
+  cover: /images/events/andrea.jpg
+  photos:
+    - /images/andrea/andrea-valencia-1.jpg
+    - /images/andrea/andrea-valencia-2.jpg
+    - /images/andrea/andrea-valencia-3.jpg
+    - /images/andrea/andrea-valencia-4.jpg
+    - /images/andrea/andrea-valencia-5.jpg
+
+- presenter: Antonio Hirtz
+  date: 9 de enero 2020
+  address: 8pm en Ave Carranza 1248, Colinas de Santa Bárbara. Colima.
+  tagline: Fotógrafo de naturaleza y conservación de fauna.
+  copyright: Antornio Hirtz
+  cover: /images/events/antonio.jpg
+  photos:
+    - /images/antornio/antonio-hirtz-1.jpg
+    - /images/antornio/antonio-hirtz-2.jpg
+    - /images/antornio/antonio-hirtz-3.jpg
+    - /images/antornio/antonio-hirtz-4.jpg
+    - /images/antornio/antonio-hirtz-5.jpg
