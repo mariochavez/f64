@@ -1,8 +1,21 @@
+- presenter: Melba Arellano
+  date: 1ro de febrero 2023
+  address: 8pm en Ave Carranza 1248, Colinas de Santa Bárbara. Colima.
+  tagline: Buscando los tesoros que guarda el espacio cotidiano. Su primer libro Carretera Nacional (Los Sumergidos) fue preseleccionado en el Premio PhotoBook de la Fundación Paris Photo Aperture en 2021.
+  copyright: Melba Arellano
+  photos:
+    - /images/melba/melba-arellano-1.jpg
+    - /images/melba/melba-arellano-2.jpg
+    - /images/melba/melba-arellano-3.jpg
+    - /images/melba/melba-arellano-4.jpg
+    - /images/melba/melba-arellano-5.jpg
+
 - presenter: Leonardo Montecillo
   date: 5 de enero 2023
   address: 8pm en Ave Carranza 1248, Colinas de Santa Bárbara. Colima.
   tagline: Documentar la vida a través de la cámara, siempre con pasión, pero sobre todo con conciencia de cada click.
   copyright: Leonardo Montecillo
+  cover: /images/events/leo.jpg
   photos:
     - /images/leo/leo-montecillo-1.jpg
     - /images/leo/leo-montecillo-2.jpg
