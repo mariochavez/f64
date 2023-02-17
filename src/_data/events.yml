@@ -1,8 +1,21 @@
+- presenter: Benom
+  date: 2 de marzo 2023
+  address: 8pm en Ave Carranza 1248, Colinas de Santa Bárbara. Colima.
+  tagline: Fotografías de calle y cerro
+  copyright: Benom
+  photos:
+    - /images/benom/benom-1.jpg
+    - /images/benom/benom-2.jpg
+    - /images/benom/benom-3.jpg
+    - /images/benom/benom-4.jpg
+    - /images/benom/benom-6.jpg
+
 - presenter: Melba Arellano
   date: 1ro de febrero 2023
   address: 8pm en Ave Carranza 1248, Colinas de Santa Bárbara. Colima.
   tagline: Buscando los tesoros que guarda el espacio cotidiano. Su primer libro Carretera Nacional (Los Sumergidos) fue preseleccionado en el Premio PhotoBook de la Fundación Paris Photo Aperture en 2021.
   copyright: Melba Arellano
+  cover: /images/events/melba.jpg
   photos:
     - /images/melba/melba-arellano-1.jpg
     - /images/melba/melba-arellano-2.jpg
