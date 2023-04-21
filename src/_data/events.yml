@@ -1,8 +1,20 @@
+- presenter: Igor Ahumada
+  date: 4 de mayo 2023
+  address: 8pm en Ave Carranza 1248, Colinas de Santa Bárbara. Colima.
+  tagline: Naturaleza y Ser - Fusión y Contrastes.
+  copyright: Igor Ahumada
+  photos:
+    - /images/igor/igor-ahumada-1.jpg
+    - /images/igor/igor-ahumada-2.jpg
+    - /images/igor/igor-ahumada-3.jpg
+    - /images/igor/igor-ahumada-4.jpg
+
 - presenter: Wendolyn Rodríguez
   date: 5 de abril 2023 (Miércoles)
   address: 8pm en Ave Carranza 1248, Colinas de Santa Bárbara. Colima.
   tagline: Mi trabajo fotográfico es muy variado, va desde lo raro e incómodo de observar y llega hasta lo que puede ser un placer para mis ojos
   copyright: Wendolyn Rodríguez
+  cover: /images/events/wendolyn.jpg
   photos:
     - /images/wendolyn/wendolyn-rodriguez-1.jpg
     - /images/wendolyn/wendolyn-rodriguez-2.jpg
@@ -15,6 +27,7 @@
   address: 8pm en Ave Carranza 1248, Colinas de Santa Bárbara. Colima.
   tagline: Fotografías de calle y cerro
   copyright: Benom
+  cover: /images/events/benom.jpg
   photos:
     - /images/benom/benom-1.jpg
     - /images/benom/benom-2.jpg
