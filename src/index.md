@@ -109,7 +109,7 @@ image: /images/f64.jpg
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8">
-          <% site.data.events.slice(1..4).each do |event| %>
+          <% site.data.events.slice(1..8).each do |event| %>
             <div class="relative">
               <img class="rounded-md shadow-md" src="<%= event.cover %>" loading="lazy" alt="<%= event.presenter %>" />
               <div class="absolute inset-0 bg-gray-50 opacity-0 mix-blend-multiply"></div>

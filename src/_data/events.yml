@@ -1,8 +1,34 @@
+- presenter: Mariana Zaragoza
+  date: 6 de julio 2023
+  address: 8pm en Ave Carranza 1248, Colinas de Santa Bárbara. Colima.
+  tagline: Las artes le han brindado un sentido de pertenencia a mi vida. Jamás me sentí más parte de algo, como cuando mis manos materializan aquello que vive en mi mente; y es justo ahí que la creatividad surge y llena de sentido mi vivir, en retribución le doy voz a través del soporte que descubro a mi paso
+  copyright: Mariana Zaragoza
+  photos:
+    - /images/mariana/mariana-zaragoza-1.jpg
+    - /images/mariana/mariana-zaragoza-2.jpg
+    - /images/mariana/mariana-zaragoza-3.jpg
+    - /images/mariana/mariana-zaragoza-4.jpg
+    - /images/mariana/mariana-zaragoza-5.jpg
+
+- presenter: Héctor Boix
+  date: 8 de junio 2023
+  address: 8pm en Ave Carranza 1248, Colinas de Santa Bárbara. Colima.
+  tagline: Las imágenes de Boix son ecos de esa realidad inasible y mágica a la cual logramos asomarnos por un instante. Frente la cámara de Héctor la vida estalla con todas sus posibilidades para revelarse y rebelarse.
+  copyright: Héctor Boix
+  cover: /images/events/boix.jpg
+  photos:
+    - /images/boix/hector-boix-1.jpg
+    - /images/boix/hector-boix-2.jpg
+    - /images/boix/hector-boix-3.jpg
+    - /images/boix/hector-boix-4.jpg
+    - /images/boix/hector-boix-5.jpg
+
 - presenter: Igor Ahumada
   date: 4 de mayo 2023
   address: 8pm en Ave Carranza 1248, Colinas de Santa Bárbara. Colima.
   tagline: Naturaleza y Ser - Fusión y Contrastes.
   copyright: Igor Ahumada
+  cover: /images/events/igor.jpg
   photos:
     - /images/igor/igor-ahumada-1.jpg
     - /images/igor/igor-ahumada-2.jpg
