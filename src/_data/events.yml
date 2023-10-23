@@ -1,3 +1,29 @@
+- presenter: Mario Alberto Chávez
+  date: 2 de noviembre 2023
+  address: 8pm en Ave Carranza 1248, Colinas de Santa Bárbara. Colima.
+  tagline: Proyectos personales acerca del territorio, cultura popular y la memoria.
+  copyright: Mario Alebrto Chávez
+  cover: /images/events/mario.jpg
+  photos:
+    - /images/mario/mario-chavez-1.jpg
+    - /images/mario/mario-chavez-2.jpg
+    - /images/mario/mario-chavez-3.jpg
+    - /images/mario/mario-chavez-4.jpg
+    - /images/mario/mario-chavez-5.jpg
+
+- presenter: Alejandra Herrera
+  date: 12 de octubre 2023
+  address: 8pm en Ave Carranza 1248, Colinas de Santa Bárbara. Colima.
+  tagline: Luz & tiempo. Fotógrafa & empresaria
+  copyright: Alejandra Herrera
+  cover: /images/events/alejandra.jpg
+  photos:
+    - /images/alejandra/alejandra-herrera-1.jpg
+    - /images/alejandra/alejandra-herrera-2.jpg
+    - /images/alejandra/alejandra-herrera-3.jpg
+    - /images/alejandra/alejandra-herrera-4.jpg
+    - /images/alejandra/alejandra-herrera-5.jpg
+
 - presenter: Juan Franco
   date: 7 de septiembre 2023
   address: 8pm en Ave Carranza 1248, Colinas de Santa Bárbara. Colima.
