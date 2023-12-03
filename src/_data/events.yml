@@ -1,3 +1,16 @@
+- presenter: Saúl Cobián
+  date: 7 de diciembre 2023
+  address: 8pm en Aquiles Serdán 573, Col. Jardines Residenciales Colima.
+  tagline: Si consideramos el arte como un medio para contar historias, la fotografía es para mi el arte de encontrar buena luz.
+  copyright:  Saúl Cobián
+  cover: /images/events/saul.jpg
+  photos:
+    - /images/saul/saul-cobian-1.jpg
+    - /images/saul/saul-cobian-2.jpg
+    - /images/saul/saul-cobian-3.jpg
+    - /images/saul/saul-cobian-4.jpg
+    - /images/saul/saul-cobian-5.jpg
+
 - presenter: Mario Alberto Chávez
   date: 2 de noviembre 2023
   address: 8pm en Aquiles Serdán 573, Col. Jardines Residenciales Colima.
