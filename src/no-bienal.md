@@ -3,7 +3,6 @@ layout: page
 title: No Bienal de Fotografía Colima 2023
 tagline: Convocatoria
 description: Invitación a participar en un ejercicio colectivo sobre "El colonialismo y sus efectos" en referencia a la conmemoración de los 500 años de la fundación de la Villa de Colima.
-image: /images/no-bienal.jpg
 published: false
 ---
 
