@@ -31,6 +31,11 @@ const outputFolder = "output"
  * @typedef { import("esbuild").BuildOptions } BuildOptions
  * @type {BuildOptions}
  */
-const esbuildOptions = {}
+const esbuildOptions = {
+  // The defaults emit sourcemaps unconditionally, and `keep_history` on the
+  // gh-pages deploy meant every build's .css.map/.js.map accumulated on the
+  // branch — 578 KB apiece, published, and useful to nobody in production.
+  sourcemap: process.env.BRIDGETOWN_ENV !== "production",
+}
 
 build(outputFolder, esbuildOptions)

@@ -32,4 +32,3 @@ gem "bridgetown", "~> 2.2"
 # (you can optionally limit this to the "development" group)
 gem "puma", "~> 8"
 
-gem "bridgetown-feed", "~> 4.0"

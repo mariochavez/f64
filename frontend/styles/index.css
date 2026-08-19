@@ -2,7 +2,12 @@
    ahead of Tailwind, and it silently drops an @import that appears after any
    other at-rule (such as @plugin or @source below). */
 @import "../fonts/fonts.css";
-@import "tailwindcss";
+/* `source(none)` disables Tailwind 4's automatic source detection, which otherwise
+   scans the whole repo from the git root — including Markdown prose at the top
+   level. A class name written inside backticks in CLAUDE.md was enough to emit a
+   real rule with an unresolvable url(), which broke the esbuild run. Only the
+   explicit @source directives below count now. */
+@import "tailwindcss" source(none);
 @import "./config.css";
 
 @plugin "@tailwindcss/typography";
@@ -11,3 +16,36 @@
    scanner at the template + script sources explicitly. */
 @source "../../src/**/*.{erb,liquid,md,html,yml}";
 @source "../javascript/**/*.js";
+
+/* Full-bleed decorative backgrounds. These can't use <picture>, so the WebP is
+   offered through image-set() with the JPEG as the declared fallback — worth
+   about 340 KB across the homepage. The plain url() first means a browser
+   without image-set() support still gets the photograph. */
+.bg-photo-home,
+.bg-photo-publico,
+.bg-photo-talks,
+.bg-photo-colima {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-photo-home { background-image: url("/images/home.jpg"); }
+.bg-photo-publico { background-image: url("/images/f64-publico.jpg"); }
+.bg-photo-talks { background-image: url("/images/talks.jpg"); }
+.bg-photo-colima { background-image: url("/images/colima.jpg"); }
+
+@supports (background-image: image-set(url("/images/home.webp") type("image/webp"))) {
+  .bg-photo-home {
+    background-image: image-set(url("/images/home.webp") type("image/webp"), url("/images/home.jpg") type("image/jpeg"));
+  }
+  .bg-photo-publico {
+    background-image: image-set(url("/images/f64-publico.webp") type("image/webp"), url("/images/f64-publico.jpg") type("image/jpeg"));
+  }
+  .bg-photo-talks {
+    background-image: image-set(url("/images/talks.webp") type("image/webp"), url("/images/talks.jpg") type("image/jpeg"));
+  }
+  .bg-photo-colima {
+    background-image: image-set(url("/images/colima.webp") type("image/webp"), url("/images/colima.jpg") type("image/jpeg"));
+  }
+}

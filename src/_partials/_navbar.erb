@@ -1,10 +1,22 @@
-<nav class="bg-black shadow-sm fixed z-20 inset-x-0">
+<%
+  current = page.relative_url.to_s
+  desktop_active = "border-sky-500 px-1 pt-1 text-sm font-bold text-skin-inverted"
+  desktop_idle = "border-transparent px-1 pt-1 text-sm font-bold text-skin-inverted/75 hover:border-gray-300 hover:text-skin-inverted"
+  mobile_active = "border-sky-500 bg-sky-800 py-2 pl-3 pr-4 text-base font-bold text-skin-inverted"
+  mobile_idle = "border-transparent py-2 pl-3 pr-4 text-base font-bold text-skin-inverted/75 hover:border-sky-500 hover:bg-gray-50 hover:text-skin-muted"
+  nav_links = [
+    { href: "/", label: "Inicio" },
+    { href: "/eventos/", label: "Eventos pasados" },
+    { href: "/acerca-de/", label: "Acerca de" },
+  ]
+%>
+<nav class="bg-black shadow-sm fixed z-20 inset-x-0" aria-label="Principal">
   <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
     <div class="relative flex h-16 justify-between">
       <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
         <!-- Mobile menu button -->
         <button type="button" class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-hidden focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-controls="mobile-menu" aria-expanded="false" data-action="mobile-menu#toggle">
-          <span class="sr-only">Open main menu</span>
+          <span class="sr-only">Abrir el menú principal</span>
           <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
@@ -15,13 +27,18 @@
       </div>
       <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
         <div class="flex shrink-0 items-center">
-          <img class="block h-8 w-auto" src="/images/f64-white.svg" alt="f/64">
+          <a href="/" aria-label="f/64 — inicio">
+            <img class="block h-8 w-auto" src="/images/f64-white.svg" alt="f/64" width="170" height="117">
+          </a>
         </div>
       </div>
       <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
         <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
-          <a href="/#top" class="inline-flex items-center border-b-2 <%= page.relative_url == "/" ? "border-sky-500 px-1 pt-1 text-sm font-bold text-skin-inverted" : "border-transparent px-1 pt-1 text-sm font-bold text-skin-inverted/75 hover:border-gray-300 hover:text-skin-inverted" %>">Inicio</a>
-          <a href="/eventos/" class="inline-flex items-center border-b-2 <%= page.relative_url == "/eventos/" ? "border-sky-500 px-1 pt-1 text-sm font-bold text-skin-inverted" : "border-transparent px-1 pt-1 text-sm font-bold text-skin-inverted/75 hover:border-gray-300 hover:text-skin-inverted" %>">Eventos pasados</a>
+          <% nav_links.each do |link| %>
+            <a href="<%= link[:href] %>"
+               class="inline-flex items-center border-b-2 <%= current == link[:href] ? desktop_active : desktop_idle %>"
+               <%= current == link[:href] ? 'aria-current="page"'.html_safe : "" %>><%= link[:label] %></a>
+          <% end %>
         </div>
       </div>
     </div>
@@ -36,8 +53,11 @@
       data-transition-leave-active="transform opacity-100 scale-100"
       data-transition-leave-to="transform opacity-0 scale-95">
     <div class="space-y-1 pt-2 pb-4">
-      <a href="/#top" class="block border-l-4 <%= page.relative_url == "/" ? "border-sky-500 bg-sky-800 py-2 pl-3 pr-4 text-base font-bold text-skin-inverted" : "border-transparent py-2 pl-3 pr-4 text-base font-bold text-skin-inverted/75 hover:border-sky-500 hover:bg-gray-50 hover:text-skin-muted" %>">Inicio</a>
-      <a href="/eventos/" class="block border-l-4 <%= page.relative_url == "/eventos/" ? "border-sky-500 bg-sky-800 py-2 pl-3 pr-4 text-base font-bold text-skin-inverted" : "border-transparent py-2 pl-3 pr-4 text-base font-bold text-skin-inverted/75 hover:border-sky-500 hover:bg-gray-50 hover:text-skin-muted" %>">Eventos pasados</a>
+      <% nav_links.each do |link| %>
+        <a href="<%= link[:href] %>"
+           class="block border-l-4 <%= current == link[:href] ? mobile_active : mobile_idle %>"
+           <%= current == link[:href] ? 'aria-current="page"'.html_safe : "" %>><%= link[:label] %></a>
+      <% end %>
     </div>
   </div>
 </nav>
