@@ -1,0 +1,64 @@
+---
+layout: default
+---
+<% event = data.event %>
+<article class="bg-white">
+  <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+
+    <a href="/eventos/" class="inline-flex items-center text-sm font-bold uppercase text-sky-600 hover:text-sky-700">
+      <svg class="mr-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+      </svg>
+      Eventos pasados
+    </a>
+
+    <header class="mt-8 grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2">
+      <div>
+        <p class="text-xl uppercase text-skin-dimmed">Sesión de f/64</p>
+        <h1 class="font-oswald text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
+          <span class="block"><%= event.presenter %></span>
+        </h1>
+      </div>
+      <div class="sm:text-right">
+        <p class="font-oswald text-2xl font-bold tracking-tight sm:text-3xl"><%= event.date %></p>
+        <p class="mt-2 text-skin-muted"><%= event.address %></p>
+      </div>
+    </header>
+
+    <p class="mt-8 max-w-3xl text-xl text-skin-muted"><%= event.tagline %></p>
+
+    <% if data.photos.any? %>
+      <section class="mt-16">
+        <h2 class="font-oswald text-2xl font-bold tracking-tight sm:text-3xl">El trabajo</h2>
+        <div class="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
+          <% data.photos.each_with_index do |photo, index| %>
+            <figure class="<%= index.zero? ? "col-span-1 sm:col-span-2" : "col-span-1" %>">
+              <img class="w-full rounded-xs shadow-xs" src="<%= photo %>" loading="lazy"
+                   alt="Fotografía de <%= event.presenter %>" />
+              <figcaption class="mt-3 text-sm font-bold">&copy; <%= event.copyright %></figcaption>
+            </figure>
+          <% end %>
+        </div>
+      </section>
+    <% end %>
+
+    <% if data.event_photos.any? %>
+      <section class="mt-16">
+        <h2 class="font-oswald text-2xl font-bold tracking-tight sm:text-3xl">La sesión</h2>
+        <div class="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
+          <% data.event_photos.each do |photo| %>
+            <figure>
+              <img class="w-full rounded-xs shadow-xs" src="<%= photo %>" loading="lazy"
+                   alt="Sesión de f/64 con <%= event.presenter %>" />
+              <figcaption class="mt-3 text-sm font-bold">&copy; f/64</figcaption>
+            </figure>
+          <% end %>
+        </div>
+      </section>
+    <% end %>
+
+    <% if data.photos.empty? && data.event_photos.empty? %>
+      <p class="mt-16 text-skin-dimmed">No hay fotografías disponibles de esta sesión.</p>
+    <% end %>
+  </div>
+</article>
