@@ -1,3 +1,16 @@
+- presenter: Saúl Cobián
+  date: 7 de diciembre 2023
+  address: 8pm en Aquiles Serdán 573, Col. Jardines Residenciales Colima.
+  tagline: Si consideramos el arte como un medio para contar historias, la fotografía es para mi el arte de encontrar buena luz.
+  copyright: Saúl Cobián
+  cover: /images/events/saul.jpg
+  photos:
+    - /images/saul/saul-cobian-1.jpg
+    - /images/saul/saul-cobian-2.jpg
+    - /images/saul/saul-cobian-3.jpg
+    - /images/saul/saul-cobian-4.jpg
+    - /images/saul/saul-cobian-5.jpg
+
 - presenter: Mario Alberto Chávez
   date: 2 de noviembre 2023
   address: 8pm en Aquiles Serdán 573, Col. Jardines Residenciales Colima.
@@ -146,12 +159,8 @@
   tagline: Se desnuda el ser, la cámara es testigo y traductora de lo íntimo.
   copyright: Anylú Villalvazo y/o David Ayala
   cover: /images/events/anylu.jpg
-  photos:
-    - /images/anylu/isa-ruiz-1.jpg
-    - /images/anylu/isa-ruiz-2.jpg
-    - /images/anylu/isa-ruiz-3.jpg
-    - /images/anylu/isa-ruiz-4.jpg
-    - /images/anylu/isa-ruiz-5.jpg
+  # Sin fotografías: el set de esta sesión nunca se agregó al repositorio.
+  photos: []
 
 - presenter: Isaura Ruíz
   date: 5 de Marzo 2020
@@ -160,11 +169,11 @@
   copyright: Isaura Ruíz
   cover: /images/events/isa.jpg
   photos:
-    - /images/anylu/isa-ruiz-1.jpg
-    - /images/anylu/isa-ruiz-2.jpg
-    - /images/anylu/isa-ruiz-3.jpg
-    - /images/anylu/isa-ruiz-4.jpg
-    - /images/anylu/isa-ruiz-5.jpg
+    - /images/isa/isa-ruiz-1.jpg
+    - /images/isa/isa-ruiz-2.jpg
+    - /images/isa/isa-ruiz-3.jpg
+    - /images/isa/isa-ruiz-4.jpg
+    - /images/isa/isa-ruiz-5.jpg
 
 - presenter: Andrea Valencia
   date: 6 de febrero 2020
@@ -178,6 +187,14 @@
     - /images/andrea/andrea-valencia-3.jpg
     - /images/andrea/andrea-valencia-4.jpg
     - /images/andrea/andrea-valencia-5.jpg
+  event_photos:
+    - /images/andrea/andrea-valencia-ev-0.jpg
+    - /images/andrea/andrea-valencia-ev-1.jpg
+    - /images/andrea/andrea-valencia-ev-2.jpg
+    - /images/andrea/andrea-valencia-ev-3.jpg
+    - /images/andrea/andrea-valencia-ev-4.jpg
+    - /images/andrea/andrea-valencia-ev-5.jpg
+    - /images/andrea/andrea-valencia-ev-6.jpg
 
 - presenter: Antonio Hirtz
   date: 9 de enero 2020
@@ -186,8 +203,306 @@
   copyright: Antornio Hirtz
   cover: /images/events/antonio.jpg
   photos:
-    - /images/antornio/antonio-hirtz-1.jpg
-    - /images/antornio/antonio-hirtz-2.jpg
-    - /images/antornio/antonio-hirtz-3.jpg
-    - /images/antornio/antonio-hirtz-4.jpg
-    - /images/antornio/antonio-hirtz-5.jpg
+    - /images/antonio/antonio-hirtz-1.jpg
+    - /images/antonio/antonio-hirtz-2.jpg
+    - /images/antonio/antonio-hirtz-3.jpg
+    - /images/antonio/antonio-hirtz-4.jpg
+    - /images/antonio/antonio-hirtz-5.jpg
+  event_photos:
+    - /images/antonio/antonio-hirtz-ev-0.jpg
+    - /images/antonio/antonio-hirtz-ev-1.jpg
+    - /images/antonio/antonio-hirtz-ev-2.jpg
+    - /images/antonio/antonio-hirtz-ev-3.jpg
+    - /images/antonio/antonio-hirtz-ev-4.jpg
+    - /images/antonio/antonio-hirtz-ev-5.jpg
+    - /images/antonio/antonio-hirtz-ev-6.jpg
+
+- presenter: Sergio Tapiro Velasco
+  date: 5 de diciembre 2019
+  address: 8pm en Av. Carranza 1248, Colonia Santa Barbara, 28017 Colima.
+  tagline: Soy fotógrafo de naturaleza con imágenes icónicas del Volcán de Colima
+  copyright: Sergio Tapiro Velasco
+  cover: /images/events/sergio.jpg
+  photos:
+    - /images/sergio/sergio-tapiro-1.jpg
+    - /images/sergio/sergio-tapiro-2.jpg
+    - /images/sergio/sergio-tapiro-3.jpg
+    - /images/sergio/sergio-tapiro-4.jpg
+    - /images/sergio/sergio-tapiro-5.jpg
+  event_photos:
+    - /images/sergio/sergio-tapiro-ev-0.jpg
+    - /images/sergio/sergio-tapiro-ev-1.jpg
+    - /images/sergio/sergio-tapiro-ev-2.jpg
+    - /images/sergio/sergio-tapiro-ev-3.jpg
+    - /images/sergio/sergio-tapiro-ev-4.jpg
+    - /images/sergio/sergio-tapiro-ev-5.jpg
+    - /images/sergio/sergio-tapiro-ev-6.jpg
+
+- presenter: "Aniversario: Omar Martínez y Miguel Dimayuga"
+  date: 7 de noviembre 2019
+  address: 8pm en Calle Vicente Guerrero No.35 Colonia Centro, Colima.
+  tagline: Sesión de aniversario con los fotoperiodistas Omar Martínez de la Agencia Cuartoscuro y Miguel Dimayuga del semanario Proceso
+  copyright: Omar Martínez y Miguel Dimayuga
+  cover: /images/events/aniversario.jpg
+  photos:
+    - /images/aniversario/omar-martinez-1.jpg
+    - /images/aniversario/omar-martinez-2.jpg
+    - /images/aniversario/omar-martinez-3.jpg
+    - /images/aniversario/miguel-dimayuga-1.jpg
+    - /images/aniversario/miguel-dimayuga-2.jpg
+    - /images/aniversario/miguel-dimayuga-3.jpg
+  event_photos:
+    - /images/aniversario/aniversario-ev-0.jpg
+    - /images/aniversario/aniversario-ev-1.jpg
+    - /images/aniversario/aniversario-ev-2.jpg
+    - /images/aniversario/aniversario-ev-3.jpg
+    - /images/aniversario/aniversario-ev-4.jpg
+    - /images/aniversario/aniversario-ev-5.jpg
+    - /images/aniversario/aniversario-ev-6.jpg
+
+- presenter: José A Márquez Gileta
+  date: 3 de octubre 2019
+  address: 8pm en Calle Codorniz No.99 Colonia Santa Barbara, 28017 Colima.
+  tagline: Archivista y conservador nos viene a presentar una restrospectiva del fotógrafo colimense Gustavo Cárdenas quien durante su época prolífica fotografío la vida social colimense.
+  copyright: José A Márquez Gileta
+  cover: /images/events/jose.jpg
+  photos:
+    - /images/jose/jose-marquez-1.jpg
+    - /images/jose/jose-marquez-2.jpg
+    - /images/jose/jose-marquez-3.jpg
+    - /images/jose/jose-marquez-4.jpg
+    - /images/jose/jose-marquez-5.jpg
+  event_photos:
+    - /images/jose/jose-marquez-ev-0.jpg
+    - /images/jose/jose-marquez-ev-1.jpg
+    - /images/jose/jose-marquez-ev-2.jpg
+    - /images/jose/jose-marquez-ev-3.jpg
+    - /images/jose/jose-marquez-ev-4.jpg
+    - /images/jose/jose-marquez-ev-5.jpg
+    - /images/jose/jose-marquez-ev-6.jpg
+
+- presenter: Angélica Mercado
+  date: 5 de septiembre 2019
+  address: 8pm en Calle Codorniz No.99 Colonia Santa Barbara, 28017 Colima.
+  tagline: Cuando fotografío, me lleno el ojo. Todo se palpa, se escucha, se contacta sin tocar. He conocido la fotografía de frente y por dentro, me he perdido a propósito con ella, solo para ver hasta dónde me lleva.
+  copyright: Angélica Mercado
+  cover: /images/events/angelica.jpg
+  photos:
+    - /images/angelica/angelica-mercado-1.jpg
+    - /images/angelica/angelica-mercado-2.jpg
+    - /images/angelica/angelica-mercado-3.jpg
+    - /images/angelica/angelica-mercado-4.jpg
+    - /images/angelica/angelica-mercado-5.jpg
+  event_photos:
+    - /images/angelica/angelica-mercado-ev-0.jpg
+    - /images/angelica/angelica-mercado-ev-1.jpg
+    - /images/angelica/angelica-mercado-ev-2.jpg
+    - /images/angelica/angelica-mercado-ev-3.jpg
+    - /images/angelica/angelica-mercado-ev-4.jpg
+    - /images/angelica/angelica-mercado-ev-5.jpg
+    - /images/angelica/angelica-mercado-ev-6.jpg
+
+- presenter: Alfredo Mendoza
+  date: 1 de agosto 2019
+  address: 8pm en Calle Codorniz No.99 Colonia Santa Barbara, 28017 Colima.
+  tagline: Desde niño soy un apasionado por la imagen, pasión que primero experimenté desde la fascinación que el cine ejerce en mí, y que conforme crecí se extendió a la fotografía.
+  copyright: Alfredo Mendoza
+  cover: /images/events/alf.jpg
+  photos:
+    - /images/alf/alfredo-mendoza-1.jpg
+    - /images/alf/alfredo-mendoza-2.jpg
+    - /images/alf/alfredo-mendoza-3.jpg
+    - /images/alf/alfredo-mendoza-4.jpg
+    - /images/alf/alfredo-mendoza-5.jpg
+  event_photos:
+    - /images/alf/alfredo-mendoza-ev-0.jpg
+    - /images/alf/alfredo-mendoza-ev-1.jpg
+    - /images/alf/alfredo-mendoza-ev-2.jpg
+    - /images/alf/alfredo-mendoza-ev-3.jpg
+    - /images/alf/alfredo-mendoza-ev-4.jpg
+    - /images/alf/alfredo-mendoza-ev-5.jpg
+    - /images/alf/alfredo-mendoza-ev-6.jpg
+
+- presenter: Carlos Tirado
+  date: 4 de julio 2019
+  address: 8pm en Casa Volcán, Venustiano Carranza 56 - A, 28450 Comala.
+  tagline: Gusto por la fotografía urbana, de paisaje, retrato, moda, etc. Enfocado en aprender más de un tipo de fotografía
+  copyright: Carlos Tirado
+  cover: /images/events/carlos.jpg
+  photos:
+    - /images/carlos/carlos-tirado-1.jpg
+    - /images/carlos/carlos-tirado-2.jpg
+    - /images/carlos/carlos-tirado-3.jpg
+    - /images/carlos/carlos-tirado-4.jpg
+    - /images/carlos/carlos-tirado-5.jpg
+  event_photos:
+    - /images/carlos/carlos-tirado-ev-0.jpg
+    - /images/carlos/carlos-tirado-ev-1.jpg
+    - /images/carlos/carlos-tirado-ev-2.jpg
+    - /images/carlos/carlos-tirado-ev-3.jpg
+    - /images/carlos/carlos-tirado-ev-4.jpg
+    - /images/carlos/carlos-tirado-ev-5.jpg
+    - /images/carlos/carlos-tirado-ev-6.jpg
+
+- presenter: Ingrid Acosta
+  date: 6 de junio 2019
+  address: 8pm en michelada.io, av. Carranza 1248 Colinas de Santa Bárbara, Colima.
+  tagline: Soy fotógrafa, realizadora documental y activista.
+  copyright: Ingrid Acosta
+  cover: /images/events/ingrid.jpg
+  photos:
+    - /images/ingrid/ingrid-acosta-1.jpg
+    - /images/ingrid/ingrid-acosta-2.jpg
+    - /images/ingrid/ingrid-acosta-3.jpg
+    - /images/ingrid/ingrid-acosta-4.jpg
+    - /images/ingrid/ingrid-acosta-5.jpg
+    - /images/ingrid/ingrid-acosta-6.jpg
+  event_photos:
+    - /images/ingrid/ingrid-acosta-ev-0.jpg
+    - /images/ingrid/ingrid-acosta-ev-1.jpg
+    - /images/ingrid/ingrid-acosta-ev-2.jpg
+    - /images/ingrid/ingrid-acosta-ev-3.jpg
+    - /images/ingrid/ingrid-acosta-ev-4.jpg
+    - /images/ingrid/ingrid-acosta-ev-5.jpg
+    - /images/ingrid/ingrid-acosta-ev-6.jpg
+
+- presenter: Massiel Hernández
+  date: 2 de mayo 2019
+  address: 8pm en michelada.io, av. Carranza 1248 Colinas de Santa Bárbara, Colima.
+  tagline: Soy fotógrafa, realizadora documental y activista.
+  copyright: Massiel Hernández
+  cover: /images/events/massiel.jpg
+  photos:
+    - /images/massiel/massiel-hernandez-1.jpg
+    - /images/massiel/massiel-hernandez-2.jpg
+    - /images/massiel/massiel-hernandez-3.jpg
+    - /images/massiel/massiel-hernandez-4.jpg
+    - /images/massiel/massiel-hernandez-5.jpg
+  event_photos:
+    - /images/massiel/massiel-hernandez-ev-0.jpg
+    - /images/massiel/massiel-hernandez-ev-1.jpg
+    - /images/massiel/massiel-hernandez-ev-2.jpg
+    - /images/massiel/massiel-hernandez-ev-3.jpg
+    - /images/massiel/massiel-hernandez-ev-4.jpg
+    - /images/massiel/massiel-hernandez-ev-5.jpg
+    - /images/massiel/massiel-hernandez-ev-6.jpg
+
+- presenter: Javier Flores
+  date: 4 de abril 2019
+  address: 8pm en michelada.io, av. Carranza 1248 Colinas de Santa Bárbara, Colima.
+  tagline: Fotógrafo que se ha dedicado a capturar la vida cotidiana de Colima y sus alrededores.
+  copyright: Javier Flores
+  cover: /images/events/javier.jpg
+  photos:
+    - /images/javier/javier-flores-1.jpg
+    - /images/javier/javier-flores-2.jpg
+    - /images/javier/javier-flores-3.jpg
+    - /images/javier/javier-flores-4.jpg
+    - /images/javier/javier-flores-5.jpg
+  event_photos:
+    - /images/javier/javier-flores-ev-0.jpg
+    - /images/javier/javier-flores-ev-1.jpg
+    - /images/javier/javier-flores-ev-2.jpg
+    - /images/javier/javier-flores-ev-3.jpg
+    - /images/javier/javier-flores-ev-4.jpg
+    - /images/javier/javier-flores-ev-5.jpg
+    - /images/javier/javier-flores-ev-6.jpg
+
+- presenter: Hernando Rivera
+  date: 7 de marzo 2019
+  address: 8pm en michelada.io, av. Carranza 1248 Colinas de Santa Bárbara, Colima.
+  tagline: Fotógrafo de naturaleza apasionado por la conservación y los paisajes nocturnos y la fauna silvestre.
+  copyright: Hernando Rivera
+  cover: /images/events/hernando.jpg
+  photos:
+    - /images/hernando/hernando-rivera-1.jpg
+    - /images/hernando/hernando-rivera-2.jpg
+    - /images/hernando/hernando-rivera-3.jpg
+    - /images/hernando/hernando-rivera-4.jpg
+    - /images/hernando/hernando-rivera-5.jpg
+  event_photos:
+    - /images/hernando/hernando-rivera-ev-0.jpg
+    - /images/hernando/hernando-rivera-ev-1.jpg
+    - /images/hernando/hernando-rivera-ev-2.jpg
+    - /images/hernando/hernando-rivera-ev-3.jpg
+    - /images/hernando/hernando-rivera-ev-4.jpg
+    - /images/hernando/hernando-rivera-ev-5.jpg
+    - /images/hernando/hernando-rivera-ev-6.jpg
+
+- presenter: América Álvarez
+  date: 7 de febrero 2019
+  address: 8pm en michelada.io, av. Carranza 1248 Colinas de Santa Bárbara, Colima.
+  tagline: Danzante, fotógrafa, pintora y viajera.
+  copyright: América Álvarez
+  cover: /images/events/america.jpg
+  photos:
+    - /images/america/america-alvarez-1.jpg
+    - /images/america/america-alvarez-2.jpg
+    - /images/america/america-alvarez-3.jpg
+    - /images/america/america-alvarez-4.jpg
+    - /images/america/america-alvarez-5.jpg
+  event_photos:
+    - /images/america/america-alvarez-ev-0.jpg
+    - /images/america/america-alvarez-ev-1.jpg
+    - /images/america/america-alvarez-ev-2.jpg
+    - /images/america/america-alvarez-ev-3.jpg
+    - /images/america/america-alvarez-ev-4.jpg
+    - /images/america/america-alvarez-ev-5.jpg
+    - /images/america/america-alvarez-ev-6.jpg
+
+- presenter: Neddy Palacios
+  date: 3 de enero 2019
+  address: 8pm en michelada.io, av. Carranza 1248 Colinas de Santa Bárbara, Colima.
+  tagline: Fotógrafa del proceso tradicional de buscar, encontrar, disparar, descubrir, revelar y develar.
+  copyright: Neddy Palacios
+  cover: /images/events/neddy.jpg
+  photos:
+    - /images/neddy/neddy-palacios-1.jpg
+    - /images/neddy/neddy-palacios-2.jpg
+    - /images/neddy/neddy-palacios-3.jpg
+    - /images/neddy/neddy-palacios-4.jpg
+    - /images/neddy/neddy-palacios-5.jpg
+  event_photos:
+    - /images/neddy/neddy-palacios-ev-0.jpg
+    - /images/neddy/neddy-palacios-ev-1.jpg
+    - /images/neddy/neddy-palacios-ev-2.jpg
+    - /images/neddy/neddy-palacios-ev-3.jpg
+    - /images/neddy/neddy-palacios-ev-4.jpg
+    - /images/neddy/neddy-palacios-ev-5.jpg
+    - /images/neddy/neddy-palacios-ev-6.jpg
+
+- presenter: Fernando Chávez
+  date: 12 de diciembre 2018
+  address: 8pm en michelada.io, av. Carranza 1248 Colinas de Santa Bárbara, Colima.
+  tagline: El fotógrafo del pueblo de Comala, él que cuida la tradición.
+  copyright: Fernando Chávez
+  cover: /images/events/fernando.jpg
+  photos:
+    - /images/fernando/fernando-chavez-1.jpg
+    - /images/fernando/fernando-chavez-2.jpg
+    - /images/fernando/fernando-chavez-3.jpg
+    - /images/fernando/fernando-chavez-4.jpg
+    - /images/fernando/fernando-chavez-5.jpg
+  event_photos:
+    - /images/fernando/fernando-chavez-ev-0.jpg
+    - /images/fernando/fernando-chavez-ev-1.jpg
+    - /images/fernando/fernando-chavez-ev-2.jpg
+    - /images/fernando/fernando-chavez-ev-3.jpg
+    - /images/fernando/fernando-chavez-ev-4.jpg
+    - /images/fernando/fernando-chavez-ev-5.jpg
+    - /images/fernando/fernando-chavez-ev-6.jpg
+
+- presenter: Gustavo Vilchis
+  date: 8 de noviembre 2018
+  address: 8pm en michelada.io, av. Carranza 1248 Colinas de Santa Bárbara, Colima.
+  tagline: Gustavo Vilchis originario de Guerrero, fotógrafo documentalista, activista y viajero.
+  copyright: Gustavo Vilchis
+  cover: /images/events/vilchis.jpg
+  photos: []
+  event_photos:
+    - /images/vilchis/gustavo-vilchis-ev-1.jpg
+    - /images/vilchis/gustavo-vilchis-ev-2.jpg
+    - /images/vilchis/gustavo-vilchis-ev-3.jpg
+    - /images/vilchis/gustavo-vilchis-ev-4.jpg
+    - /images/vilchis/gustavo-vilchis-ev-5.jpg
+    - /images/vilchis/gustavo-vilchis-ev-6.jpg
