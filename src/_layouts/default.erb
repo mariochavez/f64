@@ -1,12 +1,23 @@
 <!doctype html>
 <html lang="<%= site.config.lang %>" class="antialiased [font-feature-settings:'ss01'] scroll-smooth">
   <head>
-    <%= render "head", metadata: site.metadata, title: data.title, tagline: data.tagline, description: data.description, image: data.image %>
+    <%= render "head",
+          metadata: site.metadata,
+          title: data.title,
+          seo_title: data.seo_title,
+          description: data.description,
+          image: data.image,
+          image_alt: data.image_alt,
+          preload_image: data.preload_image,
+          og_type: data.og_type || (data.event ? "article" : "website") %>
+    <%= render "schema", site: site, resource: resource %>
   </head>
   <body data-controller="mobile-menu">
+    <a href="#contenido" class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:m-2 focus:rounded-md focus:bg-white focus:px-4 focus:py-2 focus:text-sm focus:font-bold">Saltar al contenido</a>
+
     <%= render "navbar", metadata: site.metadata, resource: resource %>
 
-    <main class="pt-6">
+    <main id="contenido" class="pt-6">
       <%= yield %>
     </main>
 

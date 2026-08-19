@@ -1,11 +1,11 @@
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.metadata.title }}, {{ site.metadata.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.metadata.myvariable }}.
+# These are used to personalize your site and are the fallback for any page that
+# doesn't set its own `title` / `description` / `image` in front matter.
+# See `src/_partials/_head.erb` for how they're consumed.
 
 title: f/64
-tagline: Pláticas fotográficas
+tagline: Pláticas fotográficas en Colima
 email: info@f64.io
+image: /images/f64.jpg
 description: >-
-  f/64 es un evento cuyo objetivo es presentar cada primer jueves del mes a una fotógrafa o fotógrafo a presentar ante público su trabajo fotográfico, cada persona que presenta es libre de elegir el tema y como lo desea mostrar.
+  Cada primer jueves del mes, una fotógrafa o un fotógrafo presentó su trabajo ante el público en Colima. Archivo de las 30 sesiones de f/64, 2018–2023.

@@ -1,26 +1,45 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<% resource_title = strip_html(strip_newlines(title)) %>
-<% resource_tagline = strip_html(strip_newlines(tagline || metadata.tagline)) %>
-<title><%= resource_title %> | <%= resource_tagline %></title>
 
-<% resource_description = strip_html(strip_newlines(description || metadata.description)) %>
+<%
+  # Bridgetown 2 ships without ActiveSupport, so there is no `presence`/`blank?`
+  # here — `first_present` is the local stand-in for picking the first usable
+  # value out of front matter, then site metadata.
+  first_present = ->(*values) { values.find { |value| !value.nil? && !value.to_s.strip.empty? } }
+
+  # `seo_title` lets a page opt out of the "<name> | f/64 Colima" pattern. The
+  # pattern exists because the title used to append the presenter's whole bio
+  # sentence, which pushed 26 of 30 event titles past 60 characters.
+  resource_name  = strip_html(strip_newlines(title.to_s))
+  resource_title = strip_html(strip_newlines(
+    first_present.(seo_title, "#{resource_name} | #{metadata.title} Colima")
+  ))
+  resource_description = strip_html(strip_newlines(first_present.(description, metadata.description)))
+  resource_image_alt = strip_html(strip_newlines(first_present.(image_alt, resource_name)))
+  social_image = absolute_url(first_present.(image, metadata.image))
+  canonical_url = absolute_url(page.relative_url)
+  hero_preload = first_present.(preload_image)
+%>
+<title><%= resource_title %></title>
 <meta name="description" content="<%= resource_description %>" />
+<link rel="canonical" href="<%= canonical_url %>" />
 
-<meta content="<%= resource_title %>" property="og:title">
-<meta content="Website" property="og:type">
-<meta content="<%= absolute_url(image) %>" property="og:image">
-<meta content="<%= absolute_url(page.relative_url) %>" property="og:url">
-<meta content="<%= title %>" property="og:site_name">
+<meta content="<%= resource_name %>" property="og:title">
+<meta content="<%= first_present.(og_type, "website") %>" property="og:type">
+<meta content="<%= social_image %>" property="og:image">
+<meta content="<%= resource_image_alt %>" property="og:image:alt">
+<meta content="<%= canonical_url %>" property="og:url">
+<meta content="<%= metadata.title %>" property="og:site_name">
 <meta content="<%= resource_description %>" property="og:description">
+<meta content="es_MX" property="og:locale">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@mario_chavez">
-<meta name="twitter:title" content="<%= resource_title %>">
+<meta name="twitter:title" content="<%= resource_name %>">
 <meta name="twitter:description" content="<%= resource_description %>">
-<meta name="twitter:image" content="<%= absolute_url(image) %>">
+<meta name="twitter:image" content="<%= social_image %>">
+<meta name="twitter:image:alt" content="<%= resource_image_alt %>">
 
-<link rel="shortcut icon" href="/favicon.ico" type-"image/x-icon" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -29,7 +48,19 @@
 <meta name="msapplication-TileColor" content="#ffc40d">
 <meta name="theme-color" content="#ffffff">
 
-<%= feed_meta %>
+<% if hero_preload %>
+  <%# The hero used to be a CSS background, only discovered after the CSSOM was
+      built, far too late for the element that decides this page's LCP.
+      Preload the WebP the <picture> will actually pick, not the JPEG — otherwise
+      the browser downloads both. `type` means a browser without WebP support
+      simply skips the preload and falls back to the JPEG in the markup. %>
+  <% hero_webp = webp_for(hero_preload) %>
+  <% if hero_webp %>
+    <link rel="preload" as="image" href="<%= hero_webp %>" type="image/webp" fetchpriority="high">
+  <% else %>
+    <link rel="preload" as="image" href="<%= hero_preload %>" fetchpriority="high">
+  <% end %>
+<% end %>
 
 <link rel="stylesheet" href="<%= asset_path :css %>" />
 <script src="<%= asset_path :js %>" defer></script>

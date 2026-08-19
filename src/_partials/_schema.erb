@@ -1,0 +1,144 @@
+<%
+  # The site shipped no structured data at all, which for a photography archive
+  # means Google has to infer from prose that "Sergio Tapiro Velasco" is a person
+  # who presented at an event in Colima on a given night. This states it outright.
+  site_url = site.config.url
+
+  organization = {
+    "@type" => "Organization",
+    "@id" => "#{site_url}/#organization",
+    "name" => site.metadata.title,
+    "url" => "#{site_url}/",
+    "email" => site.metadata.email,
+    "logo" => "#{site_url}/images/f64.jpg",
+    "description" => site.metadata.description,
+    "foundingDate" => "2018-11-08",
+    "dissolutionDate" => "2023-12-07",
+    "areaServed" => {
+      "@type" => "City",
+      "name" => "Colima",
+      "address" => {
+        "@type" => "PostalAddress",
+        "addressLocality" => "Colima",
+        "addressRegion" => "Colima",
+        "addressCountry" => "MX",
+      },
+    },
+    "sameAs" => [
+      "https://facebook.com/f64fotos",
+      "https://instagram.com/f64colima",
+    ],
+  }
+
+  website = {
+    "@type" => "WebSite",
+    "@id" => "#{site_url}/#website",
+    "url" => "#{site_url}/",
+    "name" => site.metadata.title,
+    "inLanguage" => "es-MX",
+    "publisher" => { "@id" => "#{site_url}/#organization" },
+  }
+
+  graph = [organization, website]
+
+  event = resource.data.event
+  if event
+    page_url = absolute_url(resource.relative_url)
+
+    # Addresses are stored as "8pm en <street>, <locality>." — the hour is a real
+    # signal worth keeping, so split it off rather than discarding the whole string.
+    street = event.address.to_s.sub(/\A\s*\d+\s*(?:am|pm|hrs?)\.?\s*en\s+/i, "").sub(/\.\s*\z/, "")
+    locality = street.match?(/Comala/i) ? "Comala" : "Colima"
+    iso_date = resource.data.iso_date
+
+    # Photographs stay attributed to the photographer, matching the visible
+    # credit line and the `copyright` field the archive already maintains.
+    photographs = resource.data.photos.to_a.map do |photo|
+      {
+        "@type" => "ImageObject",
+        "contentUrl" => absolute_url(photo),
+        "creator" => { "@type" => "Person", "name" => event.copyright },
+        "copyrightHolder" => { "@type" => "Person", "name" => event.copyright },
+        "creditText" => "© #{event.copyright}",
+        "acquireLicensePage" => "#{site_url}/",
+      }
+    end
+
+    graph << {
+      "@type" => "Event",
+      "@id" => "#{page_url}#event",
+      "name" => "#{event.presenter} en f/64",
+      "description" => resource.data.description,
+      "url" => page_url,
+      "startDate" => (iso_date ? "#{iso_date}T20:00:00-06:00" : nil),
+      "endDate" => (iso_date ? "#{iso_date}T22:00:00-06:00" : nil),
+      "eventStatus" => "https://schema.org/EventScheduled",
+      "eventAttendanceMode" => "https://schema.org/OfflineEventAttendanceMode",
+      "isAccessibleForFree" => true,
+      "inLanguage" => "es-MX",
+      "image" => absolute_url(event.cover),
+      "location" => {
+        "@type" => "Place",
+        "name" => street,
+        "address" => {
+          "@type" => "PostalAddress",
+          "streetAddress" => street,
+          "addressLocality" => locality,
+          "addressRegion" => "Colima",
+          "addressCountry" => "MX",
+        },
+      },
+      "performer" => {
+        "@type" => "Person",
+        "name" => event.presenter,
+        "jobTitle" => "Fotógrafo/a",
+      },
+      "organizer" => { "@id" => "#{site_url}/#organization" },
+      "superEvent" => {
+        "@type" => "EventSeries",
+        "@id" => "#{site_url}/eventos/#series",
+        "name" => "f/64 — Pláticas fotográficas",
+        "url" => "#{site_url}/eventos/",
+      },
+      "subjectOf" => (photographs.any? ? photographs : nil),
+    }.compact
+
+    graph << {
+      "@type" => "BreadcrumbList",
+      "@id" => "#{page_url}#breadcrumb",
+      "itemListElement" => [
+        { "@type" => "ListItem", "position" => 1, "name" => "Inicio", "item" => "#{site_url}/" },
+        { "@type" => "ListItem", "position" => 2, "name" => "Eventos pasados", "item" => "#{site_url}/eventos/" },
+        { "@type" => "ListItem", "position" => 3, "name" => event.presenter, "item" => page_url },
+      ],
+    }
+  end
+
+  if resource.relative_url.to_s == "/eventos/"
+    graph << {
+      "@type" => "CollectionPage",
+      "@id" => "#{site_url}/eventos/#collection",
+      "url" => "#{site_url}/eventos/",
+      "name" => "Sesiones de f/64",
+      "description" => resource.data.description,
+      "inLanguage" => "es-MX",
+      "isPartOf" => { "@id" => "#{site_url}/#website" },
+      "about" => { "@id" => "#{site_url}/#organization" },
+      "mainEntity" => {
+        "@type" => "ItemList",
+        "numberOfItems" => all_events.size,
+        "itemListElement" => all_events.each_with_index.map do |ev, index|
+          {
+            "@type" => "ListItem",
+            "position" => index + 1,
+            "url" => absolute_url(event_path(ev)),
+            "name" => ev.presenter,
+          }
+        end,
+      },
+    }
+  end
+%>
+<script type="application/ld+json">
+<%== JSON.pretty_generate({ "@context" => "https://schema.org", "@graph" => graph }) %>
+</script>

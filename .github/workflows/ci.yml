@@ -1,4 +1,3 @@
-
 name: "Build pages"
 
 on:
@@ -14,6 +13,8 @@ jobs:
   pages:
     name: "Build"
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
         with:
@@ -45,26 +46,45 @@ jobs:
           export BRIDGETOWN_ENV=production
           bundle exec bridgetown deploy
 
+      # GitHub Pages serves through Jekyll, which ignores underscore-prefixed
+      # directories, so `_bridgetown/static` would 404 in production.
       - name: "Fix assets paths"
         run: |
           mv ./output/_bridgetown/static ./output/assets
-          find ./output/ -name '*.html' -exec sed -ie 's/_bridgetown\/static\//assets\//' {} \;
-          find ./output/ -name '*.css' -exec sed -ie 's/_bridgetown\/static\//assets\//g' {} \;
-          find ./output/ -name '*.js' -exec sed -ie 's/_bridgetown\/static\//assets\//' {} \;
-          find ./output/ -name '*.htmle' -exec rm {} \;
-          find ./output/ -name '*.csse' -exec rm {} \;
-          find ./output/ -name '*.jse' -exec rm {} \;
+          find ./output/ -type f \( -name '*.html' -o -name '*.css' -o -name '*.js' \) \
+            -exec sed -i 's|_bridgetown/static/|assets/|g' {} +
 
+      # Cheap insurance: these three files are the entire discovery path for the
+      # 30 event pages, and a silent template failure would drop them without
+      # failing the build.
+      - name: "Verify SEO artifacts"
+        run: |
+          set -e
+          test -s ./output/sitemap.xml || { echo "::error::sitemap.xml missing or empty"; exit 1; }
+          test -s ./output/robots.txt  || { echo "::error::robots.txt missing or empty"; exit 1; }
+          urls=$(grep -c '<loc>' ./output/sitemap.xml)
+          echo "sitemap.xml lists $urls URLs"
+          test "$urls" -ge 30 || { echo "::error::sitemap.xml only has $urls URLs"; exit 1; }
+          missing=$(grep -L 'rel="canonical"' $(find ./output -name '*.html') || true)
+          test -z "$missing" || { echo "::error::pages without a canonical tag: $missing"; exit 1; }
+          if find ./output -name '*.map' | grep -q .; then
+            echo "::error::sourcemaps leaked into production"; exit 1
+          fi
+
+      # `force_orphan` replaces the branch contents on every deploy. The previous
+      # action kept history and only ever added files, so anything deleted from
+      # the site stayed live — `/no-bienal/` was still being served at HTTP 200
+      # long after the page was unpublished, alongside ~40 MB of orphaned images
+      # and ten stale asset bundles.
       - name: Deploy to GitHub Pages
         if: success()
-        uses: crazy-max/ghaction-github-pages@v4
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          target_branch: gh-pages
-          build_dir: output
-          keep_history: true
-          fqdn: f64.io
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./output
+          publish_branch: gh-pages
+          cname: f64.io
+          force_orphan: true
 
       - name: Archive site artifacts
         uses: actions/upload-artifact@v4

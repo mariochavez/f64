@@ -1,0 +1,16 @@
+<%
+  # Every <img> on the site used to ship without dimensions, so nothing reserved
+  # space for a photo and the page shifted as each one arrived. `image_dimensions`
+  # reads them from the file header at build time (see plugins/builders/images.rb),
+  # and a sibling .webp is advertised only when one was actually generated.
+  dimensions = image_dimensions(src)
+  webp = webp_for(src)
+%>
+<picture>
+  <% if webp %><source type="image/webp" srcset="<%= webp %>" /><% end %>
+  <img src="<%= src %>"
+       alt="<%= alt %>"
+       <%= dimensions ? "width=\"#{dimensions[0]}\" height=\"#{dimensions[1]}\"".html_safe : "" %>
+       <%= eager ? 'fetchpriority="high" decoding="async"'.html_safe : 'loading="lazy" decoding="async"'.html_safe %>
+       class="<%= classes %>" />
+</picture>
