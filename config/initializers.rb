@@ -1,3 +1,11 @@
+# Cloudflare's build container starts with no locale set, which leaves Ruby's
+# default external encoding at US-ASCII. Every accented character in this site's
+# templates then raises `Encoding::InvalidByteSequenceError` when Tilt reads the
+# file — the build dies on `_head.erb` before it renders a single page. Setting
+# this here fixes it wherever the site is built, rather than relying on a `LANG`
+# variable being present in the environment.
+Encoding.default_external = Encoding::UTF_8
+
 Bridgetown.configure do |config|
   # You can configure aspects of your Bridgetown site here instead of using
   # `bridgetown.config.yml`. For example:

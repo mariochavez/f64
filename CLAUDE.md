@@ -10,7 +10,7 @@ Built with **Bridgetown 2**, ERB templates, **Tailwind CSS 4**, esbuild, and Hot
 (`lang: es`, timezone `Guadalajara`).
 
 There is no test suite and no application server in production — the site builds to static
-HTML in `output/` and is published to GitHub Pages.
+HTML in `output/` and is deployed to Cloudflare.
 
 ## Commands
 
@@ -22,9 +22,10 @@ bin/bridgetown console           # IRB with the site loaded
 bin/bridgetown deploy            # clean + frontend build + site build (same as `rake`)
 
 bundle exec rake test            # build with BRIDGETOWN_ENV=test (a build, not a test suite)
+bundle exec rake publish         # production build + checks + wrangler deploy to Cloudflare
 ```
 
-Ruby 4.0.0, pinned in `.ruby-version` and mirrored by `RUBY_VERSION` in the CI workflow.
+Ruby 4.0.0, pinned in `.ruby-version`.
 There is no lint task wired into the bundle — `.rubocop.yml` and `.standard.yml` are
 **symlinks into `~/Development/neovim-files/`**, so editing them changes every project that
 links them.
@@ -125,21 +126,52 @@ explicit `@source` directives in that file.
 
 ## Deploy
 
-Push to `main` triggers `.github/workflows/ci.yml`, which builds with
-`BRIDGETOWN_ENV=production` and pushes `output/` to the `gh-pages` branch (CNAME `f64.io`) using
-`peaceiris/actions-gh-pages` with **`force_orphan: true`**. That flag matters: the previous
-action kept history and only ever *added* files, so anything deleted from the site stayed live —
-`/no-bienal/` was still served at HTTP 200 long after being unpublished, alongside ~49 MB of
-orphaned images and ten stale asset bundles. The workflow also has a "Verify SEO artifacts" step
-that fails the build if `sitemap.xml`/`robots.txt` go missing, if the sitemap drops below 30
-URLs, if any page loses its canonical tag, or if sourcemaps leak into production.
+The site is hosted on **Cloudflare Workers static assets** (the same setup as
+`mariochavez/foto`), not GitHub Pages. Cloudflare builds it directly from the repository on
+push — there is no GitHub Actions workflow; `.github/` was removed along with the GitHub Pages
+pipeline. `wrangler.jsonc` is the whole Cloudflare config: worker name `f64`,
+`assets.directory: ./output`, and `not_found_handling: "404-page"` so a missing path renders the
+site's own `/404.html`. The custom domain `f64.io` is attached to the worker in the Cloudflare
+dashboard, so there is no `CNAME` file in the build.
 
-The workflow includes a **post-build asset-path rewrite**: it moves
-`output/_bridgetown/static` → `output/assets` and `sed`s every `_bridgetown/static/` reference
-in the built `.html`/`.css`/`.js`. GitHub Pages serves via Jekyll, which ignores
-underscore-prefixed directories. Anything that emits a `_bridgetown/static/` URL outside those
-three file types will 404 in production while working fine locally — prefer `asset_path :css` /
-`asset_path :js` helpers and keep new asset references inside HTML/CSS/JS.
+To build and deploy by hand instead:
+
+```sh
+bundle exec rake publish   # BRIDGETOWN_ENV=production build → rake verify → npx wrangler deploy
+bundle exec rake verify    # just the checks, against whatever is in output/
+```
+
+**Cloudflare's build container sets no locale**, which leaves Ruby's default external encoding
+at US-ASCII — every accented character in a template then raises
+`Encoding::InvalidByteSequenceError` and the build dies on `_head.erb` before rendering a page.
+`config/initializers.rb` sets `Encoding.default_external = Encoding::UTF_8` at the top, outside
+the `configure` block, so this holds wherever the site is built. Reproduce locally with
+`env -u LANG -u LC_ALL -u LC_CTYPE bundle exec bridgetown build`.
+
+Each deploy replaces the entire asset set, so a file deleted from `src/` stops being served.
+That was not true of the original `crazy-max/ghaction-github-pages` setup, which kept history
+and only ever *added* files — `/no-bienal/` was still served at HTTP 200 long after being
+unpublished, alongside ~49 MB of orphaned images and ten stale asset bundles.
+
+`rake verify` guards the artifacts that are easy to lose silently: it aborts if `sitemap.xml`,
+`robots.txt` or `_headers` are missing or empty, if the sitemap drops below 30 URLs, if any page
+loses its canonical tag, or if sourcemaps leak into production.
+
+**`plugins/builders/cloudflare.rb` emits `/_headers`**, which sets cache policy. Cloudflare
+serves every static asset with `public, max-age=0, must-revalidate`, so even content-hashed
+bundles pay a revalidation round trip; the rules there give `/_bridgetown/static/*` a year and
+`immutable`, images a week, and leave HTML on the revalidating default. It is generated rather
+than kept as `src/_headers` because Bridgetown skips underscore-prefixed entries in `src/`, and
+force-including one through the `include:` config key copies it **only intermittently** — the
+file vanished from roughly two builds in three, taking the cache policy with it. A `_redirects`
+file would need the same treatment; the 14 pre-Bridgetown Jekyll URLs (`/YYYY/MM/DD/title.html`)
+currently 404 with no redirect.
+
+Assets are served from `/_bridgetown/static/` as built. The old workflow moved that directory to
+`output/assets` and `sed`ed every reference in the built `.html`/`.css`/`.js`, because GitHub
+Pages served through Jekyll and Jekyll ignores underscore-prefixed directories. Cloudflare has no
+such rule, so the rewrite — and the footgun where any `_bridgetown/static/` URL emitted outside
+those three file types would 404 in production while working locally — is gone.
 
 ## Notes
 

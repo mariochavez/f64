@@ -1,0 +1,13 @@
+{
+  // Cloudflare Workers static assets. Wrangler uploads `./output` verbatim —
+  // there is no build step on Cloudflare's side, CI builds the site and then
+  // deploys the directory (see .github/workflows/ci.yml).
+  "name": "f64",
+  "compatibility_date": "2026-08-19",
+  "assets": {
+    "directory": "./output",
+    // Bridgetown emits /404.html; without this a missing path returns a bare,
+    // unstyled 404 body instead of the site's own page.
+    "not_found_handling": "404-page"
+  }
+}

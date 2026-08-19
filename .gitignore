@@ -49,3 +49,6 @@ yarn-debug.log*
 
 # Scratch output (reports, working files)
 tmp/
+
+# Wrangler
+.wrangler/
