@@ -1,12 +1,22 @@
-:root {
-  --color-base: 31 27 54;
-  --color-accented: 5 150 105;
-  --color-inverted: 255 255 255;
-  --color-accented-hover: 6 95 70;
-  --color-muted: 55 65 81;
-  --color-dimmed: 100 116 139;
+/* Theme tokens. In Tailwind v4 these are the theme: every `--color-skin-*`
+   entry generates the matching `text-skin-*`, `bg-skin-*`, `border-skin-*`
+   utilities, and opacity modifiers (`text-skin-inverted/75`) work natively. */
+@theme {
+  --color-skin-base: rgb(31 27 54);
+  --color-skin-accented: rgb(5 150 105);
+  --color-skin-inverted: rgb(255 255 255);
+  --color-skin-accented-hover: rgb(6 95 70);
+  --color-skin-muted: rgb(55 65 81);
+  --color-skin-dimmed: rgb(100 116 139);
+
+  --font-sans: "Source Sans Pro", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-oswald: "Oswald", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-body {
-  @apply text-skin-base antialiased;
+@layer base {
+  body {
+    @apply text-skin-base antialiased;
+  }
 }

@@ -7,25 +7,17 @@ on:
       - main
 
 env:
-  RUBY_VERSION: 3.2.0
+  RUBY_VERSION: 4.0.0
+  NODE_VERSION: 22
 
 jobs:
   pages:
     name: "Build"
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 1
-
-      - name: Cache vendor
-        id: cache-vendor
-        uses: actions/cache@v2
-        with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-gems-
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
@@ -34,13 +26,19 @@ jobs:
           bundler-cache: true
           cache-version: 1
 
-      - name: "Bundle install"
-        run: |
-          bundle install --jobs 4 --retry 3
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{env.NODE_VERSION}}
+
+      # The project pins Yarn 4 via the `packageManager` field in package.json,
+      # which only the corepack shim honours.
+      - name: "Enable Corepack"
+        run: corepack enable
 
       - name: "Yarn install"
         run: |
-          yarn install
+          yarn install --immutable
 
       - name: "Build site"
         run: |
@@ -59,7 +57,7 @@ jobs:
 
       - name: Deploy to GitHub Pages
         if: success()
-        uses: crazy-max/ghaction-github-pages@v2
+        uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: gh-pages
           build_dir: output
@@ -69,7 +67,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Archive site artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: site
           path: output

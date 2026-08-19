@@ -19,10 +19,10 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 # If you need to upgrade/switch Bridgetown versions, change the line below
 # and then run `bundle update bridgetown`
-gem "bridgetown", "~> 1.2.0.beta4"
+gem "bridgetown", "~> 2.2"
 
 # Uncomment to add file-based dynamic routing to your project:
-# gem "bridgetown-routes", "~> 1.2.0.beta4"
+# gem "bridgetown-routes", "~> 2.2"
 
 # Uncomment to use the Inspectors API to manipulate the output
 # of your HTML or XML resources:
@@ -30,6 +30,6 @@ gem "bridgetown", "~> 1.2.0.beta4"
 
 # Puma is a Rack-compatible server used by Bridgetown
 # (you can optionally limit this to the "development" group)
-gem "puma", "~> 6"
+gem "puma", "~> 8"
 
-gem "bridgetown-feed", "~> 3.0"
+gem "bridgetown-feed", "~> 4.0"

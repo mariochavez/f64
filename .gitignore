@@ -37,3 +37,15 @@ yarn-debug.log*
 
 .standard.yml
 .rubocop.yml
+
+# Yarn 4 (berry) — node-modules linker
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+
+# Scratch output (reports, working files)
+tmp/
