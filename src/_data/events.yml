@@ -159,8 +159,12 @@
   tagline: Se desnuda el ser, la cámara es testigo y traductora de lo íntimo.
   copyright: Anylú Villalvazo y/o David Ayala
   cover: /images/events/anylu.jpg
-  # Sin fotografías: el set de esta sesión nunca se agregó al repositorio.
-  photos: []
+  photos:
+    - /images/anylu/anylu-david-1.jpg
+    - /images/anylu/anylu-david-2.jpg
+    - /images/anylu/anylu-david-3.jpg
+    - /images/anylu/anylu-david-4.jpg
+    - /images/anylu/anylu-david-5.jpg
 
 - presenter: Isaura Ruíz
   date: 5 de marzo de 2020

@@ -179,8 +179,6 @@ those three file types would 404 in production while working locally — is gone
   along with the `bridgetown-feed` gem, whose `feed.xml` had never had a single entry.
 - `src/about.md` (unmodified Bridgetown boilerplate, in English) was replaced by
   `src/acerca-de.md`. The old `/about/` URL is gone; nothing ever linked to it.
-- Anylú Villalvazo y David Ayala (Dec 2022) has `photos: []` — that session's photo set was never
-  committed to the repo, in any branch or commit. Only the cover exists.
 - The 14 events before Feb 2020 were recovered from the pre-Bridgetown Jekyll `_posts/` tree at
   commit `fb0f95d^`; that commit still holds `-ev-*` sets and posters if anything else is needed.
 - Roda/SSR is available but not enabled — `config/initializers.rb` has no `init` calls left, and
