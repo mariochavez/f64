@@ -49,3 +49,26 @@
     background-image: image-set(url("/images/colima.webp") type("image/webp"), url("/images/colima.jpg") type("image/jpeg"));
   }
 }
+
+/* Narrow variants for phones. These bands are CSS backgrounds, so the
+   <picture>/srcset machinery the rest of the site uses cannot reach them, and a
+   360px screen was fetching 553 KB of full-resolution photography for imagery
+   that is decorative. Declared after the @supports block above so it wins on
+   small viewports. */
+@media (max-width: 640px) {
+  .bg-photo-publico { background-image: url("/images/f64-publico-640w.jpg"); }
+  .bg-photo-talks { background-image: url("/images/talks-640w.jpg"); }
+  .bg-photo-colima { background-image: url("/images/colima-640w.jpg"); }
+
+  @supports (background-image: image-set(url("/images/home.webp") type("image/webp"))) {
+    .bg-photo-publico {
+      background-image: image-set(url("/images/f64-publico-640w.webp") type("image/webp"), url("/images/f64-publico-640w.jpg") type("image/jpeg"));
+    }
+    .bg-photo-talks {
+      background-image: image-set(url("/images/talks-640w.webp") type("image/webp"), url("/images/talks-640w.jpg") type("image/jpeg"));
+    }
+    .bg-photo-colima {
+      background-image: image-set(url("/images/colima-640w.webp") type("image/webp"), url("/images/colima-640w.jpg") type("image/jpeg"));
+    }
+  }
+}

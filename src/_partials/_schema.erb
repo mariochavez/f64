@@ -50,6 +50,7 @@
     street = event.address.to_s.sub(/\A\s*\d+\s*(?:am|pm|hrs?)\.?\s*en\s+/i, "").sub(/\.\s*\z/, "")
     locality = street.match?(/Comala/i) ? "Comala" : "Colima"
     iso_date = resource.data.iso_date
+    year = resource.data.year
 
     # Photographs stay attributed to the photographer, matching the visible
     # credit line and the `copyright` field the archive already maintains.
@@ -72,7 +73,6 @@
       "url" => page_url,
       "startDate" => (iso_date ? "#{iso_date}T20:00:00-06:00" : nil),
       "endDate" => (iso_date ? "#{iso_date}T22:00:00-06:00" : nil),
-      "eventStatus" => "https://schema.org/EventScheduled",
       "eventAttendanceMode" => "https://schema.org/OfflineEventAttendanceMode",
       "isAccessibleForFree" => true,
       "inLanguage" => "es-MX",
@@ -91,7 +91,7 @@
       "performer" => {
         "@type" => "Person",
         "name" => event.presenter,
-        "jobTitle" => "Fotógrafo/a",
+        "jobTitle" => "Fotógrafa o fotógrafo",
       },
       "organizer" => { "@id" => "#{site_url}/#organization" },
       "superEvent" => {
@@ -108,9 +108,10 @@
       "@id" => "#{page_url}#breadcrumb",
       "itemListElement" => [
         { "@type" => "ListItem", "position" => 1, "name" => "Inicio", "item" => "#{site_url}/" },
-        { "@type" => "ListItem", "position" => 2, "name" => "Eventos pasados", "item" => "#{site_url}/eventos/" },
-        { "@type" => "ListItem", "position" => 3, "name" => event.presenter, "item" => page_url },
-      ],
+        { "@type" => "ListItem", "position" => 2, "name" => "Sesiones", "item" => "#{site_url}/eventos/" },
+        (year ? { "@type" => "ListItem", "position" => 3, "name" => year, "item" => "#{site_url}/eventos/#anio-#{year}" } : nil),
+        { "@type" => "ListItem", "position" => year ? 4 : 3, "name" => event.presenter, "item" => page_url },
+      ].compact,
     }
   end
 

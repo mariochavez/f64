@@ -3,9 +3,17 @@
    utilities, and opacity modifiers (`text-skin-inverted/75`) work natively. */
 @theme {
   --color-skin-base: rgb(31 27 54);
-  --color-skin-accented: rgb(5 150 105);
+  /* The accent was declared here as an emerald that no template ever used, while
+     every link on the site reached for a raw `sky-600`. That utility measures
+     4.10:1 on white — under the 4.5:1 AA floor — so the token now holds sky-700
+     (5.93:1) and its hover holds sky-800 (7.56:1). Reach for `text-skin-accented`
+     rather than a palette utility, or the two drift apart again. */
+  --color-skin-accented: rgb(3 105 161);
   --color-skin-inverted: rgb(255 255 255);
-  --color-skin-accented-hover: rgb(6 95 70);
+  --color-skin-accented-hover: rgb(7 89 133);
+  /* Structural only — the 2px underline on the current nav item and the focus
+     ring on the black bar. 7.58:1 on black, where the accent manages 3.54:1. */
+  --color-skin-rule: rgb(14 165 233);
   --color-skin-muted: rgb(55 65 81);
   --color-skin-dimmed: rgb(100 116 139);
 

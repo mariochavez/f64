@@ -3,12 +3,24 @@
   # space for a photo and the page shifted as each one arrived. `image_dimensions`
   # reads them from the file header at build time (see plugins/builders/images.rb),
   # and a sibling .webp is advertised only when one was actually generated.
+  #
+  # `srcset_for` adds the narrow variants that exist on disk. `sizes` has to come
+  # from the call site — only the template knows how wide the slot is — so it is a
+  # required local like the rest; Bridgetown raises on undefined ones.
   dimensions = image_dimensions(src)
   webp = webp_for(src)
+  jpeg_srcset = srcset_for(src)
+  webp_srcset = webp ? srcset_for(webp) : nil
 %>
 <picture>
-  <% if webp %><source type="image/webp" srcset="<%= webp %>" /><% end %>
+  <% if webp %>
+    <source type="image/webp"
+            srcset="<%= webp_srcset || webp %>"
+            <%= sizes ? "sizes=\"#{sizes}\"".html_safe : "" %> />
+  <% end %>
   <img src="<%= src %>"
+       <%= jpeg_srcset ? "srcset=\"#{jpeg_srcset}\"".html_safe : "" %>
+       <%= sizes && jpeg_srcset ? "sizes=\"#{sizes}\"".html_safe : "" %>
        alt="<%= alt %>"
        <%= dimensions ? "width=\"#{dimensions[0]}\" height=\"#{dimensions[1]}\"".html_safe : "" %>
        <%= eager ? 'fetchpriority="high" decoding="async"'.html_safe : 'loading="lazy" decoding="async"'.html_safe %>

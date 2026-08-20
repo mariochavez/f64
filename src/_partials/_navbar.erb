@@ -1,12 +1,12 @@
 <%
   current = page.relative_url.to_s
-  desktop_active = "border-sky-500 px-1 pt-1 text-sm font-bold text-skin-inverted"
+  desktop_active = "border-skin-rule px-1 pt-1 text-sm font-bold text-skin-inverted"
   desktop_idle = "border-transparent px-1 pt-1 text-sm font-bold text-skin-inverted/75 hover:border-gray-300 hover:text-skin-inverted"
-  mobile_active = "border-sky-500 bg-sky-800 py-2 pl-3 pr-4 text-base font-bold text-skin-inverted"
-  mobile_idle = "border-transparent py-2 pl-3 pr-4 text-base font-bold text-skin-inverted/75 hover:border-sky-500 hover:bg-gray-50 hover:text-skin-muted"
+  mobile_active = "border-skin-rule bg-skin-accented-hover py-2 pl-3 pr-4 text-base font-bold text-skin-inverted"
+  mobile_idle = "border-transparent py-2 pl-3 pr-4 text-base font-bold text-skin-inverted/75 hover:border-skin-rule hover:bg-gray-50 hover:text-skin-muted"
   nav_links = [
     { href: "/", label: "Inicio" },
-    { href: "/eventos/", label: "Eventos pasados" },
+    { href: "/eventos/", label: "Sesiones" },
     { href: "/acerca-de/", label: "Acerca de" },
   ]
 %>
@@ -15,7 +15,7 @@
     <div class="relative flex h-16 justify-between">
       <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
         <!-- Mobile menu button -->
-        <button type="button" class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-hidden focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-controls="mobile-menu" aria-expanded="false" data-action="mobile-menu#toggle">
+        <button type="button" class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-hidden focus:ring-2 focus:ring-inset focus:ring-skin-rule" aria-controls="mobile-menu" aria-expanded="false" data-action="mobile-menu#toggle">
           <span class="sr-only">Abrir el menú principal</span>
           <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />

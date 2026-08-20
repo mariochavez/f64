@@ -1,0 +1,434 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-19T23:26:02Z",
+  "title": "Design System: f/64",
+  "extensions": {
+    "colorMeta": {
+      "tinta-indigo": {
+        "role": "neutral",
+        "displayName": "Tinta Indígo",
+        "canonical": "rgb(31 27 54)",
+        "note": "Declared as --color-skin-base in frontend/styles/config.css.",
+        "tonalRamp": [
+          "oklch(15% 0.045 292)",
+          "oklch(24% 0.055 292)",
+          "oklch(34% 0.055 292)",
+          "oklch(45% 0.05 292)",
+          "oklch(56% 0.045 292)",
+          "oklch(69% 0.035 292)",
+          "oklch(83% 0.022 292)",
+          "oklch(95% 0.01 292)"
+        ]
+      },
+      "gris-lectura": {
+        "role": "neutral",
+        "displayName": "Gris Lectura",
+        "canonical": "rgb(55 65 81)",
+        "note": "Declared as --color-skin-muted. Secondary prose, taglines, addresses.",
+        "tonalRamp": [
+          "oklch(15% 0.02 265)",
+          "oklch(24% 0.025 265)",
+          "oklch(35% 0.03 265)",
+          "oklch(46% 0.03 265)",
+          "oklch(58% 0.028 265)",
+          "oklch(70% 0.022 265)",
+          "oklch(83% 0.014 265)",
+          "oklch(95% 0.006 265)"
+        ]
+      },
+      "gris-ficha": {
+        "role": "neutral",
+        "displayName": "Gris Ficha",
+        "canonical": "rgb(100 116 139)",
+        "note": "Declared as --color-skin-dimmed. The register's metadata voice: dates, venues, eyebrows, breadcrumbs.",
+        "tonalRamp": [
+          "oklch(15% 0.022 257)",
+          "oklch(25% 0.028 257)",
+          "oklch(36% 0.033 257)",
+          "oklch(47% 0.036 257)",
+          "oklch(59% 0.033 257)",
+          "oklch(71% 0.026 257)",
+          "oklch(84% 0.016 257)",
+          "oklch(95% 0.007 257)"
+        ]
+      },
+      "papel": {
+        "role": "neutral",
+        "displayName": "Papel",
+        "canonical": "rgb(255 255 255)",
+        "note": "Declared as --color-skin-inverted. Every content surface, and all reversed type over photography.",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26% 0 0)",
+          "oklch(37% 0 0)",
+          "oklch(48% 0 0)",
+          "oklch(60% 0 0)",
+          "oklch(72% 0 0)",
+          "oklch(85% 0 0)",
+          "oklch(100% 0 0)"
+        ]
+      },
+      "negro-sala": {
+        "role": "neutral",
+        "displayName": "Negro Sala",
+        "canonical": "#000000",
+        "note": "The fixed navigation bar, and nothing else. Never used for body text.",
+        "tonalRamp": [
+          "oklch(0% 0 0)",
+          "oklch(14% 0 0)",
+          "oklch(28% 0 0)",
+          "oklch(42% 0 0)",
+          "oklch(56% 0 0)",
+          "oklch(70% 0 0)",
+          "oklch(84% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "azul-archivo": {
+        "role": "primary",
+        "displayName": "Azul Archivo",
+        "canonical": "#0369a1",
+        "note": "Tailwind sky-700. The system's only accent; interactive elements exclusively. 5.93:1 on white — replaced sky-600 (#0284c7), which measured 4.10:1 and failed WCAG AA.",
+        "tonalRamp": [
+          "oklch(15% 0.05 240)",
+          "oklch(26% 0.08 240)",
+          "oklch(37% 0.11 240)",
+          "oklch(48% 0.14 240)",
+          "oklch(59% 0.15 240)",
+          "oklch(71% 0.12 240)",
+          "oklch(84% 0.07 240)",
+          "oklch(95% 0.025 240)"
+        ]
+      },
+      "azul-archivo-hover": {
+        "role": "primary",
+        "displayName": "Azul Archivo Hover",
+        "canonical": "#075985",
+        "note": "Tailwind sky-800. Hovered/pressed state of the accent. 7.56:1 on white.",
+        "tonalRamp": [
+          "oklch(15% 0.05 240)",
+          "oklch(25% 0.08 240)",
+          "oklch(35% 0.10 240)",
+          "oklch(45% 0.12 240)",
+          "oklch(57% 0.14 240)",
+          "oklch(70% 0.11 240)",
+          "oklch(83% 0.065 240)",
+          "oklch(95% 0.022 240)"
+        ]
+      },
+      "azul-regla": {
+        "role": "primary",
+        "displayName": "Azul Regla",
+        "canonical": "#0ea5e9",
+        "note": "Tailwind sky-500, exposed as --color-skin-rule. Structural only: the active-nav underline, the mobile active left border, and the focus ring on the black bar. Stays sky-500 because on Negro Sala it measures 7.58:1 where the accent manages 3.54:1.",
+        "tonalRamp": [
+          "oklch(16% 0.05 235)",
+          "oklch(27% 0.08 235)",
+          "oklch(38% 0.11 235)",
+          "oklch(50% 0.14 235)",
+          "oklch(62% 0.16 235)",
+          "oklch(74% 0.12 235)",
+          "oklch(86% 0.07 235)",
+          "oklch(96% 0.025 235)"
+        ]
+      },
+      "azul-sala": {
+        "role": "primary",
+        "displayName": "Azul Sala",
+        "canonical": "#075985",
+        "note": "Tailwind sky-800. Background of the active item in the mobile menu only.",
+        "tonalRamp": [
+          "oklch(15% 0.045 240)",
+          "oklch(24% 0.07 240)",
+          "oklch(34% 0.09 240)",
+          "oklch(44% 0.11 240)",
+          "oklch(56% 0.13 240)",
+          "oklch(69% 0.10 240)",
+          "oklch(83% 0.06 240)",
+          "oklch(95% 0.02 240)"
+        ]
+      },
+      "linea-division": {
+        "role": "neutral",
+        "displayName": "Línea División",
+        "canonical": "#e5e7eb",
+        "note": "Tailwind gray-200. The system's single horizontal rule, above the previous/next pair.",
+        "tonalRamp": [
+          "oklch(15% 0.005 265)",
+          "oklch(26% 0.006 265)",
+          "oklch(37% 0.007 265)",
+          "oklch(48% 0.008 265)",
+          "oklch(60% 0.008 265)",
+          "oklch(72% 0.007 265)",
+          "oklch(85% 0.005 265)",
+          "oklch(96% 0.003 265)"
+        ]
+      },
+      "velo-claro": {
+        "role": "neutral",
+        "displayName": "Velo Claro",
+        "canonical": "#d1d5db",
+        "note": "Tailwind gray-300, applied only as a mix-blend-multiply scrim over the home hero photograph.",
+        "tonalRamp": [
+          "oklch(15% 0.006 265)",
+          "oklch(26% 0.008 265)",
+          "oklch(37% 0.010 265)",
+          "oklch(48% 0.011 265)",
+          "oklch(60% 0.011 265)",
+          "oklch(72% 0.009 265)",
+          "oklch(85% 0.006 265)",
+          "oklch(96% 0.003 265)"
+        ]
+      },
+      "velo-denso": {
+        "role": "neutral",
+        "displayName": "Velo Denso",
+        "canonical": "#4b5563",
+        "note": "Tailwind gray-600, applied only as a mix-blend-multiply scrim over full-bleed decorative sections.",
+        "tonalRamp": [
+          "oklch(15% 0.012 260)",
+          "oklch(25% 0.016 260)",
+          "oklch(36% 0.020 260)",
+          "oklch(47% 0.022 260)",
+          "oklch(59% 0.020 260)",
+          "oklch(71% 0.016 260)",
+          "oklch(84% 0.010 260)",
+          "oklch(95% 0.004 260)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Page titles, presenter names on event pages, home-page section headings. Steps 2.25rem → 3rem → 3.75rem across sm and lg."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Gallery section headings and the session date in an event header."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Presenter names in card grids and in the previous/next pair."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Session taglines and the standfirst under a page title, set in Gris Lectura."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running prose. Long-form pages use prose md:prose-lg lg:prose-xl at max-w-prose."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Uppercase eyebrows, card dates, breadcrumbs. Always Gris Ficha. The only role that is uppercased."
+      },
+      "credit": {
+        "displayName": "Credit",
+        "purpose": "The © line under every photograph. 700 weight, full-strength ink — content, not chrome."
+      }
+    },
+    "shadows": [
+      {
+        "name": "hairline",
+        "value": "0 1px 2px 0 rgb(0 0 0 / 0.05)",
+        "purpose": "Under gallery photographs (shadow-xs). Barely perceptible; separates a light image from white paper."
+      },
+      {
+        "name": "ficha",
+        "value": "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)",
+        "purpose": "Cover images in the archive grid (shadow-md). The one place a card reads as an object."
+      },
+      {
+        "name": "nav",
+        "value": "0 1px 2px 0 rgb(0 0 0 / 0.05)",
+        "purpose": "The fixed navigation bar (shadow-sm)."
+      }
+    ],
+    "motion": [
+      {
+        "name": "cover-zoom",
+        "value": "transform 300ms cubic-bezier(0.4, 0, 0.2, 1)",
+        "purpose": "Cover image scales to 1.05 inside its overflow-hidden frame on card hover. The system's only substantive motion."
+      },
+      {
+        "name": "menu-enter",
+        "value": "150ms ease-out; opacity 0→1, scale 0.95→1",
+        "purpose": "Mobile menu reveal, driven by data-transition-* attributes on the mobile-menu Stimulus controller."
+      },
+      {
+        "name": "menu-leave",
+        "value": "75ms ease-in; opacity 1→0, scale 1→0.95",
+        "purpose": "Mobile menu dismissal."
+      },
+      {
+        "name": "scroll-smooth",
+        "value": "scroll-behavior: smooth",
+        "purpose": "Set on the root element for in-page anchors."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      },
+      {
+        "name": "container",
+        "value": "1280px"
+      }
+    ],
+    "notes": [
+      "Tailwind CSS 4, theme-in-CSS. There is no tailwind.config.js; --color-skin-* tokens live in frontend/styles/config.css inside an @theme block and generate text-/bg-/border-skin-* utilities.",
+      "FONT GAP: only Oswald 600 is self-hosted, while every heading requests font-bold (700). 700 is normative; the fix is shipping oswald-v49-latin-700.",
+      "ACCENT: --color-skin-accented / -hover in frontend/styles/config.css are the single source of truth (#0369a1 / #075985). They previously held an unused emerald while templates hard-coded a below-AA sky-600; do not reintroduce raw sky-* utilities for accent text or fills."
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The archive's single button — the call through to the full listing of sessions. Every other action in the system is a text link.",
+      "html": "<a class=\"ds-btn-primary\" href=\"/eventos/\">Ver las 30 sesiones</a>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; background: #0369a1; color: #fff; font-family: 'Source Sans Pro', ui-sans-serif, system-ui, sans-serif; font-size: 1rem; font-weight: 500; text-decoration: none; padding: 8px 24px; border: 1px solid transparent; border-radius: 6px; box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05); transition: background-color 150ms ease; } .ds-btn-primary:hover { background: #075985; } .ds-btn-primary:focus-visible { outline: none; box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0369a1; }"
+    },
+    {
+      "name": "Cover Card",
+      "kind": "card",
+      "refersTo": "card-cover",
+      "description": "The archive's primary unit — one per session, thirty on /eventos/. Edge-to-edge cover image with the record beneath it; the whole card is a single link.",
+      "html": "<a class=\"ds-card-cover\" href=\"/eventos/mario-chavez/\"><span class=\"ds-card-cover__frame\"><span class=\"ds-card-cover__img\" role=\"img\" aria-label=\"Portada de la sesión\"></span></span><span class=\"ds-card-cover__name\">Nombre de la fotógrafa</span><span class=\"ds-card-cover__date\">7 de diciembre de 2023</span><span class=\"ds-card-cover__tagline\">La línea que describe de qué trató la plática, recortada a tres renglones.</span></a>",
+      "css": ".ds-card-cover { display: block; text-decoration: none; color: var(--color-skin-base, #1f1b36); font-family: 'Source Sans Pro', ui-sans-serif, system-ui, sans-serif; max-width: 320px; } .ds-card-cover__frame { display: block; overflow: hidden; border-radius: 6px; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); } .ds-card-cover__img { display: block; aspect-ratio: 3 / 2; background: linear-gradient(135deg, #4b5563, #1f1b36); transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-card-cover:hover .ds-card-cover__img { transform: scale(1.05); } .ds-card-cover__name { display: block; margin-top: 16px; font-family: Oswald, ui-sans-serif, system-ui, sans-serif; font-size: 1.25rem; font-weight: 700; letter-spacing: -0.025em; transition: color 150ms ease; } .ds-card-cover:hover .ds-card-cover__name { color: #0369a1; } .ds-card-cover__date { display: block; margin-top: 4px; font-size: 0.875rem; text-transform: uppercase; color: var(--color-skin-dimmed, #64748b); } .ds-card-cover__tagline { display: block; margin-top: 8px; color: var(--color-skin-muted, #374151); line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; } .ds-card-cover:focus-visible { outline: 2px solid #0369a1; outline-offset: 4px; } .ds-card-cover:focus-visible .ds-card-cover__name { color: #0369a1; }"
+    },
+    {
+      "name": "Figure with Credit",
+      "kind": "custom",
+      "refersTo": "figure-obra",
+      "description": "The signature component. Every photograph on the site is a figure with an attached © line, rendered through _partials/_picture.erb. The credit is bold, full-strength ink, and inseparable from the image.",
+      "html": "<figure class=\"ds-figure-obra\"><span class=\"ds-figure-obra__img\" role=\"img\" aria-label=\"Fotografía de la sesión\"></span><figcaption class=\"ds-figure-obra__credit\">© Nombre de la autora</figcaption></figure>",
+      "css": ".ds-figure-obra { margin: 0; max-width: 420px; font-family: 'Source Sans Pro', ui-sans-serif, system-ui, sans-serif; } .ds-figure-obra__img { display: block; width: 100%; aspect-ratio: 3 / 2; background: linear-gradient(160deg, #64748b, #1f1b36); border-radius: 2px; box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05); } .ds-figure-obra__credit { margin-top: 12px; font-size: 0.875rem; font-weight: 700; color: var(--color-skin-base, #1f1b36); }"
+    },
+    {
+      "name": "Navigation Bar",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Fixed black bar over the scrolling photography. White wordmark left, three links right; the current page carries a 2px Azul Regla underline.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Principal\"><span class=\"ds-nav__mark\">f/64</span><span class=\"ds-nav__links\"><a class=\"ds-nav__link\" href=\"/\">Inicio</a><a class=\"ds-nav__link ds-nav__link--active\" href=\"/eventos/\" aria-current=\"page\">Eventos pasados</a><a class=\"ds-nav__link\" href=\"/acerca-de/\">Acerca de</a></span></nav>",
+      "css": ".ds-nav { display: flex; align-items: center; justify-content: space-between; height: 64px; padding: 0 24px; background: #000; box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05); font-family: 'Source Sans Pro', ui-sans-serif, system-ui, sans-serif; } .ds-nav__mark { font-family: Oswald, ui-sans-serif, system-ui, sans-serif; font-size: 1.25rem; font-weight: 700; color: #fff; letter-spacing: -0.025em; } .ds-nav__links { display: flex; gap: 32px; height: 100%; align-items: stretch; } .ds-nav__link { display: inline-flex; align-items: center; padding: 4px 4px 0; font-size: 0.875rem; font-weight: 700; text-decoration: none; color: rgb(255 255 255 / 0.75); border-bottom: 2px solid transparent; transition: color 150ms ease, border-color 150ms ease; } .ds-nav__link:hover { color: #fff; border-bottom-color: #d1d5db; } .ds-nav__link--active { color: #fff; border-bottom-color: #0ea5e9; } .ds-nav__link:focus-visible { outline: 2px solid #0ea5e9; outline-offset: 2px; }"
+    },
+    {
+      "name": "Breadcrumbs",
+      "kind": "nav",
+      "refersTo": "eyebrow",
+      "description": "The trail on an event page. Slash separators are aria-hidden; the current page is plain text carrying aria-current.",
+      "html": "<nav class=\"ds-crumbs\" aria-label=\"Migas de pan\"><ol><li><a href=\"/\">Inicio</a></li><li aria-hidden=\"true\">/</li><li><a class=\"ds-crumbs__section\" href=\"/eventos/\">Eventos pasados</a></li><li aria-hidden=\"true\">/</li><li aria-current=\"page\">Nombre de la fotógrafa</li></ol></nav>",
+      "css": ".ds-crumbs { font-family: 'Source Sans Pro', ui-sans-serif, system-ui, sans-serif; font-size: 0.875rem; } .ds-crumbs ol { display: flex; align-items: center; gap: 8px; margin: 0; padding: 0; list-style: none; color: var(--color-skin-dimmed, #64748b); } .ds-crumbs a { color: inherit; text-decoration: none; } .ds-crumbs a:hover { color: #0369a1; } .ds-crumbs__section { font-weight: 700; text-transform: uppercase; color: #0369a1; } .ds-crumbs__section:hover { color: #075985; }"
+    },
+    {
+      "name": "Dated Record Header",
+      "kind": "custom",
+      "refersTo": "eyebrow",
+      "description": "The archive's identifying pattern: an uppercase label, the presenter at display scale, and the date set as a headline at the opposite edge of the measure. This is where The Date Is A Headline Rule lives.",
+      "html": "<header class=\"ds-record\"><div><p class=\"ds-record__eyebrow\">Sesión de f/64</p><h1 class=\"ds-record__name\">Nombre de la fotógrafa<span class=\"ds-record__sub\">Plática fotográfica en f/64, Colima</span></h1></div><div class=\"ds-record__meta\"><p class=\"ds-record__date\"><time datetime=\"2023-12-07\">7 de diciembre de 2023</time></p><p class=\"ds-record__place\">Casa Volcán, Comala</p></div></header>",
+      "css": ".ds-record { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 32px; font-family: 'Source Sans Pro', ui-sans-serif, system-ui, sans-serif; color: var(--color-skin-base, #1f1b36); } .ds-record__eyebrow { margin: 0; font-size: 1.25rem; text-transform: uppercase; color: var(--color-skin-dimmed, #64748b); } .ds-record__name { margin: 0; font-family: Oswald, ui-sans-serif, system-ui, sans-serif; font-size: clamp(2.25rem, 5vw, 3.75rem); font-weight: 700; line-height: 1; letter-spacing: -0.025em; } .ds-record__sub { display: block; margin-top: 8px; font-family: 'Source Sans Pro', ui-sans-serif, system-ui, sans-serif; font-size: 1.25rem; font-weight: 400; letter-spacing: normal; color: var(--color-skin-muted, #374151); } .ds-record__meta { text-align: right; } .ds-record__date { margin: 0; font-family: Oswald, ui-sans-serif, system-ui, sans-serif; font-size: clamp(1.5rem, 3vw, 1.875rem); font-weight: 700; letter-spacing: -0.025em; } .ds-record__place { margin-top: 8px; color: var(--color-skin-muted, #374151); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "El Archivo Fechado",
+    "overview": "f/64 is a public register of thirty evenings that already happened. The interface is a catalogue card, not a poster: every session carries a date, a venue, a presenter, and a credit, and the design's job is to make those four facts unambiguous and permanent. The structure is visible on purpose — that legibility is the aesthetic. Nothing here is persuading anyone of anything, because there is nothing left to attend.\n\nAround that spine, the system is almost entirely absent. Two families, one accent, white surfaces, near-square corners, and no ornament that isn't a photograph. Depth is a photographic property rather than a UI one: full-bleed images run the height of the viewport, held under a gray multiply scrim so display type can sit on top of them, and parallax arrives only from background-attachment: fixed above md. Box-shadows exist but are vestigial — 1px hairlines under photographs that could disappear tomorrow without the system noticing.\n\nThe tension that keeps it from being bland is scale. Oswald runs to 3.75rem on a page whose body copy is 1rem, and dates are set at the same size as names — a session's date is a headline here, not metadata. Photographs are laid out asymmetrically (the first image in every set spans two of three columns), so a gallery reads as a considered sequence rather than a contact sheet.",
+    "keyCharacteristics": [
+      "Photography is the only decoration; the interface has none of its own.",
+      "Dates are set as headlines, at display scale, because the archive is organized by them.",
+      "Flat surfaces throughout — depth comes from full-bleed imagery and multiply scrims.",
+      "Near-square corners on the work (2px), gently rounded on navigation objects (6px).",
+      "One accent, sky blue, reserved almost entirely for links and interactive state.",
+      "Credit lines are typographically emphasized (700 weight) and never treated as caption filler."
+    ],
+    "rules": [
+      {
+        "name": "The One Accent Rule",
+        "body": "Azul Archivo marks what is interactive and nothing else. It is never a decorative fill, never a background for a section, never applied to a heading that isn't a link. If a blue element cannot be clicked, it is wrong.",
+        "section": "colors"
+      },
+      {
+        "name": "The Scrim-Only Rule",
+        "body": "Gray is never a surface color. The two grays that touch large areas exist exclusively as mix-blend-multiply overlays on photographs, and only where type must sit on top. A photograph carrying no text carries no scrim.",
+        "section": "colors"
+      },
+      {
+        "name": "The Ink Is Not Black Rule",
+        "body": "Body copy is Tinta Indígo (#1f1b36), never #000. Pure black in this system means the navigation bar. Using it for text collapses the distinction.",
+        "section": "colors"
+      },
+      {
+        "name": "The Date Is A Headline Rule",
+        "body": "In an archive organized by date, the date is not metadata. On the home page and every event page it is set in Oswald at headline scale or larger, and it is wrapped in a <time datetime> carrying the machine-readable ISO value derived by the builder.",
+        "section": "typography"
+      },
+      {
+        "name": "The Credit Is Not Caption Rule",
+        "body": "A photograph's © line is set at 700 weight in full-strength ink, never in Gris Ficha, never italicized, never smaller than 0.875rem. It is content, not chrome, and it may not be moved out of the image's immediate vicinity.",
+        "section": "typography"
+      },
+      {
+        "name": "The Uppercase Is For Labels Rule",
+        "body": "Uppercase is reserved for the 0.875rem–1.25rem label role. Headings are never uppercased; Oswald is already condensed enough that uppercase display type turns into a wall.",
+        "section": "typography"
+      },
+      {
+        "name": "The Hero Photo Is Asymmetric Rule",
+        "body": "In any gallery of three or more, the first figure spans two of three columns (sm:col-span-2) and the rest are single. A photo set is a sequence with an opening image, never a uniform grid.",
+        "section": "layout"
+      },
+      {
+        "name": "The Parallax Stops At md Rule",
+        "body": "bg-fixed is applied only above md (bg-scroll md:bg-fixed). Fixed backgrounds repaint on every scroll frame and are a known source of mobile jank.",
+        "section": "layout"
+      },
+      {
+        "name": "The Photograph Is The Elevation Rule",
+        "body": "When a section needs depth, it gets a photograph — full-bleed, scrimmed, and parallaxed above md. It does not get a shadow, a gradient, or a tinted panel. There are no new shadow tokens to invent here.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Two Radii Rule",
+        "body": "2px for the work, 6px for the interface. Nothing in this system is rounded-full, rounded-xl, or larger — a pill or a heavily rounded panel reads as product UI and breaks the register.",
+        "section": "shapes"
+      },
+      {
+        "name": "The Register States Its Own Closure Rule",
+        "body": "Every event page says which session it is (Sesión N de 30), which year it belongs to (a breadcrumb step linking to that year's anchor), and that the cycle ended. Visitors land deep, so a fact that lives only on the index is a fact most of them never see.",
+        "section": "layout"
+      }
+    ],
+    "dos": [
+      "Do render every image through _partials/_picture.erb, passing all four locals (src, alt, classes, eager) — Bridgetown raises on undefined ones, and the partial is what supplies WebP, intrinsic dimensions, and the loading strategy.",
+      "Do attach a © credit to every photograph, at 700 weight in full-strength ink, immediately below the image.",
+      "Do wrap dates in <time datetime=\"…\"> using the ISO value the events builder derives, and set them in Oswald at headline scale or larger.",
+      "Do reach for the skin-* token utilities (text-skin-base, text-skin-muted, text-skin-dimmed, text-skin-inverted) for text color.",
+      "Do give the first figure in any three-or-more gallery sm:col-span-2.",
+      "Do pair bg-scroll md:bg-fixed on any full-bleed background, and mark the section aria-hidden=\"true\" when the photograph is decorative.",
+      "Do keep the accent to interactive elements only.",
+      "Do give `sizes` the slot's real rendered width, per call site — it is the only thing the partial cannot infer, and a wrong sizes is worse than none."
+    ],
+    "donts": [
+      "Don't hard-code a sky-* utility for accent text or fills. --color-skin-accented / -hover (#0369a1 / #075985) are the live, AA-compliant accent; see The Token Is The Accent Rule.",
+      "Don't introduce a second accent hue, a gradient, or a tinted section background. White paper, black bar, one blue.",
+      "Don't add elevation. If a region needs depth, it gets a scrimmed photograph — see The Photograph Is The Elevation Rule.",
+      "Don't round anything past 6px, and never use rounded-full or rounded-xl.",
+      "Don't set body text in #000; it is Tinta Indígo (#1f1b36).",
+      "Don't dim, shrink, italicize, crop, or relocate a credit line away from its photograph.",
+      "Don't uppercase a heading. Uppercase belongs to the label role.",
+      "Don't ship an <img> without width/height — the partial supplies them, and going around it reintroduces the layout shift that motivated plugins/builders/images.rb.",
+      "Don't write arbitrary-value background utilities for full-bleed imagery; add a .bg-photo-* class at the foot of frontend/styles/index.css so the WebP can be offered through image-set().",
+      "Don't state a fact only on the index. /eventos/ is not the page most visitors see."
+    ]
+  }
+}

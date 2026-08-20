@@ -1,0 +1,14 @@
+<%
+  # A cover missing from `src/` used to ship a broken <img>: `image_dimensions`
+  # returns nil, no dimensions are emitted, and the browser 404s the file. The
+  # archive says so plainly instead — the same reflex as `present_in_source` in
+  # the events builder, which drops gallery photos that aren't in the repo.
+  # Pass all four locals; Bridgetown partials raise on undefined ones.
+%>
+<% if image_present?(src) %>
+  <%= render "picture", src: src, alt: alt, classes: classes, eager: eager, sizes: sizes %>
+<% else %>
+  <div class="flex aspect-[1200/628] w-full items-center justify-center bg-gray-100 px-4 text-center">
+    <span class="text-sm uppercase text-skin-dimmed">Sin portada</span>
+  </div>
+<% end %>

@@ -1,112 +1,205 @@
 ---
 layout: default
 ---
-<% event = data.event %>
+<%
+  event = data.event
+  # One focus treatment for every link on the page. `/eventos/` shipped this and
+  # the event pages did not, which left the destination — the surface most
+  # visitors actually land on — with no visible keyboard affordance at all.
+  focus_ring = "focus-visible:outline-2 focus-visible:outline-solid focus-visible:outline-offset-2 focus-visible:outline-skin-accented"
+%>
 <article class="bg-white">
   <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
 
     <nav aria-label="Migas de pan" class="text-sm">
-      <ol class="flex items-center gap-2 text-skin-dimmed">
-        <li><a href="/" class="hover:text-sky-600">Inicio</a></li>
+      <ol class="flex flex-wrap items-center gap-x-2 text-skin-dimmed">
+        <li><a href="/" class="inline-flex min-h-11 items-center text-skin-accented hover:text-skin-accented-hover <%= focus_ring %>">Inicio</a></li>
         <li aria-hidden="true">/</li>
-        <li><a href="/eventos/" class="font-bold uppercase text-sky-600 hover:text-sky-700">Eventos pasados</a></li>
+        <li><a href="/eventos/" class="inline-flex min-h-11 items-center font-bold uppercase text-skin-accented hover:text-skin-accented-hover <%= focus_ring %>">Sesiones</a></li>
+        <% if data.year %>
+          <li aria-hidden="true">/</li>
+          <%# The archive index builds a `#anio-YYYY` anchor per year; without this
+              the only way back into the right part of a 30-item page was to scroll. %>
+          <li><a href="/eventos/#anio-<%= data.year %>" class="inline-flex min-h-11 items-center text-skin-accented hover:text-skin-accented-hover <%= focus_ring %>"><%= data.year %></a></li>
+        <% end %>
         <li aria-hidden="true">/</li>
         <li aria-current="page"><%= event.presenter %></li>
       </ol>
     </nav>
 
-    <header class="mt-8 grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2">
+    <header class="mt-12 grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
       <div>
-        <p class="text-xl uppercase text-skin-dimmed">Sesión de f/64</p>
-        <h1 class="font-oswald text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-          <span class="block"><%= event.presenter %></span>
-          <span class="mt-2 block text-xl font-normal tracking-normal text-skin-muted sm:text-2xl">Plática fotográfica en f/64, Colima</span>
+        <p class="text-sm uppercase text-skin-dimmed">
+          Sesión <%= data.number %> de <%= data.total %>
+        </p>
+        <h1 class="mt-2 font-oswald text-4xl font-bold tracking-tight break-words hyphens-auto sm:text-5xl lg:text-6xl">
+          <%= event.presenter %>
         </h1>
+        <p class="mt-3 text-xl text-skin-muted">Plática fotográfica en f/64, Colima</p>
       </div>
+
       <div class="sm:text-right">
-        <p class="font-oswald text-2xl font-bold tracking-tight sm:text-3xl">
+        <%# The date is the axis this archive is organised on, so it is set within
+            one step of the presenter's name rather than at half its size. %>
+        <p class="font-oswald text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
           <% if data.iso_date %>
             <time datetime="<%= data.iso_date %>"><%= event.date %></time>
           <% else %>
             <%= event.date %>
           <% end %>
         </p>
-        <p class="mt-2 text-skin-muted"><%= event.address %></p>
+        <% if data.weekday_note %>
+          <p class="mt-2 text-sm uppercase text-skin-dimmed">Fue <%= data.weekday_note %>, no jueves</p>
+        <% end %>
+        <p class="mt-4 text-sm uppercase text-skin-dimmed">Sede</p>
+        <p class="text-skin-muted"><%= event_venue(event) %></p>
+        <% if (hora = event_start_time(event)) %>
+          <p class="mt-1 text-sm text-skin-dimmed">Comenzó a las <%= hora %>.</p>
+        <% end %>
       </div>
     </header>
 
     <p class="mt-8 max-w-3xl text-xl text-skin-muted"><%= event.tagline %></p>
+
+    <%# Nothing on this page said the series had ended: the closure statement lived
+        only on /eventos/, which most visitors never see. %>
+    <p class="mt-4 max-w-3xl text-sm text-skin-dimmed">
+      Esta sesión ya ocurrió. El ciclo de f/64 concluyó en diciembre de 2023 y no habrá nuevas sesiones;
+      <a href="/acerca-de/" class="text-skin-accented hover:text-skin-accented-hover <%= focus_ring %>">este sitio permanece como archivo</a>.
+    </p>
 
     <% if data.links.any? %>
       <ul class="mt-6 flex flex-wrap gap-x-6 gap-y-2">
         <% data.links.each do |link| %>
           <li>
             <a href="<%= link.url %>" rel="noopener" target="_blank"
-               class="text-sm font-bold uppercase text-sky-600 hover:text-sky-700"><%= link.title %></a>
+               class="inline-flex min-h-11 items-center text-sm font-bold uppercase text-skin-accented hover:text-skin-accented-hover <%= focus_ring %>"><%= link.title %></a>
           </li>
         <% end %>
       </ul>
     <% end %>
 
     <% if data.photos.any? %>
-      <section class="mt-16">
+      <section class="mt-16" data-controller="lightbox">
         <h2 class="font-oswald text-2xl font-bold tracking-tight sm:text-3xl">El trabajo de <%= event.presenter %></h2>
+        <p class="mt-2 text-sm uppercase text-skin-dimmed">
+          <%= data.photos.size %> <%= data.photos.size == 1 ? "fotografía" : "fotografías" %> &middot; © <%= event.copyright %>
+        </p>
         <div class="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
           <% data.photos.each_with_index do |photo, index| %>
             <figure class="<%= index.zero? ? "col-span-1 sm:col-span-2" : "col-span-1" %>">
-              <%# The first photo is the largest on the page and the likeliest LCP
-                  element, so it loads eagerly while the rest stay lazy. %>
-              <%= render "picture",
-                    src: photo,
-                    alt: "Fotografía #{index + 1} de #{event.presenter}, presentada en su plática de f/64 en Colima",
-                    classes: "w-full rounded-xs shadow-xs",
-                    eager: index.zero? %>
+              <%# Every photograph on the site was previously capped at its grid cell.
+                  A plain link to the file needs no JavaScript, works with the keyboard
+                  and with right-click, and keeps working with nobody maintaining it. %>
+              <a href="<%= photo %>" class="block rounded-xs <%= focus_ring %>"
+                 data-lightbox-target="link"
+                 data-action="lightbox#open"
+                 data-lightbox-credit="© <%= event.copyright %>"
+                 data-lightbox-alt="Fotografía <%= index + 1 %> de <%= data.photos.size %> de <%= event.presenter %>"
+                 aria-label="Ver en tamaño completo la fotografía <%= index + 1 %> de <%= data.photos.size %> de <%= event.presenter %>">
+                <%= render "picture",
+                      src: photo,
+                      alt: "Fotografía #{index + 1} de #{data.photos.size} de #{event.presenter}, presentada en su plática de f/64",
+                      classes: "w-full rounded-xs shadow-xs",
+                      eager: index.zero?,
+                      sizes: index.zero? ? "(min-width: 640px) 66vw, 100vw" : "(min-width: 640px) 33vw, 100vw" %>
+              </a>
               <figcaption class="mt-3 text-sm font-bold">&copy; <%= event.copyright %></figcaption>
             </figure>
           <% end %>
         </div>
+        <%= render "lightbox", label: "El trabajo de #{event.presenter}" %>
       </section>
     <% end %>
 
     <% if data.event_photos.any? %>
-      <section class="mt-16">
+      <%# Deliberately subordinate to the section above: these are context, not the
+          authored work the page exists to present, and they carry a different
+          copyright. A tighter grid is what tells the visitor that, after the
+          heading has scrolled away. %>
+      <section class="mt-16" data-controller="lightbox">
         <h2 class="font-oswald text-2xl font-bold tracking-tight sm:text-3xl">La sesión</h2>
-        <div class="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
+        <p class="mt-2 text-sm uppercase text-skin-dimmed">
+          Fotografías del público &middot; © f/64
+        </p>
+        <div class="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
           <% data.event_photos.each_with_index do |photo, index| %>
             <figure>
-              <%= render "picture",
-                    src: photo,
-                    alt: "Público en la sesión de f/64 con #{event.presenter}, #{event.date}",
-                    classes: "w-full rounded-xs shadow-xs",
-                    eager: false %>
+              <a href="<%= photo %>" class="block rounded-xs <%= focus_ring %>"
+                 data-lightbox-target="link"
+                 data-action="lightbox#open"
+                 data-lightbox-credit="© f/64"
+                 data-lightbox-alt="Público en la sesión de f/64 con <%= event.presenter %>, fotografía <%= index + 1 %> de <%= data.event_photos.size %>"
+                 aria-label="Ver en tamaño completo la fotografía <%= index + 1 %> de <%= data.event_photos.size %> del público">
+                <%= render "picture",
+                      src: photo,
+                      alt: "Público en la sesión de f/64 con #{event.presenter}, fotografía #{index + 1} de #{data.event_photos.size}",
+                      classes: "w-full rounded-xs shadow-xs",
+                      eager: false,
+                      sizes: "(min-width: 640px) 25vw, 50vw" %>
+              </a>
               <figcaption class="mt-3 text-sm font-bold">&copy; f/64</figcaption>
             </figure>
           <% end %>
         </div>
+        <%= render "lightbox", label: "Fotografías del público en la sesión con #{event.presenter}" %>
       </section>
     <% end %>
 
     <% if data.photos.empty? && data.event_photos.empty? %>
-      <p class="mt-16 text-skin-dimmed">No hay fotografías disponibles de esta sesión.</p>
+      <p class="mt-16 max-w-3xl text-skin-dimmed">
+        No se conservan fotografías de esta sesión. La plática ocurrió; el material no llegó
+        al archivo. Queda el cartel con el que se anunció.
+      </p>
+    <% end %>
+
+    <% if image_present?(event.cover) %>
+      <%# The cover is not a photograph — every one of the thirty is the printed
+          poster that announced the session, "8:00 PM · Evento Gratuito" and all.
+          At the top of the page that reads as an invitation to an event six years
+          gone. Here, small and named, it reads as what it is: an artifact of the
+          series, and the only f/64-authored design work the archive holds. %>
+      <section class="mt-16">
+        <h2 class="font-oswald text-2xl font-bold tracking-tight sm:text-3xl">El cartel</h2>
+        <p class="mt-2 text-sm uppercase text-skin-dimmed">Con el que se anunció esta sesión &middot; © f/64</p>
+        <figure class="mt-8 max-w-xl">
+          <a href="<%= event.cover %>" class="block rounded-xs <%= focus_ring %>"
+             aria-label="Ver en tamaño completo el cartel de esta sesión">
+            <%= render "cover",
+                  src: event.cover,
+                  alt: "Cartel que anunció la sesión de f/64 con #{event.presenter}",
+                  classes: "w-full rounded-xs shadow-xs",
+                  eager: false,
+                  sizes: "(min-width: 640px) 36rem, 100vw" %>
+          </a>
+          <figcaption class="mt-3 text-sm font-bold">&copy; f/64</figcaption>
+        </figure>
+      </section>
     <% end %>
 
     <nav aria-label="Otras sesiones" class="mt-20 grid grid-cols-1 gap-6 border-t border-gray-200 pt-8 sm:grid-cols-2">
       <div>
         <% if data.older_event %>
-          <p class="text-sm uppercase text-skin-dimmed">Sesión anterior</p>
-          <a href="<%= event_path(data.older_event) %>" class="font-oswald text-xl font-bold hover:text-sky-600">
-            <%= data.older_event.presenter %>
+          <%# The link used to wrap only the presenter's name, so a screen-reader
+              link list read a bare surname with no label and no date. %>
+          <a href="<%= event_path(data.older_event) %>" class="group block rounded-md <%= focus_ring %>">
+            <span class="block text-sm uppercase text-skin-dimmed">Sesión anterior</span>
+            <span class="block font-oswald text-xl font-bold text-skin-accented group-hover:text-skin-accented-hover"><%= data.older_event.presenter %></span>
+            <span class="block text-sm text-skin-dimmed"><%= data.older_event.date %></span>
           </a>
-          <p class="text-sm text-skin-dimmed"><%= data.older_event.date %></p>
+        <% else %>
+          <p class="text-sm uppercase text-skin-dimmed">Esta fue la primera sesión de f/64.</p>
         <% end %>
       </div>
       <div class="sm:text-right">
         <% if data.newer_event %>
-          <p class="text-sm uppercase text-skin-dimmed">Sesión siguiente</p>
-          <a href="<%= event_path(data.newer_event) %>" class="font-oswald text-xl font-bold hover:text-sky-600">
-            <%= data.newer_event.presenter %>
+          <a href="<%= event_path(data.newer_event) %>" class="group block rounded-md <%= focus_ring %>">
+            <span class="block text-sm uppercase text-skin-dimmed">Sesión siguiente</span>
+            <span class="block font-oswald text-xl font-bold text-skin-accented group-hover:text-skin-accented-hover"><%= data.newer_event.presenter %></span>
+            <span class="block text-sm text-skin-dimmed"><%= data.newer_event.date %></span>
           </a>
-          <p class="text-sm text-skin-dimmed"><%= data.newer_event.date %></p>
+        <% else %>
+          <p class="text-sm uppercase text-skin-dimmed">Esta fue la última sesión de f/64.</p>
         <% end %>
       </div>
     </nav>

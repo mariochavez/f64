@@ -15,6 +15,8 @@ module Builders
     def build
       helper(:image_dimensions) { |path| Images.dimensions(site, path) }
       helper(:webp_for) { |path| Images.webp_for(site, path) }
+      helper(:image_present?) { |path| Images.present?(site, path) }
+      helper(:srcset_for) { |path| Images.srcset_for(site, path) }
     end
 
     # Cached per build; ~300 header reads would otherwise repeat across pages.
@@ -32,6 +34,57 @@ module Builders
       return nil if candidate == path.to_s
 
       File.exist?(site.in_source_dir(candidate)) ? candidate : nil
+    end
+
+    # Narrow variants generated alongside each source image at ingest time. A
+    # 950px photograph was being shipped whole into a ~350px slot on the phones
+    # PRODUCT.md names as the primary audience.
+    VARIANT_WIDTHS = [640].freeze
+
+    # Builds "photo-640w.jpg 640w, photo.jpg 950w" — but only for the widths that
+    # actually exist on disk, so a missing variant degrades to the original rather
+    # than advertising a 404. Returns nil when there is nothing to add.
+    def self.srcset_for(site, path)
+      intrinsic = intrinsic_width(site, path)
+      return nil unless intrinsic
+
+      entries = VARIANT_WIDTHS.filter_map do |width|
+        next if width >= intrinsic
+
+        candidate = variant_path(path, width)
+        "#{candidate} #{width}w" if File.file?(site.in_source_dir(candidate))
+      end
+      return nil if entries.empty?
+
+      (entries << "#{path} #{intrinsic}w").join(", ")
+    end
+
+    # The header reader understands JPEG, PNG and SVG but not WebP, and a `.webp`
+    # here is always a conversion of a sibling raster of identical pixel size. So
+    # borrow that sibling's width rather than teaching the scanner a fourth format
+    # — without this the <source> browsers actually use got no srcset at all, and
+    # every narrow variant went unused.
+    def self.intrinsic_width(site, path)
+      direct = dimensions(site, path)&.first
+      return direct if direct
+      return nil unless path.to_s.downcase.end_with?(".webp")
+
+      %w[.jpg .jpeg .png].each do |ext|
+        sibling = path.to_s.sub(/\.webp\z/i, ext)
+        width = dimensions(site, sibling)&.first
+        return width if width
+      end
+      nil
+    end
+
+    def self.variant_path(path, width)
+      path.to_s.sub(/(\.\w+)\z/, "-#{width}w\\1")
+    end
+
+    def self.present?(site, path)
+      return false if path.to_s.strip.empty?
+
+      File.file?(site.in_source_dir(path.to_s))
     end
 
     def self.read_dimensions(absolute_path)

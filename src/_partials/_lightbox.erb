@@ -1,0 +1,44 @@
+<%
+  # Rendered once per gallery. `label` names the set for screen readers, since a
+  # page carries two of these and they hold different work under different rights.
+%>
+<dialog data-lightbox-target="dialog"
+        data-action="keydown->lightbox#keydown"
+        aria-label="<%= label %>"
+        class="m-0 h-full max-h-full w-full max-w-full bg-black/95 p-0 backdrop:bg-black/95 open:flex open:flex-col">
+  <div class="flex items-center justify-between px-4 py-3 sm:px-6">
+    <p data-lightbox-target="counter" class="text-sm font-bold uppercase text-skin-inverted/75" aria-live="polite"></p>
+    <button type="button" data-action="lightbox#close"
+            class="inline-flex min-h-11 min-w-11 items-center justify-center rounded-md px-3 text-sm font-bold uppercase text-skin-inverted hover:text-skin-inverted/75 focus-visible:outline-2 focus-visible:outline-solid focus-visible:outline-offset-2 focus-visible:outline-skin-rule">
+      Cerrar
+    </button>
+  </div>
+
+  <%# The controls overlay the photograph rather than sitting beside it: as flex
+      siblings they could not shrink, so at 390px the image took the full row and
+      pushed both buttons off-screen — the lightbox opened and then trapped you. %>
+  <div class="relative flex min-h-0 flex-1 items-center justify-center px-2 sm:px-4">
+    <button type="button" data-action="lightbox#previous" data-lightbox-target="previous"
+            class="absolute left-2 top-1/2 z-10 inline-flex min-h-11 min-w-11 -translate-y-1/2 items-center justify-center rounded-md bg-black/60 text-skin-inverted hover:bg-black/80 focus-visible:outline-2 focus-visible:outline-solid focus-visible:outline-offset-2 focus-visible:outline-skin-rule sm:left-4">
+      <span class="sr-only">Fotografía anterior</span>
+      <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+      </svg>
+    </button>
+
+    <%# No `src` attribute at all until a photograph is chosen: `src=""` makes the
+      browser re-request the current document and paints a broken-image box. %>
+  <img data-lightbox-target="image" alt=""
+         class="max-h-full min-h-0 w-auto max-w-full rounded-xs object-contain" />
+
+    <button type="button" data-action="lightbox#next" data-lightbox-target="next"
+            class="absolute right-2 top-1/2 z-10 inline-flex min-h-11 min-w-11 -translate-y-1/2 items-center justify-center rounded-md bg-black/60 text-skin-inverted hover:bg-black/80 focus-visible:outline-2 focus-visible:outline-solid focus-visible:outline-offset-2 focus-visible:outline-skin-rule sm:right-4">
+      <span class="sr-only">Fotografía siguiente</span>
+      <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+      </svg>
+    </button>
+  </div>
+
+  <p data-lightbox-target="credit" class="px-4 py-4 text-center text-sm font-bold text-skin-inverted sm:px-6"></p>
+</dialog>

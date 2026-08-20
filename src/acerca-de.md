@@ -2,15 +2,14 @@
 layout: page
 title: Qué fue f/64
 seo_title: Qué fue f/64 — pláticas fotográficas en Colima | f/64 Colima
-tagline: Acerca del proyecto
-description: f/64 fue un ciclo de pláticas fotográficas gratuitas en Colima. 30 sesiones entre noviembre de 2018 y diciembre de 2023, cada primer jueves del mes.
+description: f/64 fue un ciclo de pláticas fotográficas gratuitas en Colima. 30 sesiones entre noviembre de 2018 y diciembre de 2023, casi siempre el primer jueves del mes.
 image: /images/talks.jpg
 image_alt: Una plática fotográfica de f/64 en Colima
 ---
 
 <div class="prose md:prose-lg lg:prose-xl">
   <p>
-  <strong>f/64</strong> fue un ciclo de pláticas fotográficas en la ciudad de Colima, México. Cada primer jueves del mes, una fotógrafa o un fotógrafo presentaba su trabajo ante el público y conversaba con los asistentes sobre cómo y por qué lo hizo.
+  <strong>f/64</strong> fue un ciclo de pláticas fotográficas en la ciudad de Colima, México. Casi siempre el primer jueves del mes, una fotógrafa o un fotógrafo presentaba su trabajo ante el público y conversaba con los asistentes sobre cómo y por qué lo hizo.
   </p>
 
   <p>
